@@ -53,6 +53,7 @@ void draw() {
   // hair
   for(x = player.x-player.face*2; x <= player.x+player.face*2; x+=2) {
     noFill();
+    stroke(player.hairColor[0],player.hairColor[1],player.hairColor[2]);
     ellipse(x,player.y-20,2,3);
   }
   
