@@ -64,9 +64,10 @@ function UConScreenKeyboard() {
   for (var i = 0; i < abc.length; i++) {
     abc[i] = abc[i].toUpperCase();
     thingie += '<button onclick="enterLetter(\''+ abc[i] + '\')">' + abc[i] + '</button>' ;
+    /*
     if (abc[i] == 'P') {
         thingie += '<br>';
-    }
+    } */
   }
   thingie += '<button onclick="enterLetter(\' \')">_</button>';
   thingie += '<button onclick="LConScreenKeyboard()">A^a</button>';
@@ -80,9 +81,10 @@ function LConScreenKeyboard() {
   var thingie = '';
   for (var i = 0; i < abc.length; i++) {
     thingie += '<button onclick="enterLetter(\''+ abc[i] + '\')">' + abc[i] + '</button>' ;
+      /*
     if (abc[i] == 'p') {
         thingie += '<br>';
-    }
+    } */
   }
   thingie += '<button onclick="enterLetter(\' \')">_</button>';
   thingie += '<button onclick="UConScreenKeyboard()">a^A</button>';
