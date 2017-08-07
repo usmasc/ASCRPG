@@ -7,7 +7,7 @@ void setup() {
 
 void draw() {
   
-  background(0,0,0);
+  background(100,100,255);
  
   fill(player.skin[0],player.skin[1],player.skin[2]);
   //ears
@@ -57,7 +57,7 @@ void draw() {
   
   //pants
   fill(0,100,0);
-  rect(player.x-4,player.y+12,8,3);
+  rect(player.x-4,player.y+12,12,3);
   rect(player.x-4,player.y+14,3,3);
   rect(player.x+2, player.y+14,3,3);
   
