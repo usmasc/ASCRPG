@@ -123,7 +123,7 @@ function setShirtColor(o) {
     player.tColor = [255,0,0];
     break;
   case 1:
-    player.tColor = [0,255,0];
+    player.tColor = [0,100,0];
     break;
   case 2:
     player.tColor = [0,0,255];
