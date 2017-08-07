@@ -28,14 +28,18 @@ th, #textArea, #submitButtonArea {
 }
 
 .hair2 {
-  background-color: #A56B46;
+  background-color: #6A4E42;
 }
 
 .hair3 {
-  background-color: #B55239;
+  background-color: #A56B46;
 }
 
 .hair4 {
+  background-color: #B55239;
+}
+
+.hair5 {
   background-color: #E6CEA8;
 }
 
