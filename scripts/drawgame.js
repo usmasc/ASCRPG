@@ -48,12 +48,12 @@ void draw() {
   ellipse(player.x+3+player.face,player.y-11,1,1);
   
   // mouth
-  rect(player.x-3,player.y-5,6,2);
+  rect(player.x-3,player.y-5,6,1);
   
   // hair
-  for(x = player.x-player.face*2; x <= player.x+player.face*2; x+=1) {
+  for(x = player.x-player.face*2; x <= player.x+player.face*2; x+=2) {
     noFill();
-    ellipse(x,player.y-20,2,2);
+    ellipse(x,player.y-20,2,3);
   }
   
   //pants
