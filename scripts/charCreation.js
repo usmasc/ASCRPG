@@ -219,7 +219,7 @@ function pickPantsColor() {
     thingie += '<button class="pants1" onclick="setPantsColor(1)">_</button> ';
     thingie += '<button class="pants2" onclick="setPantsColor(2)">_</button> ';
     thingie += '<button class="pants3" onclick="setPantsColor(3)">_</button> ';
-    thingie += '<button class="pants3" onclick="isOK()">_</button> ';
+    thingie += '<button class="pants3" onclick="isOK()">OK</button> ';
     sumbit.innerHTML = thingie;
 }
 
