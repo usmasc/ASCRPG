@@ -1,8 +1,24 @@
-#textArea, #name, #HP {
+
+ 
+body, button {
   background-color: #000000;
   color: #FFFFFF;
   font-family: monospace;
 }
+
+
+
+th, #textArea, #submitButtonArea {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+  button {
+    border: 0px;
+  }
+
 
 
 .shirt0 {
@@ -19,21 +35,21 @@
 
 
 .skin0 {
-  background-color: #FFDCB1;
+  background-color: #8d5524;
 }
 
 .skin1 {
-  background-color: #E5C298;
+  background-color: #c68642;
 }
 
 .skin2 {
-  background-color: #E4B98E;
+  background-color: #e0ac69;
 }
 
 .skin3 {
-  background-color: #E2B98F;
+  background-color: #f1c27d;
 }
 
 .skin4 {
-  background-color: #E3A173;
+  background-color: #ffdbac;
 }
