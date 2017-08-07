@@ -6,8 +6,16 @@ var player = {
     "hairColor": [0, 0, 0],
     "tshirt": 'e',
     "tColor": [255, 0, 0],
-    x: 300,
-    y: 200
+    'x': 300,
+    'y': 200,
+    'hp': 50,
+    'mp': 10,
+    'maxhp': 50,
+    'maxmp': 10,
+    'xp': 0,
+    'nextLevel': 100,
+    'money': 0
+    
  };
 
 var command = 'Enter X';
@@ -194,6 +202,14 @@ function setSkinTone(o) {
   pickShirt();
 }
 
+function updateStats() {
+    document.getElementById('hp').innerHTML = 'HP: '+ player.hp + '/' player.maxhp;
+    document.getElementById('mp').innerHTML = 'MP: '+ player.mp + '/' player.maxmp;
+    document.getElementById('xp').innerHTML = 'XP: '+ player.xp + '/' player.nextLevel;
+    document.getElementById('money').innerHTML = '$'+ player.money;
+}
+
 
 
 enterName();
+updateStates();
