@@ -12,19 +12,23 @@ void draw() {
   //fill(255,255,255);
   //text('e',200,210);
   
-  // face
+ 
   fill(player.skin[0],player.skin[1],player.skin[2]);
+  //ears
+  ellipse(player.x-6-player.face*2,player.y-12,4,4);
+  ellipse(player.x+6+player.face*2,player.y-12,4,4);
+   // head
   ellipse(player.x,player.y-10,12+player.face*4,20);
   
   // arms
-  rect(player.x-10,player.y+4,4,8);
-  rect(player.x+6,player.y+4,4,8);
+  rect(player.x-10,player.y+8,4,4);
+  rect(player.x+6,player.y+8,4,4);
   
   // tshirt
   fill(player.tColor[0],player.tColor[1],player.tColor[2]);
   rect(player.x-6,player.y,12,10);
-  rect(player.x-10,player.y,4,4);
-  rect(player.x+6,player.y,4,4);
+  rect(player.x-10,player.y,4,8);
+  rect(player.x+6,player.y,4,8);
   
   /*
   // hat
