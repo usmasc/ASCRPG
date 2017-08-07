@@ -1,6 +1,6 @@
 var player = {
     "name": "Ness",
-    "face": 0,
+    "face": 3,
     "skin": [217, 183, 31],
     "hair": 0,
     "hairColor": [0, 0, 0],
@@ -23,6 +23,7 @@ function pickFace() {
   var thingie = '<button onclick="setFaceShape(0)">()</button> '
   thingie += '<button onclick="setFaceShape(1)">( )</button>';
   thingie += '<button onclick="setFaceShape(2)">(&nbsp;&nbsp;)</button>';
+    thingie += '<button onclick="setFaceShape(3)">(&nbsp;&nbsp;&nbsp;)</button>';
   sumbit.innerHTML = thingie;
 }
 
