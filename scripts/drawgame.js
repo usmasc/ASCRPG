@@ -60,10 +60,11 @@ void draw() {
   
   //pants
   fill(0,100,0);
+  noStroke();
   rect(player.x-6,player.y+16,4,3);
   rect(player.x+2, player.y+16,4,3);
-  rect(player.x-6,player.y+15,12,2);
-  
+  rect(player.x-6,player.y+14,12,2);
+  stroke(0,0,0);
   
   //shoes
   fill(0,0,0);
