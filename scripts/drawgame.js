@@ -31,9 +31,9 @@ void draw() {
   text(player.tshirt,player.x-5,player.y+15);
   // eye whites
   ellipse(player.x-3-player.face,player.y-15,3,3);
-  ellipse(player.x+3+player.face.player.y-15,3,3);
+  ellipse(player.x+3+player.face,player.y-15,3,3);
   
   fill(0,0,0);
   ellipse(player.x-3-player.face,player.y-15,1,1);
-  ellipse(player.x-3-player.face,player.y-15,1,1);
+  ellipse(player.x+3+player.face,player.y-15,1,1);
 }
