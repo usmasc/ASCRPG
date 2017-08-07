@@ -22,7 +22,7 @@ void draw() {
   
   // tshirt
   fill(player.tColor[0],player.tColor[1],player.tColor[2]);
-  rect(player.x-4,player.y,8,10);
+  rect(player.x-6,player.y,8,10);
   rect(player.x-10,player.y,4,4);
   rect(player.x+6,player.y,4,4);
   
@@ -33,7 +33,7 @@ void draw() {
   
   // tshirt logo
   fill(255,255,255);
-  text(player.tshirt,player.x-3,player.y+5);
+  text(player.tshirt,player.x-3,player.y+7);
  
   // eye whites
   fill(255,255,255);
