@@ -18,6 +18,7 @@ th, #textArea, #submitButtonArea {
   button {
     font-size: 2em;
     margin: 10px;
+    padding: 10px;
     border: 0px;
   }
 
