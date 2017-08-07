@@ -19,6 +19,25 @@ th, #textArea, #submitButtonArea {
     border: 0px;
   }
 
+.hair0 {
+  background-color: #000000;
+}
+
+.hair1 {
+  background-color: #3B3024;
+}
+
+.hair2 {
+  background-color: #A56B46;
+}
+
+.hair3 {
+  background-color: #B55239;
+}
+
+.hair4 {
+  background-color: #E6CEA8;
+}
 
 
 .shirt0 {
