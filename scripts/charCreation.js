@@ -26,6 +26,49 @@ thingie += '<button class="skin4" onclick="setSkinTone(4)">_</button> ';
 playArea = thingie;
 }
 
+
+function pickSkin() {
+text = 'Pick shirt color:';
+var thingie = '<button class="shirt0" onclick="setShirtColor(0)">_</button> ';
+thingie += '<button class="shirt1" onclick="setShirtColor(1)">_</button> ';
+thingie += '<button class="shirt2" onclick="setShirtColor(2)">_</button> ';
+playArea = thingie;
+}
+
+function pickShirt() {
+text = 'Pick tshirt logo:';
+var thingie = '<button onclick="setTshirt(2.7)">e</button> ';
+thingie += '<button onclick="setTshirt(3.14)">π</button> ';
+thingie += '<button onclick="setTshirt(6.2)">τ</button> ';
+thingie += '<button onclick="setTshirt(0)">ϕ</button> ';
+thingie += '<button onclick="setTshirt(1)">μ</button> ';
+thingie += '<button onclick="setTshirt(2)">λ</button> ';    
+playArea = thingie;
+}
+
+function setTshirt(o) {
+  switch(o) {
+   case 3.14:
+     player.tshirt = 'π';
+     break;
+   case 2.7:
+     player.tshirt = 'e';
+     break;
+   case 6.2:
+     player.tshirt = 'τ';
+     break;
+   case 0:
+     player.tshirt = 'ϕ';
+     break;
+   case 1:
+     player.tshirt = 'μ';
+     break;
+   case 1:
+     player.tshirt = 'λ';
+     break;
+  }
+}
+
 function setFaceShape(o) {
   player.face = o;
   pickSkin();
@@ -49,6 +92,9 @@ function setSkinTone(o) {
     player.skin = [227,161,115];
     break;
   }
+  pickShirt();
 }
+
+
 
 pickFace();
