@@ -1,5 +1,5 @@
-var w = 600;
-var h = 400;
+var w = 720;
+var h = 200;
 
 void setup() { 
   size(w, h);
