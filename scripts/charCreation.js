@@ -1,19 +1,37 @@
 var player = {
-     "face":0,
+    "name": "Ness",
+    "face": 0,
     "skin": [217, 183, 31],
     "hair": 0,
     "hairColor": [0, 0, 0],
     "tshirt": 'e',
     "tColor": [255, 0, 0]
  };
+
  
  var text = document.getElementById('textArea');
- var playArea = document.getElementById('playArea');
+ var playArea = document.getElementById('playArea'); 
+ var sumbit = document.getElementById('submitButtonArea');
+var textInput = document.getElementById('textInput');
 
 function pickFace() {
   text.innerHTML = 'Pick a face shape:';
   var thingie = '<button onclick="setFaceShape(0)">0</button> <button onclick="setFaceShape(1)">O</button>';
   playArea.innerHTML = thingie;
+}
+
+function enterName() {
+  text.innerHTML = 'Enter name:';
+  var thingie = '<button onclick="submitName">submit</button>';
+  playArea.innerHTML = '';
+ sumbit.innerHTML = thingie;
+}
+
+function submitName() {
+     player.name = textInput.value;
+     document.getElementById('name').innnerHTML = player.name;
+     sumbit.innerHTML = '';
+     pickFace();
 }
 
 function pickSkin() {
@@ -113,4 +131,4 @@ function setSkinTone(o) {
 
 
 
-pickFace();
+enterName();
