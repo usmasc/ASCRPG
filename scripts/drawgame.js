@@ -51,20 +51,20 @@ void draw() {
   rect(player.x-3,player.y-5,6,2);
   
   // hair
-  for(x = player.x-player.face*2+6; x <= player.x+player.face*2+6; x+=2) {
+  for(x = player.x-player.face*2-6; x <= player.x+player.face*2+6; x+=2) {
     ellipse(x,player.y-20,2,2);
   }
   
   //pants
   fill(0,100,0);
-  rect(player.x-4,player.y+12,12,3);
-  rect(player.x-4,player.y+14,3,3);
-  rect(player.x+2, player.y+14,3,3);
+  rect(player.x-6,player.y+12,12,3);
+  rect(player.x-6,player.y+14,4,3);
+  rect(player.x+2, player.y+14,4,3);
   
   //shoes
   fill(0,0,0);
-  rect(player.x-5,player.y+19,5,2);
-  rect(player.x+2,player.y+19,5,2);
+  rect(player.x-5,player.y+17,5,2);
+  rect(player.x+2,player.y+17,5,2);
   
   
 }
