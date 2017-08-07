@@ -31,7 +31,8 @@ function pickFace() {
   var thingie = '<button onclick="setFaceShape(0)">()</button> '
   thingie += '<button onclick="setFaceShape(1)">( )</button>';
   thingie += '<button onclick="setFaceShape(2)">(&nbsp;&nbsp;)</button>';
-    thingie += '<button onclick="setFaceShape(3)">(&nbsp;&nbsp;&nbsp;)</button>';
+  thingie += '<button onclick="setFaceShape(3)">(&nbsp;&nbsp;&nbsp;)</button>';
+  thingie += '<button onclick="pickSkin()">OK</button>';
   sumbit.innerHTML = thingie;
 }
 
@@ -67,7 +68,7 @@ function UConScreenKeyboard() {
   thingie += '<button onclick="enterLetter(\' \')">_</button>';
   thingie += '<button onclick="LConScreenKeyboard()">A^a</button>';
   thingie += '<button onclick="deleteText()">Del</button>';
-  thingie += '<button onclick="submitText()">Done</button>';
+  thingie += '<button onclick="submitText()">OK</button>';
   sumbit.innerHTML = thingie;
 }
 
@@ -80,7 +81,7 @@ function LConScreenKeyboard() {
   thingie += '<button onclick="enterLetter(\' \')">_</button>';
   thingie += '<button onclick="UConScreenKeyboard()">a^A</button>';
   thingie += '<button onclick="deleteText()">Del</button>';
-  thingie += '<button onclick="submitText()">Done</button>';
+  thingie += '<button onclick="submitText()">OK</button>';
   sumbit.innerHTML = thingie;
 }
 
@@ -114,6 +115,7 @@ function pickSkin() {
      thingie += '<button class="skin2" onclick="setSkinTone(2)">_</button> ';
      thingie += '<button class="skin3" onclick="setSkinTone(3)">_</button> ';
      thingie += '<button class="skin4" onclick="setSkinTone(4)">_</button> ';
+     thingie += '<button onclick="pickTshirt()">OK</button>';    
      sumbit.innerHTML = thingie;
 }
 
@@ -148,7 +150,8 @@ function pickShirt() {
      thingie += '<button onclick="setTshirt(6.2)">τ</button> ';
      thingie += '<button onclick="setTshirt(0)">ϕ</button> ';
      thingie += '<button onclick="setTshirt(1)">μ</button> ';
-     thingie += '<button onclick="setTshirt(2)">λ</button> ';    
+     thingie += '<button onclick="setTshirt(2)">λ</button> '; 
+      thingie += '<button onclick="pickShirtColor()">OK</button>';
      sumbit.innerHTML = thingie;
 }
 
@@ -173,7 +176,6 @@ function setTshirt(o) {
      player.tshirt = 'λ';
      break;
   }
-  pickShirtColor();
 }
 
 function setFaceShape(o) {
