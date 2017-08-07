@@ -212,4 +212,4 @@ function updateStats() {
 
 
 enterName();
-updateStates();
+updateStats();
