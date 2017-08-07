@@ -18,11 +18,11 @@ var player = {
  };
 
 var command = 'Enter X';
- var thingToBeEntered = 'ThingToBeEntered';
+var thingToBeEntered = 'ThingToBeEntered';
 var enteredText = '';
- var text = document.getElementById('textArea');
- var playArea = document.getElementById('playArea'); 
- var sumbit = document.getElementById('submitButtonArea');
+var text = document.getElementById('textArea');
+var playArea = document.getElementById('playArea'); 
+var sumbit = document.getElementById('submitButtonArea');
 var textInput = document.getElementById('textInput');
 
 function pickFace() {
@@ -125,31 +125,31 @@ function pickHairColor() {
      thingie += '<button class="hair2" onclick="setHairColor(2)">_</button> ';
      thingie += '<button class="hair3" onclick="setHairColor(3)">_</button> ';
      thingie += '<button class="hair4" onclick="setHairColor(4)">_</button> ';
-     thingie += '<button class="hair4" onclick="setHairColor(5)">_</button> ';
+     thingie += '<button class="hair5" onclick="setHairColor(5)">_</button> ';
      thingie += '<button onclick="pickShirt()">OK</button>';    
      sumbit.innerHTML = thingie;
 }
 
 function setHairColor(o) {
   switch(o) {
-  case 0:
-    player.hairColor = [0,0,0];
-    break;
-  case 1:
-    player.hairColor = [59,48,36];
-    break;
-  case 2:
-    player.hairColor = [106,78,66];
-    break;
-  case 3:
-    player.hairColor = [165,107,70];
-    break;
-  case 4:
-    player.hairColor = [181,82,57];
-    break;
-  case 5:
-    player.hairColor = [230,206,168];
-    break;
+      case 0:
+        player.hairColor = [0,0,0];
+        break;
+      case 1:
+        player.hairColor = [59,48,36];
+        break;
+      case 2:
+        player.hairColor = [106,78,66];
+        break;
+      case 3:
+        player.hairColor = [165,107,70];
+        break;
+      case 4:
+        player.hairColor = [181,82,57];
+        break;
+      case 5:
+        player.hairColor = [230,206,168];
+        break;
   }
 }
 
