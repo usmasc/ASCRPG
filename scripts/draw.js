@@ -7,9 +7,9 @@ void setup() {
 
 void draw() {
   fill(player.skin[0],player.skin[1],player.skin[2]);
-  ellipse(292-player.face,190,6+player.face*2,10);
+  ellipse(player.x-player.face-3,player.y-10,6+player.face*2,10);
   fill(player.tColor[0],player.tColor[1],player.tColor[2]);
-  rect(290,195,10,10);
+  rect(player.x-5,player.y,10,10);
   fill(255,255,255);
   text(player.tshirt,290,195);
 }
