@@ -106,6 +106,13 @@ function enterName() {
   UConScreenKeyboard();
 }
 
+function isOK() {
+    text.innerHTML = 'Is this OK?';
+    var thingie = '<button onclick="start()">YES</button> ';
+    var thingie = '<button onclick="enterName()">NO</button> ';
+    sumbit.innerHTML = thingie;
+}
+
 
 
 function pickSkin() {
@@ -201,13 +208,15 @@ function setPantsColor(o) {
 }
 
 function pickPantsColor() {
-    text.innerHTML = 'Pick shirt color:';
+    text.innerHTML = 'Pick pants color:';
     var thingie = '<button class="pants0" onclick="setPantsColor(0)">_</button> ';
     thingie += '<button class="pants1" onclick="setPantsColor(1)">_</button> ';
     thingie += '<button class="pants2" onclick="setPantsColor(2)">_</button> ';
     thingie += '<button class="pants3" onclick="setPantsColor(3)">_</button> ';
+    thingie += '<button class="pants3" onclick="isOK()">_</button> ';
     sumbit.innerHTML = thingie;
 }
+
 
 
 function pickShirt() {
