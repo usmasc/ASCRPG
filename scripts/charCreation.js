@@ -171,7 +171,7 @@ function setTshirt(o) {
    case 1:
      player.tshirt = 'μ';
      break;
-   case 1:
+   case 2:
      player.tshirt = 'λ';
      break;
   }
@@ -179,7 +179,6 @@ function setTshirt(o) {
 
 function setFaceShape(o) {
   player.face = o;
-  pickSkin();
 }
 
 function setSkinTone(o) {
