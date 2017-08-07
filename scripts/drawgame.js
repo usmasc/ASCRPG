@@ -59,7 +59,7 @@ void draw() {
   stroke(0,0,0);
   
   //pants
-  fill(0,100,0);
+  fill(player.pColor[0],player.pColor[1],player.pColor[2]);
   noStroke();
   rect(player.x-6,player.y+16,4,3);
   rect(player.x+2, player.y+16,4,3);
