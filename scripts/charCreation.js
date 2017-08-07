@@ -5,7 +5,9 @@ var player = {
     "hair": 0,
     "hairColor": [0, 0, 0],
     "tshirt": 'e',
-    "tColor": [255, 0, 0]
+    "tColor": [255, 0, 0],
+    x: 300,
+    y: 200
  };
 
 var command = 'Enter X';
