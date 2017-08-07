@@ -46,4 +46,10 @@ void draw() {
   rect(player.x-10,player.y+30,5,10);
   rect(player.x+5, player.y+30,5,10);
   
+  //shoes
+  fill(0,0,0);
+  rect(player.x-10,player.y+40,5,3);
+  rect(player.x+5,player.y+40,5,3);
+  
+  
 }
