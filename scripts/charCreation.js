@@ -7,32 +7,32 @@ var player = {
     "tColor": [255, 0, 0]
  };
  
- var text = document.getElementById('textArea').innerHTML;
- var playArea = document.getElementById('playArea').innerHTML;
+ var text = document.getElementById('textArea');
+ var playArea = document.getElementById('playArea');
 
 function pickFace() {
-  text = 'Pick a face shape:';
+  text.innerHTML = 'Pick a face shape:';
   var thingie = '<button onclick="setFaceShape(0)">0</button> <button onclick="setFaceShape(1)">O</button>';
-  playArea = thingie;
+  playArea.innerHTML = thingie;
 }
 
 function pickSkin() {
-     text = 'Pick skin tone:';
+     text.innerHTML = 'Pick skin tone:';
      var thingie = '<button class="skin0" onclick="setSkinTone(0)">_</button> ';
      thingie += '<button class="skin1" onclick="setSkinTone(1)">_</button> ';
      thingie += '<button class="skin2" onclick="setSkinTone(2)">_</button> ';
      thingie += '<button class="skin3" onclick="setSkinTone(3)">_</button> ';
      thingie += '<button class="skin4" onclick="setSkinTone(4)">_</button> ';
-     playArea = thingie;
+     playArea.innerHTML = thingie;
 }
 
 
 function pickShirtColor() {
-     text = 'Pick shirt color:';
+     text.innerHTML = 'Pick shirt color:';
      var thingie = '<button class="shirt0" onclick="setShirtColor(0)">_</button> ';
      thingie += '<button class="shirt1" onclick="setShirtColor(1)">_</button> ';
      thingie += '<button class="shirt2" onclick="setShirtColor(2)">_</button> ';
-     playArea = thingie;
+     playArea.innerHTML = thingie;
 }
 
 function setShirtColor(o) {
@@ -51,14 +51,14 @@ function setShirtColor(o) {
 
 
 function pickShirt() {
-     text = 'Pick tshirt logo:';
+     text.innerHTML = 'Pick tshirt logo:';
      var thingie = '<button onclick="setTshirt(2.7)">e</button> ';
      thingie += '<button onclick="setTshirt(3.14)">π</button> ';
      thingie += '<button onclick="setTshirt(6.2)">τ</button> ';
      thingie += '<button onclick="setTshirt(0)">ϕ</button> ';
      thingie += '<button onclick="setTshirt(1)">μ</button> ';
      thingie += '<button onclick="setTshirt(2)">λ</button> ';    
-     playArea = thingie;
+     playArea.innerHTML = thingie;
 }
 
 function setTshirt(o) {
