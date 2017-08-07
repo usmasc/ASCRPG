@@ -48,8 +48,8 @@ void draw() {
   
   //shoes
   fill(0,0,0);
-  rect(player.x-10,player.y+40,5,3);
-  rect(player.x+5,player.y+40,5,3);
+  rect(player.x-11,player.y+40,7,3);
+  rect(player.x+4,player.y+40,7,3);
   
   
 }
