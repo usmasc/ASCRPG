@@ -6,11 +6,6 @@ void setup() {
 }
 
 void draw() {
-  //fill(255,0,0);
-  //ellipse(200,200,10,10);
-  //rect(200,205,10,10);
-  //fill(255,255,255);
-  //text('e',200,210);
   
   background(0,0,0);
  
@@ -27,7 +22,7 @@ void draw() {
   
   // tshirt
   fill(player.tColor[0],player.tColor[1],player.tColor[2]);
-  rect(player.x-6,player.y,12,10);
+  rect(player.x-6,player.y,12,12);
   rect(player.x-10,player.y,4,8);
   rect(player.x+6,player.y,4,8);
   
@@ -53,18 +48,18 @@ void draw() {
   ellipse(player.x+3+player.face,player.y-11,1,1);
   
   // mouth
-  rect(player.x-3,player.y-5,6,1);
+  rect(player.x-3,player.y-5,6,2);
   
   // hair
-  for(x = player.x-player.face*2+6; x <= player.x+player.face*x+6; x+=2) {
-    ellipse(x,y-20,2,2);
+  for(x = player.x-player.face*2+6; x <= player.x+player.face*2+6; x+=2) {
+    ellipse(x,player.y-20,2,2);
   }
   
   //pants
   fill(0,100,0);
-  rect(player.x-4,player.y+10,8,4);
-  rect(player.x-4,player.y+14,3,4);
-  rect(player.x+2, player.y+14,3,4);
+  rect(player.x-4,player.y+12,8,3);
+  rect(player.x-4,player.y+14,3,3);
+  rect(player.x+2, player.y+14,3,3);
   
   //shoes
   fill(0,0,0);
