@@ -115,7 +115,7 @@ function enterName() {
 function isOK() {
     text.innerHTML = 'Is this OK?';
     var thingie = '<button onclick="start()">YES</button> ';
-    var thingie = '<button onclick="enterName()">NO</button> ';
+    thingie += '<button onclick="enterName()">NO</button> ';
     sumbit.innerHTML = thingie;
 }
 
