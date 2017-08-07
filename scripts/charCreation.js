@@ -27,13 +27,28 @@ playArea = thingie;
 }
 
 
-function pickSkin() {
+function pickShirtColor() {
 text = 'Pick shirt color:';
 var thingie = '<button class="shirt0" onclick="setShirtColor(0)">_</button> ';
 thingie += '<button class="shirt1" onclick="setShirtColor(1)">_</button> ';
 thingie += '<button class="shirt2" onclick="setShirtColor(2)">_</button> ';
 playArea = thingie;
 }
+
+function setShirtColor(o) {
+  switch(o) {
+  case 0:
+    player.tColor = [255,0,0];
+    break;
+  case 1:
+    player.tColor = [0,255,0];
+    break;
+  case 2:
+    player.tColor = [0,0,255];
+    break;
+  }
+}
+
 
 function pickShirt() {
 text = 'Pick tshirt logo:';
@@ -67,6 +82,7 @@ function setTshirt(o) {
      player.tshirt = 'λ';
      break;
   }
+  pickShirtColor();
 }
 
 function setFaceShape(o) {
