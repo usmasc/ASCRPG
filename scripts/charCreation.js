@@ -160,7 +160,7 @@ function pickShirtColor() {
      var thingie = '<button class="shirt0" onclick="setShirtColor(0)">_</button> ';
      thingie += '<button class="shirt1" onclick="setShirtColor(1)">_</button> ';
      thingie += '<button class="shirt2" onclick="setShirtColor(2)">_</button> ';
-    hingie += '<button onclick="pickPantsColor()">OK</button> ';
+     thingie += '<button onclick="pickPantsColor()">OK</button> ';
      sumbit.innerHTML = thingie;
 }
 
@@ -201,7 +201,7 @@ function pickPantsColor() {
     var thingie = '<button class="pants0" onclick="setPantsColor(0)">_</button> ';
     thingie += '<button class="pants1" onclick="setPantsColor(1)">_</button> ';
     thingie += '<button class="pants2" onclick="setPantsColor(2)">_</button> ';
-    thingie += '<button class="pants2" onclick="setPantsColor(3)">_</button> ';
+    thingie += '<button class="pants3" onclick="setPantsColor(3)">_</button> ';
     sumbit.innerHTML = thingie;
 }
 
