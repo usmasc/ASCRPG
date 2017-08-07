@@ -26,14 +26,16 @@ void draw() {
   rect(player.x-10,player.y,4,4);
   rect(player.x+6,player.y,4,4);
   
+  /*
   // hat
   rect(player.x-player.face-6, player.y-25, player.face*2+12, 5);
   fill(0,0,100);
   rect(player.x-player.face-6-3, player.y-21, 3, 2);
+  */
   
   // tshirt logo
   fill(255,255,255);
-  text(player.tshirt,player.x-3,player.y+7);
+  text(player.tshirt,player.x-3,player.y+9);
  
   // eye whites
   fill(255,255,255);
