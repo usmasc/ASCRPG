@@ -119,7 +119,7 @@ function pickSkin() {
 }
 
 function pickHairColor() {
-     text.innerHTML = 'Pick skin tone:';
+     text.innerHTML = 'Pick hair color:';
      var thingie = '<button class="hair0" onclick="setHairColor(0)">_</button> ';
      thingie += '<button class="hair1" onclick="setHairColor(1)">_</button> ';
      thingie += '<button class="hair2" onclick="setHairColor(2)">_</button> ';
