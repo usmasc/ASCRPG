@@ -56,6 +56,7 @@ void draw() {
     stroke(player.hairColor[0],player.hairColor[1],player.hairColor[2]);
     ellipse(x,player.y-20,2,3);
   }
+  stroke(0,0,0);
   
   //pants
   fill(0,100,0);
