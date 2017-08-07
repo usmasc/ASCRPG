@@ -26,6 +26,10 @@ void draw() {
   rect(player.x-14,player.y,4,4);
   rect(player.x+10,player.y,4,4);
   
+  // hat
+  rect(player.x-10,player.y-25,20,5);
+  rect(player.x-13,player.y-22,3,2);
+  
   // tshirt logo
   fill(255,255,255);
   text(player.tshirt,player.x-3,player.y+13);
@@ -39,6 +43,9 @@ void draw() {
   fill(0,0,0);
   ellipse(player.x-3-player.face,player.y-11,1,1);
   ellipse(player.x+3+player.face,player.y-11,1,1);
+  
+  // mouth
+  line(player.x-3,payer.y-5,player.x+3,player.y-5);
   
   //pants
   fill(0,100,0);
