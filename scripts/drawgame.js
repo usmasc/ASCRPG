@@ -45,6 +45,7 @@ void draw() {
   ellipse(player.x+3+player.face,player.y-11,1,1);
   
   // mouth
+  stroke(0,0,0);
   line(player.x-3,payer.y-5,player.x+3,player.y-5);
   
   //pants
