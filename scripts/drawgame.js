@@ -22,7 +22,7 @@ void draw() {
   
   // tshirt
   fill(player.tColor[0],player.tColor[1],player.tColor[2]);
-  rect(player.x-6,player.y,12,12);
+  rect(player.x-6,player.y,12,14);
   rect(player.x-10,player.y,4,8);
   rect(player.x+6,player.y,4,8);
   
@@ -35,7 +35,7 @@ void draw() {
   
   // tshirt logo
   fill(255,255,255);
-  text(player.tshirt,player.x-3,player.y+9);
+  text(player.tshirt,player.x-3,player.y+10);
  
   // eye whites
   fill(255,255,255);
@@ -60,14 +60,15 @@ void draw() {
   
   //pants
   fill(0,100,0);
-  rect(player.x-6,player.y+12,12,3);
-  rect(player.x-6,player.y+14,4,3);
-  rect(player.x+2, player.y+14,4,3);
+  rect(player.x-6,player.y+16,4,3);
+  rect(player.x+2, player.y+16,4,3);
+  rect(player.x-6,player.y+15,12,2);
+  
   
   //shoes
   fill(0,0,0);
-  rect(player.x-5,player.y+17,5,2);
-  rect(player.x+2,player.y+17,5,2);
+  rect(player.x-5,player.y+18,5,2);
+  rect(player.x+2,player.y+18,5,2);
   
   
 }
