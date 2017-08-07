@@ -201,15 +201,14 @@ function setSkinTone(o) {
   }
 }
 
-/*
+
 function updateStats() {
     document.getElementById('hp').innerHTML = 'HP: ' + player.hp + '/' + player.maxhp;
     document.getElementById('mp').innerHTML = 'MP: ' + player.mp + '/' + player.maxmp;
     document.getElementById('xp').innerHTML = 'XP: ' + player.xp + '/' + player.nextLevel;
     document.getElementById('money').innerHTML = '$' + player.money;
 }
-*/
 
 
 enterName();
-//updateStats();
+updateStats();
