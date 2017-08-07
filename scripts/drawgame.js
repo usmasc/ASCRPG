@@ -13,9 +13,9 @@ void draw() {
   //text('e',200,210);
   
   fill(player.skin[0],player.skin[1],player.skin[2]);
-  ellipse(player.x-player.face-6,player.y-10,12+player.face*4,20);
+  ellipse(player.x,player.y-10,12+player.face*4,20);
   fill(player.tColor[0],player.tColor[1],player.tColor[2]);
   rect(player.x-10,player.y,20,20);
   fill(255,255,255);
-  text(player.tshirt,player.x+5,player.y+5);
+  text(player.tshirt,player.x-5,player.y+10);
 }
