@@ -14,8 +14,8 @@ var player = {
     'xp': 0,
     'nextLevel': 100,
     'money': 0,
-     x: 300,
-     y: 200
+     x: 360,
+     y: 100
  };
 
 var command = 'Enter X';
