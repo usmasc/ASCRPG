@@ -51,7 +51,8 @@ void draw() {
   rect(player.x-3,player.y-5,6,2);
   
   // hair
-  for(x = player.x-player.face*2-6; x <= player.x+player.face*2+6; x+=2) {
+  for(x = player.x-player.face*2; x <= player.x+player.face*2; x+=1) {
+    nofill();
     ellipse(x,player.y-20,2,2);
   }
   
