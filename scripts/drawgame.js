@@ -28,7 +28,8 @@ void draw() {
   
   // hat
   rect(player.x-player.face-6, player.y-25, player.face*2+12, 5);
-  rect(player.x-player.face-9, player.y-22, 3, 2);
+  fill(0,0,0);
+  rect(player.x-player.face-6, player.y-21, 3, 2);
   
   // tshirt logo
   fill(255,255,255);
