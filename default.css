@@ -16,6 +16,7 @@ th, #textArea, #submitButtonArea {
 }
 
   button {
+    font-size: 2em;
     border: 0px;
   }
 
