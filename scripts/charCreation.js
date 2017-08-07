@@ -6,16 +6,15 @@ var player = {
     "hairColor": [0, 0, 0],
     "tshirt": 'e',
     "tColor": [255, 0, 0],
-     x: 300,
-     y: 200,
     'hp': 50,
     'mp': 10,
     'maxhp': 50,
     'maxmp': 10,
     'xp': 0,
     'nextLevel': 100,
-    'money': 0
-    
+    'money': 0,
+     x: 300,
+     y: 200
  };
 
 var command = 'Enter X';
@@ -115,7 +114,7 @@ function pickSkin() {
      thingie += '<button class="skin2" onclick="setSkinTone(2)">_</button> ';
      thingie += '<button class="skin3" onclick="setSkinTone(3)">_</button> ';
      thingie += '<button class="skin4" onclick="setSkinTone(4)">_</button> ';
-     thingie += '<button onclick="pickTshirt()">OK</button>';    
+     thingie += '<button onclick="pickShirt()">OK</button>';    
      sumbit.innerHTML = thingie;
 }
 
@@ -201,7 +200,6 @@ function setSkinTone(o) {
     player.skin = [255,219,172];
     break;
   }
-  pickShirt();
 }
 
 /*
