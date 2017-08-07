@@ -9,8 +9,8 @@ body, button {
 
 
 th, #textArea, #submitButtonArea {
-  margin: 15px;
-  padding: 15px;
+  margin: 15px 20px;
+  padding: 15px 20px;
   border: 2px solid grey;
   border-radius: 5px;
 }
