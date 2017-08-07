@@ -160,6 +160,7 @@ function pickShirtColor() {
      var thingie = '<button class="shirt0" onclick="setShirtColor(0)">_</button> ';
      thingie += '<button class="shirt1" onclick="setShirtColor(1)">_</button> ';
      thingie += '<button class="shirt2" onclick="setShirtColor(2)">_</button> ';
+     thingie += '<button class="pants3" onclick="setShirtColor(3)">_</button> ';
      thingie += '<button onclick="pickPantsColor()">OK</button> ';
      sumbit.innerHTML = thingie;
 }
@@ -174,6 +175,9 @@ function setShirtColor(o) {
     break;
   case 2:
     player.tColor = [0,0,255];
+    break;
+  case 3:
+    player.tColor = [0,0,0];
     break;
   }
 }
