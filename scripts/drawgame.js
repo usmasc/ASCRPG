@@ -22,7 +22,7 @@ void draw() {
   
   // tshirt
   fill(player.tColor[0],player.tColor[1],player.tColor[2]);
-  rect(player.x-6,player.y,8,10);
+  rect(player.x-6,player.y,12,10);
   rect(player.x-10,player.y,4,4);
   rect(player.x+6,player.y,4,4);
   
