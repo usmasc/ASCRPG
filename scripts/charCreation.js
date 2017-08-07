@@ -151,7 +151,7 @@ function pickShirt() {
      thingie += '<button onclick="setTshirt(0)">ϕ</button> ';
      thingie += '<button onclick="setTshirt(1)">μ</button> ';
      thingie += '<button onclick="setTshirt(2)">λ</button> '; 
-      thingie += '<button onclick="pickShirtColor()">OK</button>';
+     thingie += '<button onclick="pickShirtColor()">OK</button>';
      sumbit.innerHTML = thingie;
 }
 
@@ -204,14 +204,15 @@ function setSkinTone(o) {
   pickShirt();
 }
 
+/*
 function updateStats() {
-    document.getElementById('hp').innerHTML = 'HP: '+ player.hp + '/' +player.maxhp;
-    document.getElementById('mp').innerHTML = 'MP: '+ player.mp + '/' +player.maxmp;
-    document.getElementById('xp').innerHTML = 'XP: '+ player.xp + '/' +player.nextLevel;
-    document.getElementById('money').innerHTML = '$'+ player.money;
+    document.getElementById('hp').innerHTML = 'HP: ' + player.hp + '/' + player.maxhp;
+    document.getElementById('mp').innerHTML = 'MP: ' + player.mp + '/' + player.maxmp;
+    document.getElementById('xp').innerHTML = 'XP: ' + player.xp + '/' + player.nextLevel;
+    document.getElementById('money').innerHTML = '$' + player.money;
 }
-
+*/
 
 
 enterName();
-updateStats();
+//updateStats();
