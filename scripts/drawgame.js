@@ -12,6 +12,7 @@ void draw() {
   //fill(255,255,255);
   //text('e',200,210);
   
+  background(0,0,0);
  
   fill(player.skin[0],player.skin[1],player.skin[2]);
   //ears
@@ -52,7 +53,10 @@ void draw() {
   ellipse(player.x+3+player.face,player.y-11,1,1);
   
   // mouth
-  //rect(player.x-3,payer.y-5,6,1);
+  rect(player.x-3,player.y-5,6,1);
+  
+  // hair
+  for(x = player.x-player.
   
   //pants
   fill(0,100,0);
