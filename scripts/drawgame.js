@@ -56,7 +56,9 @@ void draw() {
   rect(player.x-3,player.y-5,6,1);
   
   // hair
-  for(x = player.x-player.
+  for(x = player.x-player.face*2+6, x <= player.x+player.face*x+6; x+=2) {
+    ellipse(x,y-20,2,2);
+  }
   
   //pants
   fill(0,100,0);
