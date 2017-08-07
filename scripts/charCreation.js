@@ -6,6 +6,7 @@ var player = {
     "hairColor": [0, 0, 0],
     "tshirt": 'e',
     "tColor": [255, 0, 0],
+    'pColor': [0, 50, 0],
     'hp': 50,
     'mp': 10,
     'maxhp': 50,
@@ -159,6 +160,7 @@ function pickShirtColor() {
      var thingie = '<button class="shirt0" onclick="setShirtColor(0)">_</button> ';
      thingie += '<button class="shirt1" onclick="setShirtColor(1)">_</button> ';
      thingie += '<button class="shirt2" onclick="setShirtColor(2)">_</button> ';
+    hingie += '<button onclick="pickPantsColor()">OK</button> ';
      sumbit.innerHTML = thingie;
 }
 
@@ -174,6 +176,33 @@ function setShirtColor(o) {
     player.tColor = [0,0,255];
     break;
   }
+}
+
+
+function setPantsColor(o) {
+  switch(o) {
+  case 0:
+    player.pColor = [50,0,0];
+    break;
+  case 1:
+    player.pColor = [0,50,0];
+    break;
+  case 2:
+    player.pColor = [0,0,50];
+    break;
+  case 2:
+    player.pColor = [0,0,0];
+    break;
+  }
+}
+
+function pickPantsColor() {
+    text.innerHTML = 'Pick shirt color:';
+    var thingie = '<button class="pants0" onclick="setPantsColor(0)">_</button> ';
+    thingie += '<button class="pants1" onclick="setPantsColor(1)">_</button> ';
+    thingie += '<button class="pants2" onclick="setPantsColor(2)">_</button> ';
+    thingie += '<button class="pants2" onclick="setPantsColor(3)">_</button> ';
+    sumbit.innerHTML = thingie;
 }
 
 
