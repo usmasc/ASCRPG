@@ -114,9 +114,42 @@ function pickSkin() {
      thingie += '<button class="skin2" onclick="setSkinTone(2)">_</button> ';
      thingie += '<button class="skin3" onclick="setSkinTone(3)">_</button> ';
      thingie += '<button class="skin4" onclick="setSkinTone(4)">_</button> ';
+     thingie += '<button onclick="pickHairColor()">OK</button>';    
+     sumbit.innerHTML = thingie;
+}
+
+function pickHairColor() {
+     text.innerHTML = 'Pick skin tone:';
+     var thingie = '<button class="hair0" onclick="setHairColor(0)">_</button> ';
+     thingie += '<button class="hair1" onclick="setHairColor(1)">_</button> ';
+     thingie += '<button class="hair2" onclick="setHairColor(2)">_</button> ';
+     thingie += '<button class="hair3" onclick="setHairColor(3)">_</button> ';
+     thingie += '<button class="hair4" onclick="setHairColor(4)">_</button> ';
+     thingie += '<button class="hair4" onclick="setHairColor(5)">_</button> ';
      thingie += '<button onclick="pickShirt()">OK</button>';    
      sumbit.innerHTML = thingie;
 }
+
+function setHairColor(o) {
+  switch(o) {
+  case 0:
+    player.hairColor = [0,0,0];
+    break;
+  case 1:
+    player.hairColor = [59,48,36];
+    break;
+  case 2:
+    player.hairColor = [106,78,66];
+    break;
+  case 3:
+    player.hairColor = [165,107,70];
+    break;
+  case 4:
+    player.hairColor = [181,82,57];
+    break;
+  case 5:
+    player.hairColor = [230,206,168];
+    break;
 
 
 function pickShirtColor() {
