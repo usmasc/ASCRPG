@@ -17,8 +17,8 @@ void draw() {
   ellipse(player.x,player.y-10,12+player.face*4,20);
   
   // arms
-  rect(player.x-14,player.y+4,4,6);
-  rect(player.x+10,player.y+4,4,6);
+  rect(player.x-14,player.y+4,4,18);
+  rect(player.x+10,player.y+4,4,18);
   
   // tshirt
   fill(player.tColor[0],player.tColor[1],player.tColor[2]);
@@ -28,13 +28,22 @@ void draw() {
   
   // tshirt logo
   fill(255,255,255);
-  text(player.tshirt,player.x-5,player.y+15);
+  text(player.tshirt,player.x,player.y+10);
  
   // eye whites
-  ellipse(player.x-4-player.face,player.y-15,4,4);
-  ellipse(player.x+4+player.face,player.y-15,4,4);
+  fill(255,255,255);
+  ellipse(player.x-5-player.face,player.y-11,4,5);
+  ellipse(player.x+5+player.face,player.y-11,4,5);
   
+  //pupils
   fill(0,0,0);
-  ellipse(player.x-4-player.face,player.y-15,1,1);
-  ellipse(player.x+4+player.face,player.y-15,1,1);
+  ellipse(player.x-5-player.face,player.y-11,1,1);
+  ellipse(player.x+5+player.face,player.y-11,1,1);
+  
+  //pants
+  fill(0,100,0);
+  rect(player.x-10,player.y+20,20,10);
+  rect(player.x-10,player.y+30,5,10);
+  rect(player.x+5, player.y+30,5,10);
+  
 }
