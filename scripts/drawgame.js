@@ -28,17 +28,17 @@ void draw() {
   
   // tshirt logo
   fill(255,255,255);
-  text(player.tshirt,player.x,player.y+10);
+  text(player.tshirt,player.x-3,player.y+13);
  
   // eye whites
   fill(255,255,255);
-  ellipse(player.x-5-player.face,player.y-11,4,5);
-  ellipse(player.x+5+player.face,player.y-11,4,5);
+  ellipse(player.x-3-player.face,player.y-11,4,5);
+  ellipse(player.x+3+player.face,player.y-11,4,5);
   
   //pupils
   fill(0,0,0);
-  ellipse(player.x-5-player.face,player.y-11,1,1);
-  ellipse(player.x+5+player.face,player.y-11,1,1);
+  ellipse(player.x-3-player.face,player.y-11,1,1);
+  ellipse(player.x+3+player.face,player.y-11,1,1);
   
   //pants
   fill(0,100,0);
