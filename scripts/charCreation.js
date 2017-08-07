@@ -150,6 +150,8 @@ function setHairColor(o) {
   case 5:
     player.hairColor = [230,206,168];
     break;
+  }
+}
 
 
 function pickShirtColor() {
