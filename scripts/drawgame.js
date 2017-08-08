@@ -9,7 +9,7 @@ void draw() {
   
   background(100,100,255);
   
-  var drawPath = function(x,y) {
+  function drawPath(x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -20,10 +20,10 @@ void draw() {
             rect(xi,yi,4,4);
         }
     }
-  };
+  }
   
   //rug
-  var drawrUg = function(x,y) {
+  function drawrUg(x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -34,9 +34,9 @@ void draw() {
             rect(xi,yi,4,4);
         }
     }
-};
+}
   
-  var drawBrick = function(x,y) {
+  function drawBrick(x,y) {
     //stroke(255, 255, 255);
     x = 20*x-20;
     y = 20*y-20;
@@ -74,9 +74,9 @@ void draw() {
     rect(x+14,yi,6,4);
     rect(x+10,yi,6,4);
     noStroke();
-};
+  }
   
-  var drawGrass = function(x,y) {
+  function drawGrass(x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -87,9 +87,9 @@ void draw() {
             rect(xi,yi,4,4);
         }
     }
-};
+  }
   
-  var drawDesert = function(x,y) {
+  function drawDesert(x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -101,9 +101,9 @@ void draw() {
             rect(xi,yi,4,4);
         }
     }
-};
+}
   
-var drawSwamp = function(x,y) {
+function drawSwamp(x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -114,9 +114,9 @@ var drawSwamp = function(x,y) {
             rect(xi,yi,4,4);
         }
     }
-};  
+  }
   
-  var drawfLoor = function(x,y) {
+  function drawfLoor(x,y) {
     //stroke(255, 255, 255);
     x = 20*x-20;
     y = 20*y-20;
@@ -153,7 +153,7 @@ var drawSwamp = function(x,y) {
     fill(random(100,125),random(75,100),0);
     rect(xi,y+14,4,6);
 
-};
+}
   
     function drawPlayerFacingDown() { 
       fill(player.skin[0],player.skin[1],player.skin[2]);
@@ -219,11 +219,11 @@ var drawSwamp = function(x,y) {
       rect(player.x+2,player.y+18,5,2);
     }
 
-  for(var x = 1; x <= 36; x++) {
-    for(var y = 1; y <= 10; y++) {
+  for(var x = 2; x < 36; x++) {
+    for(var y = 2; y < 10; y++) {
       drawrUg(x,y);
     }
   }
   
- drawPlayerFacingDown(); 
+drawPlayerFacingDown(); 
 }
