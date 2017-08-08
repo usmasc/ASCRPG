@@ -9,7 +9,7 @@ void setup() {
 }
 
 void draw() {
-  
+  /*
   var brk = {
     "canPass":false,
     "draw": draw_brick(x,y);
@@ -37,7 +37,8 @@ void draw() {
       map[y][x].draw(x,y);
     }
   }
-  /*
+  */
+  
   for(var y = 1; y < 11; y++) {
      draw_water(1,y);
      draw_swamp(2,y);
