@@ -68,8 +68,8 @@ var map = [[wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,
 
 void draw() {
   
-  var mapX0 = player.x/20 - player.mapX;
-  var mapY0 = player.y/20 - player.mapY;
+  var mapX0 = player.mapX - player.x/20;
+  var mapY0 = player.mapY -player.y/20;
   var mapYi = 1;
   var mapXi = 1;
   
