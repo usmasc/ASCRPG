@@ -71,7 +71,7 @@ void draw() {
   var mapY0 = player.y/20 - player.mapY;
   var mapYi = 0;
   var mapXi = 0;
-  /*
+  
   for(var y = 1, y < 11; y++) {
     mapYi = y + mapY0;
     if (mapYi > -1 && mapYi < map.length) {
@@ -83,8 +83,8 @@ void draw() {
       }
     }
   }
-*/
- 
+
+ /*
   for(var y = 1; y < 11; y++) {
      draw_bg(wtr.draw,1,y);
      draw_bg(smp.draw,2,y);
@@ -117,7 +117,7 @@ void draw() {
       draw_bg(rug.draw,x,y);
     }
   }
-  
+  */
   
  
 draw_PlayerFacingDown(); 
