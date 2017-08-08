@@ -73,7 +73,7 @@ void draw() {
      draw_bg('water',1,y);
      draw_bg('swamp',2,y);
      draw_bg('grass',3,y);
-     draw_bg('path',4,y);
+     draw_bg('grass',4,y);
      draw_bg(brk.draw,5,y);
      draw_bg('brick',26,y);
      draw_bg('path',27,y);    
