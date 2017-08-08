@@ -66,14 +66,16 @@ void setup() {
            [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr]];
 
 void draw() {
-  mapX0 = player.x/20 - player.mapX;
-  mapY0 = player.y/20 - player.mapY;
-
+  var mapX0 = player.x/20 - player.mapX;
+  var mapY0 = player.y/20 - player.mapY;
+  var mapYi = 0;
+  var mapXi = 0;
+  
   for(var y = 1, y < 11; y++) {
-    var mapYi = y + mapY0;
+    mapYi = y + mapY0;
     if (mapYi > -1 && mapYi < map.length) {
       for(var x = 1, x < 29; x++) {
-        var mapXi = x+ mapX0;
+        mapXi = x + mapX0;
         if (mapXi > -1 && mapXi < map[y].length) {
           draw_bg(map[mapYi][mapXi].draw,x,y);
         }
