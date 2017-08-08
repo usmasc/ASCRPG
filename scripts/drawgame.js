@@ -94,12 +94,13 @@ function drawSwamp(x,y) {
 */
   
 
-  
+  /*
   for(var y = 1; y < 11; y++) {
       draw_Brick(1,y);
       draw_Brick(36,y);
     }
   }
+  */
 
   for(var x = 2; x < 36; x++) {
     draw_Brick(x,1);
