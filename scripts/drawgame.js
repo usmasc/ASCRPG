@@ -9,36 +9,22 @@ void setup() {
 }
 
 void draw() {
-  /*
-  var brk = {
-    "canPass":false,
-    "draw": draw_brick(x,y);
-  };
+  mapX0 = player.x/20 - player.mapX
+  mapY0 = player.y/20 - player.mapY
 
-  var rug = {
-    "canPass":true,
-    "draw": draw_rug(x,y);
-  };
-
-  var map = [[brk, brk, brk, brk, brk, brk, brk, brk, brk],
-             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-             [brk, brk, brk, brk, brk, brk, brk, brk, brk]];
-
-  
-  for(y = 0, y < map.length; y++) {
-    for(x = 0, x < map[y].length; x++) {
-      map[y][x].draw(x,y);
+  for(var y = 0, y < 11; y++) {
+    mapYi = y+ mapY0;
+    if (mapYi > -1 && mapYi < map.length) {
+      for(var x = 0, x < 37; x++) {
+        mapXi = x+ mapX0;
+        if (mapXi > -1 && mapXi < map[y].length) {
+          draw_bg(map[y][x].draw,x,y);
+        }
+      }
     }
   }
-  */
-  
+
+  /*
   for(var y = 1; y < 11; y++) {
      draw_bg('water',1,y);
      draw_bg('swamp',2,y);
@@ -71,6 +57,7 @@ void draw() {
       draw_bg('rug',x,y);
     }
   }
+  */
   
  
 draw_PlayerFacingDown(); 
