@@ -155,7 +155,18 @@ function drawSwamp(x,y) {
 }
 */
   
-    function drawPlayerFacingDown() { 
+
+/*
+  for(var x = 2; x < 36; x++) {
+    for(var y = 2; y < 10; y++) {
+      drawrUg(x,y);
+    }
+  }
+  */
+drawPlayerFacingDown(); 
+}
+
+   void function drawPlayerFacingDown() { 
       fill(player.skin[0],player.skin[1],player.skin[2]);
       //ears
       ellipse(player.x-6-player.face*2,player.y-12,4,4);
@@ -218,12 +229,3 @@ function drawSwamp(x,y) {
       rect(player.x-5,player.y+18,5,2);
       rect(player.x+2,player.y+18,5,2);
     }
-/*
-  for(var x = 2; x < 36; x++) {
-    for(var y = 2; y < 10; y++) {
-      drawrUg(x,y);
-    }
-  }
-  */
-drawPlayerFacingDown(); 
-}
