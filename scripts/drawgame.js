@@ -10,12 +10,12 @@ void setup() {
 
 var brk = {
   "canPass":false,
-  "draw": 'brick';
+  "draw": 'brick'
 };
 /*
 var rug = {
   "canPass":true,
-  "draw": 'rug';
+  "draw": 'rug'
 };
 
 var grs = {
