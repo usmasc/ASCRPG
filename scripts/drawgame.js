@@ -56,43 +56,7 @@ function drawSwamp(x,y) {
     }
   }
   
-  function drawfLoor(x,y) {
-    //stroke(255, 255, 255);
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+16; xi+=8) {
-            //1st line
-            //stroke(51, 32, 2);
-            fill(random(100,125),random(75,100),0);
-            rect(xi,y,4,7);
-            fill(random(100,125),random(75,100),0);
-            rect(xi,y+7,4,7);
-            //stroke(30, 0, 0);
-            fill(random(100,125),random(75,100),0);
-            rect(xi,y+14,4,6);
-            //2nd line
-            noStroke();
-            fill(random(100,125),random(75,100),0);
-            rect(xi+4,y,4,4);
-            fill(random(100,125),random(75,100),0);
-            rect(xi+4,y+16,4,4);
-            //stroke(30, 0, 0);
-            fill(random(100,125),random(75,100),0);
-            rect(xi+4,y+4,4,7);
-            fill(random(100,125),random(75,100),0);
-            rect(xi+4,y+10,4,6);
-    }
-    //last line
-    var xi = x+16;
-    //stroke(51, 32, 2);
-    fill(random(100,125),random(75,100),0);
-    rect(xi,y,4,7);
-    fill(random(100,125),random(75,100),0);
-    rect(xi,y+7,4,7);
-    //stroke(30, 0, 0);
-    fill(random(100,125),random(75,100),0);
-    rect(xi,y+14,4,6);
-}
+  
 */
   
 
@@ -102,13 +66,17 @@ function drawSwamp(x,y) {
      draw_Grass(36,y);    
      draw_Brick(2,y);
      draw_Brick(35,y);
+     draw_fLoor(3,y);
+     draw_fLoor(34,y);
    }
   
 
-  for(var x = 2; x < 36; x++) {
+  for(var x = 4; x < 34; x++) {
     draw_Brick(x,1);
     draw_Brick(x,10);
-    for(var y = 2; y < 10; y++) {
+    draw_fLoor(x,9);
+    draw_fLoor(x,2);
+    for(var y = 3; y < 9; y++) {
       draw_rUg(x,y);
     }
   }
@@ -247,6 +215,44 @@ void draw_Brick(x,y) {
         }
     }
   }
+
+void draw_fLoor(x,y) {
+    //stroke(255, 255, 255);
+    x = 20*x-20;
+    y = 20*y-20;
+    for(var xi = x; xi < x+16; xi+=8) {
+            //1st line
+            //stroke(51, 32, 2);
+            fill(random(100,125),random(75,100),0);
+            rect(xi,y,4,7);
+            fill(random(100,125),random(75,100),0);
+            rect(xi,y+7,4,7);
+            //stroke(30, 0, 0);
+            fill(random(100,125),random(75,100),0);
+            rect(xi,y+14,4,6);
+            //2nd line
+            noStroke();
+            fill(random(100,125),random(75,100),0);
+            rect(xi+4,y,4,4);
+            fill(random(100,125),random(75,100),0);
+            rect(xi+4,y+16,4,4);
+            //stroke(30, 0, 0);
+            fill(random(100,125),random(75,100),0);
+            rect(xi+4,y+4,4,7);
+            fill(random(100,125),random(75,100),0);
+            rect(xi+4,y+10,4,6);
+    }
+    //last line
+    var xi = x+16;
+    //stroke(51, 32, 2);
+    fill(random(100,125),random(75,100),0);
+    rect(xi,y,4,7);
+    fill(random(100,125),random(75,100),0);
+    rect(xi,y+7,4,7);
+    //stroke(30, 0, 0);
+    fill(random(100,125),random(75,100),0);
+    rect(xi,y+14,4,6);
+}
 
 /*
 var brk = {
