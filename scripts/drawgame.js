@@ -7,12 +7,12 @@ void setup() {
   background(100,100,255);
   //noLoop();
 }
-/*
+
 var brk = {
   "canPass":false,
   "draw": 'brick');
 };
-
+/*
 var rug = {
   "canPass":true,
   "draw": 'rug');
@@ -74,7 +74,7 @@ void draw() {
      draw_bg('swamp',2,y);
      draw_bg('grass',3,y);
      draw_bg('path',4,y);
-     draw_bg('brick',5,y);
+     draw_bg(brk.draw,5,y);
      draw_bg('brick',26,y);
      draw_bg('path',27,y);    
      draw_bg('sand',28,y);
