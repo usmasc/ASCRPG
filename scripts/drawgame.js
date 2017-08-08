@@ -163,10 +163,10 @@ function drawSwamp(x,y) {
     }
   }
   */
-drawPlayerFacingDown(); 
+draw_PlayerFacingDown(); 
 }
 
-   void function drawPlayerFacingDown() { 
+   void function draw_PlayerFacingDown() { 
       fill(player.skin[0],player.skin[1],player.skin[2]);
       //ears
       ellipse(player.x-6-player.face*2,player.y-12,4,4);
