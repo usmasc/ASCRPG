@@ -70,7 +70,7 @@ void draw() {
   var mapY0 = player.y/20 - player.mapY;
   var mapYi = 0;
   var mapXi = 0;
-  
+  /*
   for(var y = 1, y < 11; y++) {
     mapYi = y + mapY0;
     if (mapYi > -1 && mapYi < map.length) {
@@ -82,32 +82,32 @@ void draw() {
       }
     }
   }
-
-  /*
+*/
+ 
   for(var y = 1; y < 11; y++) {
      draw_bg('water',1,y);
      draw_bg('swamp',2,y);
      draw_bg('grass',3,y);
      draw_bg('path',4,y);
      draw_bg('brick',5,y);
-     draw_bg('brick',34,y);
-     draw_bg('path',35,y);    
-     draw_bg('sand',36,y);
+     draw_bg('brick',26,y);
+     draw_bg('path',27,y);    
+     draw_bg('sand',28,y);
    }
   
   draw_bg('brick',6,1);
   draw_bg('brick',6,10);
-    draw_bg('brick',33,1);
-  draw_bg('brick',33,10);
+    draw_bg('brick',25,1);
+  draw_bg('brick',25,10);
   
     for(var y = 2; y < 10; y++) {
      draw_bg('floor',6,y);
-     draw_bg('floor',33,y);
+     draw_bg('floor',25,y);
    }
   
   
 
-  for(var x = 7; x < 33; x++) {
+  for(var x = 7; x < 25; x++) {
     draw_bg('brick',x,1);
     draw_bg('brick',x,10);
     draw_bg('floor',x,9);
@@ -116,7 +116,7 @@ void draw() {
       draw_bg('rug',x,y);
     }
   }
-  */
+  
   
  
 draw_PlayerFacingDown(); 
