@@ -25,58 +25,7 @@ void draw() {
   
 
   
-  function drawBrick(x,y) {
-    //stroke(255, 255, 255);
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var yi = y; yi < y+16; yi+=8) {
-            //1st line
-            stroke(30, 0, 0);
-            fill(random(31,255),0,0);
-            rect(x,yi,6,4);
-            fill(random(31,225),0,0);
-            rect(x+7,yi,7,4);
-            stroke(30, 0, 0);
-            fill(random(31,225),0,0);
-            rect(x+14,yi,6,4);
-            //2nd line
-            noStroke();
-            fill(random(31,255),0,0);
-            rect(x,yi+4,4,4);
-            fill(random(31,225),0,0);
-            rect(x+16,yi+4,4,4);
-            stroke(30, 0, 0);
-            fill(random(31,225),0,0);
-            rect(x+4,yi+4,7,4);
-            fill(random(31,225),0,0);
-            rect(x+10,yi+4,6,4);
-    }
-    //last line
-    var yi = y+16;
-    stroke(30, 0, 0);
-    fill(random(31,255),0,0);
-    rect(x,yi,6,4);
-    fill(random(31,225),0,0);
-    rect(x+7,yi,7,4);
-    stroke(30, 0, 0);
-    fill(random(31,225),0,0);
-    rect(x+14,yi,6,4);
-    rect(x+10,yi,6,4);
-    noStroke();
-  }
   
-  function drawGrass(x,y) {
-    noStroke();
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=4) {
-        for(var yi = y; yi < y+20; yi+=4) {
-            noStroke();
-            fill(random(75,100),random(225,255),random(75,100));
-            rect(xi,yi,4,4);
-        }
-    }
-  }
   
   function drawDesert(x,y) {
     noStroke();
@@ -145,9 +94,21 @@ function drawSwamp(x,y) {
 */
   
 
+  
+  for(var y = 1; y <= 10; y++) {
+      draw_Brick(1,y);
+    }
+  }
 
-  for(var x = 2; x < 35; x++) {
-    for(var y = 2; y < 9; y++) {
+  for(var y = 1; y <= 10; y++) {
+      draw_Brick(36,y);
+    }
+  }
+
+  for(var x = 2; x <= 35; x++) {
+    draw_Brick(x,1);
+    draw_Brick(x,10);
+    for(var y = 2; y <= 9; y++) {
       draw_rUg(x,y);
     }
   }
@@ -232,3 +193,56 @@ void draw_rUg(x,y) {
       }
   }
 }
+
+void draw_Brick(x,y) {
+    //stroke(255, 255, 255);
+    x = 20*x-20;
+    y = 20*y-20;
+    for(var yi = y; yi < y+16; yi+=8) {
+            //1st line
+            stroke(30, 0, 0);
+            fill(random(31,255),0,0);
+            rect(x,yi,6,4);
+            fill(random(31,225),0,0);
+            rect(x+7,yi,7,4);
+            stroke(30, 0, 0);
+            fill(random(31,225),0,0);
+            rect(x+14,yi,6,4);
+            //2nd line
+            noStroke();
+            fill(random(31,255),0,0);
+            rect(x,yi+4,4,4);
+            fill(random(31,225),0,0);
+            rect(x+16,yi+4,4,4);
+            stroke(30, 0, 0);
+            fill(random(31,225),0,0);
+            rect(x+4,yi+4,7,4);
+            fill(random(31,225),0,0);
+            rect(x+10,yi+4,6,4);
+    }
+    //last line
+    var yi = y+16;
+    stroke(30, 0, 0);
+    fill(random(31,255),0,0);
+    rect(x,yi,6,4);
+    fill(random(31,225),0,0);
+    rect(x+7,yi,7,4);
+    stroke(30, 0, 0);
+    fill(random(31,225),0,0);
+    rect(x+14,yi,6,4);
+    rect(x+10,yi,6,4);
+    noStroke();
+  }
+  
+  void draw_Grass(x,y) {
+    noStroke();
+    x = 20*x-20;
+    y = 20*y-20;
+    for(var xi = x; xi < x+20; xi+=4) {
+        for(var yi = y; yi < y+20; yi+=4) {
+            noStroke();
+            fill(random(75,100),random(225,255),random(75,100));
+            rect(xi,yi,4,4);
+        }
+    }
+  }
