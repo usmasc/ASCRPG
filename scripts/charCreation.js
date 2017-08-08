@@ -266,6 +266,7 @@ function setTshirt(o) {
 
 function setFaceShape(o) {
   player.face = o;
+  redraw();
 }
 
 function setSkinTone(o) {
@@ -286,6 +287,7 @@ function setSkinTone(o) {
     player.skin = [255,219,172];
     break;
   }
+  
 }
 
 
