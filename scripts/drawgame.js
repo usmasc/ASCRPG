@@ -23,19 +23,7 @@ void draw() {
     }
   }
   
-  //rug
-  function drawrUg(x,y) {
-    noStroke();
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=4) {
-        for(var yi = y; yi < y+20; yi+=4) {
-            noStroke();
-            fill(random(175,200), 0, 0);
-            rect(xi,yi,4,4);
-        }
-    }
-  }
+
   
   function drawBrick(x,y) {
     //stroke(255, 255, 255);
@@ -157,13 +145,13 @@ function drawSwamp(x,y) {
 */
   
 
-/*
+
   for(var x = 2; x < 36; x++) {
     for(var y = 2; y < 10; y++) {
       drawrUg(x,y);
     }
   }
-  */
+  
 draw_PlayerFacingDown(); 
 }
 
@@ -230,3 +218,17 @@ draw_PlayerFacingDown();
       rect(player.x-5,player.y+18,5,2);
       rect(player.x+2,player.y+18,5,2);
     }
+
+  //rug
+  void draw_rUg(x,y) {
+    noStroke();
+    x = 20*x-20;
+    y = 20*y-20;
+    for(var xi = x; xi < x+20; xi+=4) {
+        for(var yi = y; yi < y+20; yi+=4) {
+            noStroke();
+            fill(random(175,200), 0, 0);
+            rect(xi,yi,4,4);
+        }
+    }
+  }
