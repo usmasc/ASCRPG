@@ -187,6 +187,7 @@ void draw_bg(bgo, x,y) {
       rect(x+10,yi,6,4);
       noStroke();
       break;
+      
     case 'rug':
         noStroke();
         x = 20*x-20;
@@ -199,7 +200,7 @@ void draw_bg(bgo, x,y) {
           }
         }
         break;
-    }
+      
   case 'grass':
     noStroke();
     x = 20*x-20;
@@ -212,6 +213,7 @@ void draw_bg(bgo, x,y) {
         }
     }
   break;
+      
   case 'floor':
      //stroke(255, 255, 255);
     x = 20*x-20;
@@ -249,6 +251,7 @@ void draw_bg(bgo, x,y) {
     fill(random(100,125),random(75,100),0);
     rect(xi,y+14,4,6);
     break;
+      
   case 'path':
     noStroke();
     x = 20*x-20;
@@ -261,6 +264,7 @@ void draw_bg(bgo, x,y) {
         }
     }
     break;
+      
   case 'sand':
     noStroke();
     x = 20*x-20;
@@ -274,6 +278,7 @@ void draw_bg(bgo, x,y) {
         }
     }
     break;
+  
   case 'swamp':
     noStroke();
     x = 20*x-20;
@@ -286,6 +291,7 @@ void draw_bg(bgo, x,y) {
         }
     }
     break;
+  
   case 'water':
     noStroke();
     x = 20*x-20;
@@ -298,6 +304,7 @@ void draw_bg(bgo, x,y) {
         }
     }
     break;
+  
   }
 }
 
