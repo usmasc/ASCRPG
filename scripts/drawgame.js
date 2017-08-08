@@ -6,7 +6,7 @@ var h = 200;
 void setup() { 
   size(w, h);
   background(100,100,255);
-  noLoop();
+  //noLoop();
 }
 
 void draw() {
