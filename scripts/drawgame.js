@@ -67,10 +67,11 @@ var map = [[wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,
            [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr]];
 
 void draw() {
+  /*
   var mapX0 = player.x/20 - player.mapX;
   var mapY0 = player.y/20 - player.mapY;
-  var mapYi = 0;
-  var mapXi = 0;
+  var mapYi = 1;
+  var mapXi = 1;
   
   for(var y = 1, y < 11; y++) {
     mapYi = y + mapY0;
@@ -83,8 +84,9 @@ void draw() {
       }
     }
   }
+  */
 
- /*
+ 
   for(var y = 1; y < 11; y++) {
      draw_bg(wtr.draw,1,y);
      draw_bg(smp.draw,2,y);
@@ -114,10 +116,10 @@ void draw() {
     draw_bg('floor',x,9);
     draw_bg('floor',x,2);
     for(var y = 3; y < 9; y++) {
-      draw_bg(rug.draw,x,y);
+      draw_bg(map[4][3].draw,x,y);
     }
   }
-  */
+  
   
  
 draw_PlayerFacingDown(); 
