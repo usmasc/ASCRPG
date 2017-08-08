@@ -11,26 +11,29 @@ void setup() {
 void draw() {
   
   for(var y = 1; y < 11; y++) {
-     draw_swamp(1,y);
-     draw_grass(2,y);
-     draw_path(3,y);
-     draw_brick(4,y);
+     draw_water(1,y);
+     draw_swamp(2,y);
+     draw_grass(3,y);
+     draw_path(4,y);
+     draw_brick(5,y);
      draw_brick(34,y);
      draw_grass(35,y);    
      draw_desert(36,y);
    }
   
-  draw_brick(5,1);
-  draw_brick(5,10);
+  draw_brick(6,1);
+  draw_brick(6,10);
+    draw_brick(33,1);
+  draw_brick(33,10);
   
     for(var y = 2; y < 10; y++) {
-     draw_floor(5,y);
+     draw_floor(6,y);
      draw_floor(33,y);
    }
   
   
 
-  for(var x = 6; x < 33; x++) {
+  for(var x = 7; x < 33; x++) {
     draw_brick(x,1);
     draw_brick(x,10);
     draw_floor(x,9);
@@ -256,6 +259,19 @@ void draw_swamp(x,y) {
         }
     }
   }
+
+void draw_water(x,y) {
+    noStroke();
+    x = 20*x-20;
+    y = 20*y-20;
+    for(var xi = x; xi < x+20; xi+=4) {
+        for(var yi = y; yi < y+20; yi+=4) {
+            noStroke();
+            fill(random(0,50),random(0,50),random(225,255));
+            rect(xi,yi,4,4);
+        }
+    }
+}
   
   
 
