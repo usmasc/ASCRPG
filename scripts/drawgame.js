@@ -40,35 +40,35 @@ void draw() {
   */
   
   for(var y = 1; y < 11; y++) {
-     draw_water(1,y);
-     draw_swamp(2,y);
-     draw_grass(3,y);
-     draw_path(4,y);
-     draw_brick(5,y);
-     draw_brick(34,y);
-     draw_grass(35,y);    
-     draw_desert(36,y);
+     draw_bg('water',1,y);
+     draw_bg('swamp',2,y);
+     draw_bg('grass',3,y);
+     draw_bg('path',4,y);
+     draw_bg('brick',5,y);
+     draw_bg('brick',34,y);
+     draw_bg('path',35,y);    
+     draw_bg('sand',36,y);
    }
   
-  draw_brick(6,1);
-  draw_brick(6,10);
-    draw_brick(33,1);
-  draw_brick(33,10);
+  draw_bg('brick',6,1);
+  draw_bg('brick',6,10);
+    draw_bg('brick',33,1);
+  draw_bg('brick',33,10);
   
     for(var y = 2; y < 10; y++) {
-     draw_floor(6,y);
-     draw_floor(33,y);
+     draw_bg('floor',6,y);
+     draw_bg('floor',33,y);
    }
   
   
 
   for(var x = 7; x < 33; x++) {
-    draw_brick(x,1);
-    draw_brick(x,10);
-    draw_floor(x,9);
-    draw_floor(x,2);
+    draw_bg('brick',x,1);
+    draw_bg('brick',x,10);
+    draw_bg('floor',x,9);
+    draw_bg('floor',x,2);
     for(var y = 3; y < 9; y++) {
-      draw_rug(x,y);
+      draw_bg('rug',x,y);
     }
   }
   
@@ -145,62 +145,62 @@ void draw_PlayerFacingDown() {
   rect(player.x+2,player.y+18,5,2);
 }
 
-//rug
-void draw_rug(x,y) {
-  noStroke();
-  x = 20*x-20;
-  y = 20*y-20;
-  for(var xi = x; xi < x+20; xi+=4) {
-      for(var yi = y; yi < y+20; yi+=4) {
-          noStroke();
-          fill(random(175,200), 0, 0);
-          rect(xi,yi,4,4);
-      }
-  }
-}
 
-void draw_brick(x,y) {
-  //stroke(255, 255, 255);
-  x = 20*x-20;
-  y = 20*y-20;
-  for(var yi = y; yi < y+16; yi+=8) {
-    //1st line
-    stroke(30, 0, 0);
-    fill(random(31,255),0,0);
-    rect(x,yi,6,4);
-    fill(random(31,225),0,0);
-    rect(x+7,yi,7,4);
-    stroke(30, 0, 0);
-    fill(random(31,225),0,0);
-    rect(x+14,yi,6,4);
-    //2nd line
-    noStroke();
-    fill(random(31,255),0,0);
-    rect(x,yi+4,4,4);
-    fill(random(31,225),0,0);
-    rect(x+16,yi+4,4,4);
-    stroke(30, 0, 0);
-    fill(random(31,225),0,0);
-    rect(x+4,yi+4,7,4);
-    fill(random(31,225),0,0);
-    rect(x+10,yi+4,6,4);
-  }
-  //last line
-  var yi = y+16;
-  stroke(30, 0, 0);
-  fill(random(31,255),0,0);
-  rect(x,yi,6,4);
-  fill(random(31,225),0,0);
-  rect(x+7,yi,7,4);
-  stroke(30, 0, 0);
-  fill(random(31,225),0,0);
-  rect(x+14,yi,6,4);
-  rect(x+10,yi,6,4);
-  noStroke();
-  }
-  
- 
-  void draw_grass(x,y) {
+void draw_bg(bgo, x,y) {
+  switch(bgo) {
+    case 'brick':
+      //stroke(255, 255, 255);
+      x = 20*x-20;
+      y = 20*y-20;
+      for(var yi = y; yi < y+16; yi+=8) {
+        //1st line
+        stroke(30, 0, 0);
+        fill(random(31,255),0,0);
+        rect(x,yi,6,4);
+        fill(random(31,225),0,0);
+        rect(x+7,yi,7,4);
+        stroke(30, 0, 0);
+        fill(random(31,225),0,0);
+        rect(x+14,yi,6,4);
+        //2nd line
+        noStroke();
+        fill(random(31,255),0,0);
+        rect(x,yi+4,4,4);
+        fill(random(31,225),0,0);
+        rect(x+16,yi+4,4,4);
+        stroke(30, 0, 0);
+        fill(random(31,225),0,0);
+        rect(x+4,yi+4,7,4);
+        fill(random(31,225),0,0);
+        rect(x+10,yi+4,6,4);
+      }
+      //last line
+      var yi = y+16;
+      stroke(30, 0, 0);
+      fill(random(31,255),0,0);
+      rect(x,yi,6,4);
+      fill(random(31,225),0,0);
+      rect(x+7,yi,7,4);
+      stroke(30, 0, 0);
+      fill(random(31,225),0,0);
+      rect(x+14,yi,6,4);
+      rect(x+10,yi,6,4);
+      noStroke();
+      break;
+    case 'rug':
+        noStroke();
+        x = 20*x-20;
+        y = 20*y-20;
+        for(var xi = x; xi < x+20; xi+=4) {
+          for(var yi = y; yi < y+20; yi+=4) {
+            noStroke();
+            fill(random(175,200), 0, 0);
+            rect(xi,yi,4,4);
+          }
+        }
+        break;
+    }
+  case 'grass':
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -211,33 +211,32 @@ void draw_brick(x,y) {
             rect(xi,yi,4,4);
         }
     }
-  }
-
-void draw_floor(x,y) {
-    //stroke(255, 255, 255);
+  break;
+  case 'floor':
+     //stroke(255, 255, 255);
     x = 20*x-20;
     y = 20*y-20;
     for(var xi = x; xi < x+16; xi+=8) {
-            //1st line
-            //stroke(51, 32, 2);
-            fill(random(100,125),random(75,100),0);
-            rect(xi,y,4,7);
-            fill(random(100,125),random(75,100),0);
-            rect(xi,y+7,4,7);
-            //stroke(30, 0, 0);
-            fill(random(100,125),random(75,100),0);
-            rect(xi,y+14,4,6);
-            //2nd line
-            noStroke();
-            fill(random(100,125),random(75,100),0);
-            rect(xi+4,y,4,4);
-            fill(random(100,125),random(75,100),0);
-            rect(xi+4,y+16,4,4);
-            //stroke(30, 0, 0);
-            fill(random(100,125),random(75,100),0);
-            rect(xi+4,y+4,4,7);
-            fill(random(100,125),random(75,100),0);
-            rect(xi+4,y+10,4,6);
+        //1st line
+        //stroke(51, 32, 2);
+        fill(random(100,125),random(75,100),0);
+        rect(xi,y,4,7);
+        fill(random(100,125),random(75,100),0);
+        rect(xi,y+7,4,7);
+        //stroke(30, 0, 0);
+        fill(random(100,125),random(75,100),0);
+        rect(xi,y+14,4,6);
+        //2nd line
+        noStroke();
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y,4,4);
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y+16,4,4);
+        //stroke(30, 0, 0);
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y+4,4,7);
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y+10,4,6);
     }
     //last line
     var xi = x+16;
@@ -249,9 +248,8 @@ void draw_floor(x,y) {
     //stroke(30, 0, 0);
     fill(random(100,125),random(75,100),0);
     rect(xi,y+14,4,6);
-  }
-
-  void draw_path(x,y) {
+    break;
+  case 'path':
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -262,13 +260,8 @@ void draw_floor(x,y) {
             rect(xi,yi,4,4);
         }
     }
-  }
-  
-
-  
-  
-  
-  void draw_desert(x,y) {
+    break;
+  case 'sand':
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -280,9 +273,8 @@ void draw_floor(x,y) {
             rect(xi,yi,4,4);
         }
     }
-}
-  
-void draw_swamp(x,y) {
+    break;
+  case 'swamp':
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -293,9 +285,8 @@ void draw_swamp(x,y) {
             rect(xi,yi,4,4);
         }
     }
-  }
-
-void draw_water(x,y) {
+    break;
+  case 'water':
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -306,7 +297,9 @@ void draw_water(x,y) {
             rect(xi,yi,4,4);
         }
     }
+    break;
 }
+
   
   
 
