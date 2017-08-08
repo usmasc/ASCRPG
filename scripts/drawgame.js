@@ -298,6 +298,7 @@ void draw_bg(bgo, x,y) {
         }
     }
     break;
+  }
 }
 
   
