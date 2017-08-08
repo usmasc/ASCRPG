@@ -98,8 +98,10 @@ function drawSwamp(x,y) {
 
   
   for(var y = 1; y < 11; y++) {
-     draw_Brick(1,y);
-     draw_Brick(36,y);
+     draw_Grass(1,y);
+     draw_Grass(36,y);    
+     draw_Brick(2,y);
+     draw_Brick(35,y);
    }
   
 
@@ -232,7 +234,7 @@ void draw_Brick(x,y) {
   noStroke();
   }
   
-  /*
+ 
   void draw_Grass(x,y) {
     noStroke();
     x = 20*x-20;
@@ -245,8 +247,8 @@ void draw_Brick(x,y) {
         }
     }
   }
-  */
 
+/*
 var brk = {
   "canPass":false,
   "draw": draw_Brick();
@@ -267,3 +269,4 @@ var map = [[brk, brk, brk, brk, brk, brk, brk, brk, brk],
            [brk, rug, rug, rug, rug, rug, rug, rug, brk],
            [brk, rug, rug, rug, rug, rug, rug, rug, brk],
            [brk, brk, brk, brk, brk, brk, brk, brk, brk]];
+           */
