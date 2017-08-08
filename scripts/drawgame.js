@@ -2,15 +2,43 @@ var w = 720;
 var h = 200;
 
 
-
 void setup() { 
   size(w, h);
   background(100,100,255);
   //noLoop();
 }
 
+
+var brk = {
+  "canPass":false,
+  "draw": draw_brick(x,y);
+};
+
+var rug = {
+  "canPass":true,
+  "draw": draw_rug(x,y);
+};
+
+var map = [[brk, brk, brk, brk, brk, brk, brk, brk, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, brk, brk, brk, brk, brk, brk, brk, brk]];
+
+
+
 void draw() {
-  
+  for(y = 0, y < map.length; y++) {
+    for(x = 0, x < map[y].length; x++) {
+      map[y][x].draw(x,y);
+    }
+  }
+  /*
   for(var y = 1; y < 11; y++) {
      draw_water(1,y);
      draw_swamp(2,y);
@@ -43,6 +71,7 @@ void draw() {
       draw_rug(x,y);
     }
   }
+  */
  
 draw_PlayerFacingDown(); 
 }
@@ -283,25 +312,5 @@ void draw_water(x,y) {
 
  
 
-/*
-var brk = {
-  "canPass":false,
-  "draw": draw_Brick();
-};
 
-var rug = {
-  "canPass":true,
-  "draw": draw_rUg();
-};
-
-var map = [[brk, brk, brk, brk, brk, brk, brk, brk, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, brk, brk, brk, brk, brk, brk, brk, brk]];
-           */
+           
