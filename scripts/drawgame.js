@@ -12,7 +12,7 @@ var brk = {
   "canPass":false,
   "draw": 'brick'
 };
-/*
+
 var rug = {
   "canPass":true,
   "draw": 'rug'
@@ -86,10 +86,10 @@ void draw() {
 */
  
   for(var y = 1; y < 11; y++) {
-     draw_bg('water',1,y);
-     draw_bg('swamp',2,y);
-     draw_bg('grass',3,y);
-     draw_bg('grass',4,y);
+     draw_bg(wtr.draw,1,y);
+     draw_bg(smp.draw,2,y);
+     draw_bg(grs.draw,3,y);
+     draw_bg(pth.draw,4,y);
      draw_bg(brk.draw,5,y);
      draw_bg('brick',26,y);
      draw_bg('path',27,y);    
@@ -102,7 +102,7 @@ void draw() {
   draw_bg('brick',25,10);
   
     for(var y = 2; y < 10; y++) {
-     draw_bg('floor',6,y);
+     draw_bg(flr.draw,6,y);
      draw_bg('floor',25,y);
    }
   
@@ -114,7 +114,7 @@ void draw() {
     draw_bg('floor',x,9);
     draw_bg('floor',x,2);
     for(var y = 3; y < 9; y++) {
-      draw_bg('rug',x,y);
+      draw_bg(rug.draw,x,y);
     }
   }
   
