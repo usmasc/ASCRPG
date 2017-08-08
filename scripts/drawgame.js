@@ -13,40 +13,40 @@ void setup() {
     "draw": 'brick');
   };
   
-    var rug = {
+  var rug = {
     "canPass":true,
     "draw": 'rug');
   };
   
   var grs = {
-  "canPass":true,
-  "draw": 'grass'
-  }
+    "canPass":true,
+    "draw": 'grass'
+  };
   
   var smp = {
-  'canPass':true,
-  'draw':'swamp'
-  }
+    'canPass':true,
+    'draw':'swamp'
+  };
   
   var snd = {
-  'canPass':true,
-  'draw':'sand'
-  }
+    'canPass':true,
+    'draw':'sand'
+  };
   
   var pth = {
-  'canPass':true,
-  'draw':'path'
-  }
+    'canPass':true,
+    'draw':'path'
+  };
   
   var flr = {
-  'canPass':true,
-  'draw':'floor'
-  }
+    'canPass':true,
+    'draw':'floor'
+  };
   
   var wtr = {
-  'canPass':false,
+      'canPass':false,
   'draw':'water'
-  }
+  };
   
   var map=[[wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
            [wtr,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,wtr],
