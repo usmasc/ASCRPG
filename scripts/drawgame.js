@@ -9,8 +9,8 @@ void setup() {
 }
 
 void draw() {
-  mapX0 = player.x/20 - player.mapX
-  mapY0 = player.y/20 - player.mapY
+  mapX0 = player.x/20 - player.mapX;
+  mapY0 = player.y/20 - player.mapY;
 
   for(var y = 0, y < 11; y++) {
     var mapYi = y + mapY0;
