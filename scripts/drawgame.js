@@ -14,33 +14,32 @@ void draw() {
 
   
   for(var y = 1; y < 11; y++) {
-     draw_Swamp(1,y);
-     draw_Grass(2,y);
-     draw_Path(3,y);
-     draw_Grass(36,y);    
-     draw_Brick(4,y);
-     draw_Brick(35,y);
-     draw_fLoor(5,y);
-     draw_fLoor(34,y);
+     draw_swamp(1,y);
+     draw_grass(2,y);
+     draw_path(3,y);
+     draw_brick(4,y);
+     draw_brick(34,y);
+     draw_grass(35,y);    
+     draw_desert(36,y);
    }
   
-  draw_Brick(5,1);
-  draw_Brick(5,10);
+  draw_brick(5,1);
+  draw_brick(5,10);
   
     for(var y = 2; y < 10; y++) {
-     draw_fLoor(5,y);
-     draw_fLoor(34,y);
+     draw_floor(5,y);
+     draw_floor(34,y);
    }
   
   
 
-  for(var x = 4; x < 34; x++) {
-    draw_Brick(x,1);
-    draw_Brick(x,10);
-    draw_fLoor(x,9);
-    draw_fLoor(x,2);
+  for(var x = 5; x < 34; x++) {
+    draw_brick(x,1);
+    draw_brick(x,10);
+    draw_floor(x,9);
+    draw_floor(x,2);
     for(var y = 3; y < 9; y++) {
-      draw_rUg(x,y);
+      draw_rug(x,y);
     }
   }
   
@@ -112,7 +111,7 @@ void draw_PlayerFacingDown() {
 }
 
 //rug
-void draw_rUg(x,y) {
+void draw_rug(x,y) {
   noStroke();
   x = 20*x-20;
   y = 20*y-20;
@@ -125,7 +124,7 @@ void draw_rUg(x,y) {
   }
 }
 
-void draw_Brick(x,y) {
+void draw_brick(x,y) {
   //stroke(255, 255, 255);
   x = 20*x-20;
   y = 20*y-20;
@@ -166,7 +165,7 @@ void draw_Brick(x,y) {
   }
   
  
-  void draw_Grass(x,y) {
+  void draw_grass(x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -179,7 +178,7 @@ void draw_Brick(x,y) {
     }
   }
 
-void draw_fLoor(x,y) {
+void draw_floor(x,y) {
     //stroke(255, 255, 255);
     x = 20*x-20;
     y = 20*y-20;
@@ -217,7 +216,7 @@ void draw_fLoor(x,y) {
     rect(xi,y+14,4,6);
   }
 
-  void draw_Path(x,y) {
+  void draw_path(x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -234,7 +233,7 @@ void draw_fLoor(x,y) {
   
   
   
-  void draw_Desert(x,y) {
+  void draw_desert(x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
@@ -248,7 +247,7 @@ void draw_fLoor(x,y) {
     }
 }
   
-void draw_Swamp(x,y) {
+void draw_swamp(x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
