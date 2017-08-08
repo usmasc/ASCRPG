@@ -48,7 +48,7 @@ draw_PlayerFacingDown();
 }
 
 void reload() {
-  reload();
+  redraw();
 }
 
 void draw_PlayerFacingDown() { 
