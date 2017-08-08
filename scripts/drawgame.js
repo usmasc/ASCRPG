@@ -49,6 +49,7 @@ draw_PlayerFacingDown();
 
 void reload() {
   redraw();
+  updateStats();
 }
 
 void draw_PlayerFacingDown() { 
