@@ -3,11 +3,12 @@ var h = 200;
 
 void setup() { 
   size(w, h);
+  background(100,100,255);
 }
 
 void draw() {
   
-  background(100,100,255);
+  
   /*
   function drawPath(x,y) {
     noStroke();
@@ -166,7 +167,7 @@ function drawSwamp(x,y) {
 draw_PlayerFacingDown(); 
 }
 
-   void function draw_PlayerFacingDown() { 
+   void draw_PlayerFacingDown() { 
       fill(player.skin[0],player.skin[1],player.skin[2]);
       //ears
       ellipse(player.x-6-player.face*2,player.y-12,4,4);
