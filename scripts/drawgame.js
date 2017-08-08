@@ -69,10 +69,10 @@ void draw() {
   mapX0 = player.x/20 - player.mapX;
   mapY0 = player.y/20 - player.mapY;
 
-  for(var y = 0, y < 11; y++) {
+  for(var y = 1, y < 11; y++) {
     var mapYi = y + mapY0;
     if (mapYi > -1 && mapYi < map.length) {
-      for(var x = 0, x < 29; x++) {
+      for(var x = 1, x < 29; x++) {
         var mapXi = x+ mapX0;
         if (mapXi > -1 && mapXi < map[y].length) {
           draw_bg(map[mapYi][mapXi].draw,x,y);
