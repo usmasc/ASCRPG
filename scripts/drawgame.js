@@ -92,7 +92,7 @@ void draw() {
      draw_bg(pth.draw,4,y);
      draw_bg(brk.draw,5,y);
      draw_bg('brick',26,y);
-     draw_bg('path',27,y);    
+     draw_bg(snd.draw,27,y);    
      draw_bg('sand',28,y);
    }
   
