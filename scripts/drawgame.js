@@ -1,6 +1,27 @@
 var w = 720;
 var h = 200;
 
+var brk = {
+  "canPass":false,
+  "draw": draw_Brick();
+};
+
+var rug = {
+  "canPass":true,
+  "draw": draw_rUg();
+};
+
+var map = [[brk, brk, brk, brk, brk, brk, brk, brk, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+           [brk, brk, brk, brk, brk, brk, brk, brk, brk]];
+
 void setup() { 
   size(w, h);
   background(100,100,255);
