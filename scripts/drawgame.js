@@ -8,7 +8,7 @@ void setup() {
 void draw() {
   
   background(100,100,255);
-  
+  /*
   function drawPath(x,y) {
     noStroke();
     x = 20*x-20;
@@ -34,7 +34,7 @@ void draw() {
             rect(xi,yi,4,4);
         }
     }
-}
+  }
   
   function drawBrick(x,y) {
     //stroke(255, 255, 255);
@@ -152,8 +152,8 @@ function drawSwamp(x,y) {
     //stroke(30, 0, 0);
     fill(random(100,125),random(75,100),0);
     rect(xi,y+14,4,6);
-
 }
+*/
   
     function drawPlayerFacingDown() { 
       fill(player.skin[0],player.skin[1],player.skin[2]);
@@ -218,12 +218,12 @@ function drawSwamp(x,y) {
       rect(player.x-5,player.y+18,5,2);
       rect(player.x+2,player.y+18,5,2);
     }
-
+/*
   for(var x = 2; x < 36; x++) {
     for(var y = 2; y < 10; y++) {
       drawrUg(x,y);
     }
   }
-  
+  */
 drawPlayerFacingDown(); 
 }
