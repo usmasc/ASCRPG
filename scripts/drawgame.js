@@ -10,65 +10,28 @@ void setup() {
 
 void draw() {
   
-  
-  /*
-  function drawPath(x,y) {
-    noStroke();
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=4) {
-        for(var yi = y; yi < y+20; yi+=4) {
-            noStroke();
-            fill(random(175,200), random(175,200), 0);
-            rect(xi,yi,4,4);
-        }
-    }
-  }
-  
-
-  
-  
-  
-  function drawDesert(x,y) {
-    noStroke();
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=4) {
-        for(var yi = y; yi < y+20; yi+=4) {
-            noStroke();
-            //224, 166, 137
-            fill(random(230,255), random(200,229), random(175,199));
-            rect(xi,yi,4,4);
-        }
-    }
-}
-  
-function drawSwamp(x,y) {
-    noStroke();
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=4) {
-        for(var yi = y; yi < y+20; yi+=4) {
-            noStroke();
-            fill(0,random(50,200),random(50,150));
-            rect(xi,yi,4,4);
-        }
-    }
-  }
-  
-  
-*/
-  
+ 
 
   
   for(var y = 1; y < 11; y++) {
-     draw_Grass(1,y);
+     draw_Swamp(1,y);
+     draw_Grass(2,y);
+     draw_Path(3,y);
      draw_Grass(36,y);    
-     draw_Brick(2,y);
+     draw_Brick(4,y);
      draw_Brick(35,y);
-     draw_fLoor(3,y);
+     draw_fLoor(5,y);
      draw_fLoor(34,y);
    }
+  
+  draw_Brick(5,1);
+  draw_Brick(5,10);
+  
+    for(var y = 2; y < 10; y++) {
+     draw_fLoor(5,y);
+     draw_fLoor(34,y);
+   }
+  
   
 
   for(var x = 4; x < 34; x++) {
@@ -252,7 +215,55 @@ void draw_fLoor(x,y) {
     //stroke(30, 0, 0);
     fill(random(100,125),random(75,100),0);
     rect(xi,y+14,4,6);
+  }
+
+  void draw_Path(x,y) {
+    noStroke();
+    x = 20*x-20;
+    y = 20*y-20;
+    for(var xi = x; xi < x+20; xi+=4) {
+        for(var yi = y; yi < y+20; yi+=4) {
+            noStroke();
+            fill(random(175,200), random(175,200), 0);
+            rect(xi,yi,4,4);
+        }
+    }
+  }
+  
+
+  
+  
+  
+  void draw_Desert(x,y) {
+    noStroke();
+    x = 20*x-20;
+    y = 20*y-20;
+    for(var xi = x; xi < x+20; xi+=4) {
+        for(var yi = y; yi < y+20; yi+=4) {
+            noStroke();
+            //224, 166, 137
+            fill(random(230,255), random(200,229), random(175,199));
+            rect(xi,yi,4,4);
+        }
+    }
 }
+  
+void draw_Swamp(x,y) {
+    noStroke();
+    x = 20*x-20;
+    y = 20*y-20;
+    for(var xi = x; xi < x+20; xi+=4) {
+        for(var yi = y; yi < y+20; yi+=4) {
+            noStroke();
+            fill(0,random(50,200),random(50,150));
+            rect(xi,yi,4,4);
+        }
+    }
+  }
+  
+  
+*/
+ 
 
 /*
 var brk = {
