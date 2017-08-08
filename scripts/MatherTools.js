@@ -1,5 +1,12 @@
-// onScreen Keyboard
+var command = 'Enter X';
+var thingToBeEntered = 'ThingToBeEntered';
+var enteredText = '';
+var text = document.getElementById('textArea');
+var playArea = document.getElementById('playArea'); 
+var sumbit = document.getElementById('submitButtonArea');
+var textInput = document.getElementById('textInput');
 
+// onScreen Keyboard
 
 function submitText() {
   switch(thingToBeEntered) {
