@@ -10,9 +10,6 @@ void setup() {
 
 void draw() {
   
- 
-
-  
   for(var y = 1; y < 11; y++) {
      draw_swamp(1,y);
      draw_grass(2,y);
@@ -28,12 +25,12 @@ void draw() {
   
     for(var y = 2; y < 10; y++) {
      draw_floor(5,y);
-     draw_floor(34,y);
+     draw_floor(33,y);
    }
   
   
 
-  for(var x = 5; x < 34; x++) {
+  for(var x = 6; x < 33; x++) {
     draw_brick(x,1);
     draw_brick(x,10);
     draw_floor(x,9);
