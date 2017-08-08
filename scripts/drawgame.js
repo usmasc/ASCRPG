@@ -43,8 +43,12 @@ void draw() {
       draw_rug(x,y);
     }
   }
-  
+ 
 draw_PlayerFacingDown(); 
+}
+
+void reload() {
+  reload();
 }
 
 void draw_PlayerFacingDown() { 
