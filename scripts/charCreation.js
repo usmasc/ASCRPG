@@ -20,13 +20,6 @@ var player = {
      y: 100
  };
 
-var command = 'Enter X';
-var thingToBeEntered = 'ThingToBeEntered';
-var enteredText = '';
-var text = document.getElementById('textArea');
-var playArea = document.getElementById('playArea'); 
-var sumbit = document.getElementById('submitButtonArea');
-var textInput = document.getElementById('textInput');
 
 function pickFace() {
   text.innerHTML = 'Pick a face shape:';
@@ -39,11 +32,6 @@ function pickFace() {
 }
 
 
-
-
-
-
-
 function enterName() {
   command = 'Enter name: ';
   text.innerHTML = command;
@@ -54,13 +42,13 @@ function enterName() {
   UConScreenKeyboard();
 }
 
+
 function isOK() {
     text.innerHTML = 'Is this OK?';
     var thingie = '<button onclick="start()">YES</button> ';
     thingie += '<button onclick="enterName()">NO</button> ';
     sumbit.innerHTML = thingie;
 }
-
 
 
 function pickSkin() {
