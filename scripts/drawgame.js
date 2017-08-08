@@ -94,17 +94,16 @@ function drawSwamp(x,y) {
 */
   
 
-  /*
+  
   for(var y = 1; y < 11; y++) {
-      draw_Brick(1,y);
-      draw_Brick(36,y);
-    }
-  }
-  */
+     draw_Brick(1,y);
+     draw_Brick(36,y);
+   }
+  
 
   for(var x = 2; x < 36; x++) {
-    //draw_Brick(x,1);
-    //draw_Brick(x,10);
+    draw_Brick(x,1);
+    draw_Brick(x,10);
     for(var y = 2; y < 10; y++) {
       draw_rUg(x,y);
     }
@@ -190,7 +189,7 @@ void draw_rUg(x,y) {
       }
   }
 }
-/*
+
 void draw_Brick(x,y) {
   //stroke(255, 255, 255);
   x = 20*x-20;
@@ -230,7 +229,7 @@ void draw_Brick(x,y) {
   rect(x+10,yi,6,4);
   noStroke();
   }
-  */
+  
   /*
   void draw_Grass(x,y) {
     noStroke();
