@@ -8,31 +8,30 @@ void setup() {
   //noLoop();
 }
 
-
-var brk = {
-  "canPass":false,
-  "draw": draw_brick(x,y);
-};
-
-var rug = {
-  "canPass":true,
-  "draw": draw_rug(x,y);
-};
-
-var map = [[brk, brk, brk, brk, brk, brk, brk, brk, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, rug, rug, rug, rug, rug, rug, rug, brk],
-           [brk, brk, brk, brk, brk, brk, brk, brk, brk]];
-
-
-
 void draw() {
+  
+  var brk = {
+    "canPass":false,
+    "draw": draw_brick(x,y);
+  };
+
+  var rug = {
+    "canPass":true,
+    "draw": draw_rug(x,y);
+  };
+
+  var map = [[brk, brk, brk, brk, brk, brk, brk, brk, brk],
+             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+             [brk, rug, rug, rug, rug, rug, rug, rug, brk],
+             [brk, brk, brk, brk, brk, brk, brk, brk, brk]];
+
+  
   for(y = 0, y < map.length; y++) {
     for(x = 0, x < map[y].length; x++) {
       map[y][x].draw(x,y);
@@ -71,7 +70,7 @@ void draw() {
       draw_rug(x,y);
     }
   }
-  */
+  
  
 draw_PlayerFacingDown(); 
 }
