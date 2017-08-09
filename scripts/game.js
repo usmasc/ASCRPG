@@ -114,7 +114,7 @@ function up() {
       }
      player.mapY--;
    } else {
-     text.innerHTML = 'None shall pass ' + map[player.mapY-1][player.mapX].draw;
+     text.innerHTML = 'Find another route.';
    }
 
 }
