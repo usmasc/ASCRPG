@@ -1,5 +1,5 @@
 var horBlks = 28;
-var verBlks = 10
+var verBlks = 10;
 
 var w = horBlks * 20;
 var h = verBloks* 20;
@@ -70,10 +70,10 @@ void draw() {
   var mapYi = 1;
   var mapXi = 1;
   
-  for(var y = 1; y < 11; y++) {
+  for(var y = 1; y <= verBlks; y++) {
     mapYi = y + mapY0;
     if (mapYi > -1 && mapYi < map.length) {
-      for(var x = 1; x < 29; x++) {
+      for(var x = 1; x <= horBlks; x++) {
         mapXi = x + mapX0;
         if (mapXi > -1 && mapXi < map[y].length) {
           draw_bg(mapD[mapYi][mapXi].draw,x,y);
