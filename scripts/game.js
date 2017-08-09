@@ -156,28 +156,31 @@ function arrows() {
 function check() {
   if (map[player.mapY][player.mapX].canCheck) {
     text.innerHTML = map[player.mapY][player.mapX].check();
+    return 0;
   } else {
       switch(player.facing) {
         case 'North':
             if (map[player.mapY-1][player.mapX].canCheck) {
                text.innerHTML = map[player.mapY-1][player.mapX].check();
+               return 0;
             } 
-            break;
+        
         case 'South':
             if (map[player.mapY+1][player.mapX].canCheck) {
                text.innerHTML = map[player.mapY+1][player.mapX].check();
+               return 0;
             } 
-            break;
+
         case 'West':
             if (map[player.mapY][player.mapX-1].canCheck) {
                text.innerHTML = map[player.mapY][player.mapX-1].check();
+               return 0;
             } 
-            break;
         case 'East':
             if (map[player.mapY][player.mapX+1].canCheck) {
                text.innerHTML = map[player.mapY][player.mapX+1].check();
+               return 0;
             } 
-            break;
         default:
           text.innerHTML = 'Your explore the area under your feet and to the ' + player.facing;
           text.innerHTML += ', but do not find anything of interest. You note these findings in your journal ';
