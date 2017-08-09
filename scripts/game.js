@@ -4,42 +4,57 @@ var sumbit = document.getElementById('submitButtonArea');
 
 var brk = {
   "canPass":false,
-  "draw": 'brick'
+  "draw": 'brick',
+  'canCheck': false
 };
 
 var rug = {
   "canPass":true,
-  "draw": 'rug'
+  "draw": 'rug',
+  'canCheck': true,
+  'check': function() {
+    text.innerHTML = 'No problems found here. While you are tempted, you refuse to sweep your problems under the rug.';
+  }
 };
 
 var grs = {
   "canPass":true,
-  "draw": 'grass'
+  "draw": 'grass',
+    'canCheck': true,
+  'check': function() {
+    text.innerHTML = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
+    text.innerHTML += ' the grass in the distance looks greener now.';
+  }
 };
 
 var smp = {
   'canPass':true,
-  'draw':'swamp'
+  'draw':'swamp',
+  'canCheck': false
 };
 
 var snd = {
   'canPass':true,
-  'draw':'sand'
+  'draw':'sand',
+  'canCheck': false
 };
 
 var pth = {
   'canPass':true,
-  'draw':'path'
+  'draw':'path',
+  'canCheck': false
 };
 
 var flr = {
   'canPass':true,
-  'draw':'floor'
+  'draw':'floor',
+  'canCheck': false
 };
 
 var wtr = {
   'canPass':false,
-  'draw':'water'
+  'draw':'water',
+  'canCheck': false
 };
   
 var map = [[wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
@@ -72,7 +87,7 @@ function up() {
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY-1][player.mapX].draw;
    }
-
+     player.facing = 'North';
 }
 
 function down() {
@@ -84,10 +99,11 @@ function down() {
         text.innerHTML =  'Stay off the grass';
       }
      player.mapY++;
+
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY+1][player.mapX].draw;
    }
-
+     player.facing = 'South';
 }
 
 
@@ -102,6 +118,7 @@ function left() {
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX-1].draw;
    }
+       player.facing = 'West';
 }
 
 function right() {
@@ -116,26 +133,57 @@ function right() {
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX+1].draw;
    }
+       player.facing = 'East';
 }
 
 function arrows() {
    thingie = '<table><tr><td>';
-   // arrows
-   thingie += '<table><tr><td></td><td> <button onclick="up()"> ⇑ </button></td><td></td></tr>';
+   // row 1
+   thingie += '<table><tr><td></td><td> <button onclick="up()"> ⇑ </button></td><td></td>';
+   thingie += '<td><button onclick="talk()">talk</button></td>';
+   thingie += '<td><button onclick="items()">items</button></td></tr>';
+   // row 2
    thingie += '<tr><td><button onclick="left()">⇐</button></td>';
    thingie += '<td><button onclick="down()"> ⇓ </button></td>';
-   thingie += '<td><button onclick="right()">⇒</button></td></tr></table></td>';
-  
-  thingie += '<td>';
-  // buttons go here
-  thingie += '<button onclick="talk()">talk</button> ';
-  thingie += '<button onclick="check()">check</button> ';
-  thingie += '<button onclick="items()">items</button> ';
-  thingie += '<button onclick="stats()">stats</button> ';
-  thingie += '</td></tr></table>';
+   thingie += '<td><button onclick="right()">⇒</button></td>';
+   thingie += '<td><button onclick="check()">check</button></td>';
+   thingie += '<td><button onclick="stats()">status</button></td>'
+   thingie += '</tr></table>';
   
    sumbit.innerHTML = thingie;
 }
+
+function check() {
+  if (map[player.mapY][player.mapX].canCheck()) {
+    text.innerHTML = map[player.mapY][player.mapX].check();
+  } else {
+    switch(player.facing) {
+      case 'North':
+          if (map[player.mapY-1][player.mapX].canCheck()) {
+             text.innerHTML = map[player.mapY-1][player.mapX].check();
+          } 
+          break;
+      case 'South':
+          if (map[player.mapY+1][player.mapX].canCheck()) {
+             text.innerHTML = map[player.mapY+1][player.mapX].check();
+          } 
+          break;
+      case 'West':
+          if (map[player.mapY][player.mapX-1].canCheck()) {
+             text.innerHTML = map[player.mapY][player.mapX-1].check();
+          } 
+          break;
+      case 'East':
+          if (map[player.mapY][player.mapX+1].canCheck()) {
+             text.innerHTML = map[player.mapY][player.mapX+1].check();
+          } 
+          break;
+      default:
+        text.innerHTML = 'Your explore the area under your feet and to the ' + player.facing;
+        text.innerHTML += ', but do not find anything of interest. You note these findings in your journal ';
+        text.innerHTML += ' and press on.';
+     }
+  }
 
 
 
