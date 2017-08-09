@@ -98,10 +98,11 @@ function right() {
 }
 
 function arrows() {
-   thingie = '<button onclick="up()"> ⇑ </button><br>';
-   thingie += '<button onclick="left()">⇐</button> ';
-   thingie += '<button onclick="right()">⇒</button><br>';
-   thingie += '<button onclick="down()"> ⇓ </button>';
+  
+   thingie = '<table><tr><td></td><td> <button onclick="up()"> ⇑ </button></td><td></td></tr>';
+   thingie += '<tr><td><button onclick="left()">⇐</button></td><td></td>';
+   thingie += '<td><button onclick="right()">⇒</button></td></tr>';
+   thingie += '<tr><td></td><td><button onclick="down()"> ⇓ </button></td><td></td></tr></table>';
    sumbit.innerHTML = thingie;
 }
 
