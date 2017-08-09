@@ -72,11 +72,11 @@ void draw() {
   
   for(var y = 1; y <= verBlks; y++) {
     mapYi = y + mapY0;
-    if (mapYi > -1 && mapYi < map.length) {
+    if (mapYi > -1 && mapYi < mapD.length) {
       for(var x = 1; x <= horBlks; x++) {
         mapXi = x + mapX0;
-        if (mapXi > -1 && mapXi < map[y].length) {
-          draw_bg(map[mapYi][mapXi].draw,x,y);
+        if (mapXi > -1 && mapXi < mapD[y].length) {
+          draw_bg(mapD[mapYi][mapXi].draw,x,y);
         }
       }
     }
@@ -84,10 +84,11 @@ void draw() {
 //draw_PlayerFacingDown(); 
 }
 
-
+/*
 void reload() {
   redraw();
 }
+*/
 
 /*
 void draw_PlayerFacingDown() {
