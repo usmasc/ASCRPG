@@ -154,27 +154,27 @@ function arrows() {
 }
 
 function check() {
-  if (map[player.mapY][player.mapX].canCheck()) {
+  if (map[player.mapY][player.mapX].canCheck) {
     text.innerHTML = map[player.mapY][player.mapX].check();
   } else {
       switch(player.facing) {
         case 'North':
-            if (map[player.mapY-1][player.mapX].canCheck()) {
+            if (map[player.mapY-1][player.mapX].canCheck) {
                text.innerHTML = map[player.mapY-1][player.mapX].check();
             } 
             break;
         case 'South':
-            if (map[player.mapY+1][player.mapX].canCheck()) {
+            if (map[player.mapY+1][player.mapX].canCheck) {
                text.innerHTML = map[player.mapY+1][player.mapX].check();
             } 
             break;
         case 'West':
-            if (map[player.mapY][player.mapX-1].canCheck()) {
+            if (map[player.mapY][player.mapX-1].canCheck) {
                text.innerHTML = map[player.mapY][player.mapX-1].check();
             } 
             break;
         case 'East':
-            if (map[player.mapY][player.mapX+1].canCheck()) {
+            if (map[player.mapY][player.mapX+1].canCheck) {
                text.innerHTML = map[player.mapY][player.mapX+1].check();
             } 
             break;
