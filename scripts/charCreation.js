@@ -18,7 +18,7 @@ var player = {
     'money': 0,
      x: 280,
      y: 100,
-    'facing':'down',
+    'facing':'South',
     'items':['shirt','pants','shoes']
  };
 
