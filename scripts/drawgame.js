@@ -2,7 +2,7 @@ var horBlks = 28;
 var verBlks = 10;
 
 var w = horBlks * 20;
-var h = verBlks* 20;
+var h = verBlks * 20;
 
 
 void setup() { 
@@ -24,17 +24,15 @@ var grD = {
 };
 
 var smD = {
-  'canPass':true,
-  'draw':'swamp',
-  'canCheck': false
+  'draw':'swamp'
 };
 
 var snD = {
-  'draw':'sand',
+  'draw':'sand'
 };
 
 var ptD = {
-  'draw':'path',
+  'draw':'path'
 };
 
 var flD = {
@@ -84,12 +82,12 @@ void draw() {
 draw_PlayerFacingDown(); 
 }
 
-/*
+
 void reload() {
   redraw();
   updateStats();
 }
-*/
+
 
 void draw_PlayerFacingDown() {
   var newx = player.x-10;
