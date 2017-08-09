@@ -1,5 +1,8 @@
-var w = 560;
-var h = 200;
+var horBlks = 28;
+var verBlks = 10
+
+var w = horBlks * 20;
+var h = verBloks* 20;
 
 
 void setup() { 
@@ -7,6 +10,9 @@ void setup() {
   background(100,100,255);
   //noLoop();
 }
+
+
+var text = document.getElementById('textArea');
 
 var brk = {
   "canPass":false,
@@ -18,7 +24,7 @@ var rug = {
   "canPass":true,
   "draw": 'rug',
   'canCheck': true,
-   check() {
+   check: void() {
     text.innerHTML = 'No problems found here. While you are tempted, you refuse to sweep your problems under the rug.';
   }
 };
@@ -27,7 +33,7 @@ var grs = {
   "canPass":true,
   "draw": 'grass',
   'canCheck': true,
-  check() {
+  check: void() {
     text.innerHTML = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
     text.innerHTML += ' the grass in the distance looks greener now.';
   }
