@@ -3,26 +3,26 @@ var sumbit = document.getElementById('submitButtonArea');
 
 
 var brk = {
-  "canPass":false,
+  "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
 var rug = {
-  "canPass":true,
+  "canPass": true,
   "draw": 'rug',
   'canCheck': true,
-   check: function() {
+   check() {
     var thingie = 'No problems found here. While you are tempted, you refuse to sweep your problems under the rug.';
     text.innerHTML = thingie;
   }
 };
 
 var grs = {
-  "canPass":true,
+  "canPass": true,
   "draw": 'grass',
   'canCheck': true,
-  check: function() {
+  check() {
     var thingie = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
     thingie += ' the grass in the distance looks greener now.';
     text.innerHTML = thingie;
@@ -161,7 +161,7 @@ function arrows() {
 function check() {
   var thingie = '';
   if (map[player.mapY][player.mapX].canCheck) {
-    text.innerHTML = map[player.mapY][player.mapX].check();
+    map[player.mapY][player.mapX].check();
     return 0;
   } else {
       switch(player.facing) {
