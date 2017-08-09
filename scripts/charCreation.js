@@ -1,5 +1,5 @@
 var player = {
-    "name": "Ness",
+    "name": "Mather",
     "face": 3,
     "skin": [217, 183, 31],
     "hair": 0,
@@ -16,10 +16,10 @@ var player = {
     'xp': 0,
     'nextLevel': 100,
     'money': 0,
-     x: 280,
-     y: 100,
     'facing':'South',
-    'items':['shirt','pants','shoes']
+    'items':['shirt','pants','shoes'],
+     x: 280,
+     y: 100
  };
 
 var command = 'Enter X';
@@ -114,7 +114,7 @@ function enterName() {
   command = 'Enter name: ';
   text.innerHTML = command;
   thingToBeEntered = 'name';
-  enteredText = '';
+  enteredText = player.name;
   text.innerHTML = command + enteredText;
   document.getElementById('name').innerHTML = enteredText;
   UConScreenKeyboard();
