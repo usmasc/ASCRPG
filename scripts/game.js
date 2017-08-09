@@ -81,7 +81,7 @@ function down() {
      
      text.innerHTML = 'y-=1.';
      if (map[player.mapY+1][player.mapX] == grs){
-        text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
+        text.innerHTML = 'Stay off the ' + map[player.mapY+1][player.mapX].draw;
       }
      player.mapY++;
    } else {
@@ -96,7 +96,7 @@ function left() {
      
      text.innerHTML = 'Going left.';
      if (map[player.mapY][player.mapX-1] == grs){
-        text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
+        text.innerHTML = 'Stay off the ' + map[player.mapY][player.mapX-1].draw;
      }
      player.mapX--;
    } else {
