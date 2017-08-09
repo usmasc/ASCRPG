@@ -157,32 +157,33 @@ function check() {
   if (map[player.mapY][player.mapX].canCheck()) {
     text.innerHTML = map[player.mapY][player.mapX].check();
   } else {
-    switch(player.facing) {
-      case 'North':
-          if (map[player.mapY-1][player.mapX].canCheck()) {
-             text.innerHTML = map[player.mapY-1][player.mapX].check();
-          } 
-          break;
-      case 'South':
-          if (map[player.mapY+1][player.mapX].canCheck()) {
-             text.innerHTML = map[player.mapY+1][player.mapX].check();
-          } 
-          break;
-      case 'West':
-          if (map[player.mapY][player.mapX-1].canCheck()) {
-             text.innerHTML = map[player.mapY][player.mapX-1].check();
-          } 
-          break;
-      case 'East':
-          if (map[player.mapY][player.mapX+1].canCheck()) {
-             text.innerHTML = map[player.mapY][player.mapX+1].check();
-          } 
-          break;
-      default:
-        text.innerHTML = 'Your explore the area under your feet and to the ' + player.facing;
-        text.innerHTML += ', but do not find anything of interest. You note these findings in your journal ';
-        text.innerHTML += ' and press on.';
-     }
+      switch(player.facing) {
+        case 'North':
+            if (map[player.mapY-1][player.mapX].canCheck()) {
+               text.innerHTML = map[player.mapY-1][player.mapX].check();
+            } 
+            break;
+        case 'South':
+            if (map[player.mapY+1][player.mapX].canCheck()) {
+               text.innerHTML = map[player.mapY+1][player.mapX].check();
+            } 
+            break;
+        case 'West':
+            if (map[player.mapY][player.mapX-1].canCheck()) {
+               text.innerHTML = map[player.mapY][player.mapX-1].check();
+            } 
+            break;
+        case 'East':
+            if (map[player.mapY][player.mapX+1].canCheck()) {
+               text.innerHTML = map[player.mapY][player.mapX+1].check();
+            } 
+            break;
+        default:
+          text.innerHTML = 'Your explore the area under your feet and to the ' + player.facing;
+          text.innerHTML += ', but do not find anything of interest. You note these findings in your journal ';
+          text.innerHTML += ' and press on.';
+       }
+    }
   }
 
 
