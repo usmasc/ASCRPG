@@ -2,12 +2,12 @@ var horBlks = 28;
 var verBlks = 10;
 
 var w = horBlks * 20;
-var h = verBloks* 20;
+var h = verBlks* 20;
 
 
 void setup() { 
   size(w, h);
-  background(100,100,255);
+  background(1,1,1);
   //noLoop();
 }
 
@@ -81,18 +81,15 @@ void draw() {
       }
     }
   }
-  
-
-  
-  
- 
 draw_PlayerFacingDown(); 
 }
 
+/*
 void reload() {
   redraw();
   updateStats();
 }
+*/
 
 void draw_PlayerFacingDown() {
   var newx = player.x-10;
