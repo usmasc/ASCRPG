@@ -1,3 +1,28 @@
+var player = {
+    "name": "",
+    "face": 3,
+    "skin": [217, 183, 31],
+    "hair": 0,
+    "hairColor": [0, 0, 0],
+    "tshirt": 'e',
+    "tColor": [255, 0, 0],
+    'pColor': [0, 50, 0],
+    'hp': 50,
+    'mp': 10,
+    'maxhp': 50,
+    'maxmp': 10,
+    'mapX': 13,
+    'mapY': 5,
+    'xp': 0,
+    'nextLevel': 100,
+    'money': 0,
+    'facing':'South',
+    'items':['shirt','pants','shoes'],
+     x: 280,
+     y: 100
+ };
+
+
 var command = 'Enter X';
 var thingToBeEntered = 'ThingToBeEntered';
 var enteredText = '';
