@@ -1,5 +1,5 @@
 var player = {
-    "name": "Mather",
+    "name": "",
     "face": 3,
     "skin": [217, 183, 31],
     "hair": 0,
