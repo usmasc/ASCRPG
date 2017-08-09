@@ -18,7 +18,7 @@ var rug = {
   "canPass":true,
   "draw": 'rug',
   'canCheck': true,
-  'check': function() {
+   check() {
     text.innerHTML = 'No problems found here. While you are tempted, you refuse to sweep your problems under the rug.';
   }
 };
@@ -26,8 +26,8 @@ var rug = {
 var grs = {
   "canPass":true,
   "draw": 'grass',
-    'canCheck': true,
-  'check': function() {
+  'canCheck': true,
+  check() {
     text.innerHTML = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
     text.innerHTML += ' the grass in the distance looks greener now.';
   }
