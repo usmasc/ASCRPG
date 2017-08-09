@@ -245,11 +245,11 @@ void draw_bg(bgo, x,y) {
         noStroke();
         x = 20*x-20;
         y = 20*y-20;
-        for(var xi = x; xi < x+20; xi+=8) {
-          for(var yi = y; yi < y+20; yi+=8) {
+        for(var xi = x; xi < x+20; xi+=5) {
+          for(var yi = y; yi < y+20; yi+=5) {
             noStroke();
             fill(random(175,200), 0, 0);
-            rect(xi,yi,8,8);
+            rect(xi,yi,5,5);
           }
         }
         break;
@@ -258,11 +258,11 @@ void draw_bg(bgo, x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=4) {
-        for(var yi = y; yi < y+20; yi+=4) {
+    for(var xi = x; xi < x+20; xi+=5) {
+        for(var yi = y; yi < y+20; yi+=5) {
             noStroke();
             fill(random(75,100),random(225,255),random(75,100));
-            rect(xi,yi,4,4);
+            rect(xi,yi,5,5);
         }
     }
   break;
@@ -309,11 +309,11 @@ void draw_bg(bgo, x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=4) {
-        for(var yi = y; yi < y+20; yi+=4) {
+    for(var xi = x; xi < x+20; xi+=5) {
+        for(var yi = y; yi < y+20; yi+=5) {
             noStroke();
             fill(random(175,200), random(175,200), 0);
-            rect(xi,yi,4,4);
+            rect(xi,yi,5,5);
         }
     }
     break;
@@ -322,12 +322,12 @@ void draw_bg(bgo, x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=4) {
-        for(var yi = y; yi < y+20; yi+=4) {
+    for(var xi = x; xi < x+20; xi+=5) {
+        for(var yi = y; yi < y+20; yi+=5) {
             noStroke();
             //224, 166, 137
             fill(random(230,255), random(200,229), random(175,199));
-            rect(xi,yi,4,4);
+            rect(xi,yi,5,5);
         }
     }
     break;
@@ -336,11 +336,11 @@ void draw_bg(bgo, x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=4) {
-        for(var yi = y; yi < y+20; yi+=4) {
+    for(var xi = x; xi < x+20; xi+=5) {
+        for(var yi = y; yi < y+20; yi+=5) {
             noStroke();
             fill(0,random(50,200),random(50,150));
-            rect(xi,yi,4,4);
+            rect(xi,yi,5,5);
         }
     }
     break;
@@ -349,11 +349,11 @@ void draw_bg(bgo, x,y) {
     noStroke();
     x = 20*x-20;
     y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=4) {
-        for(var yi = y; yi < y+20; yi+=4) {
+    for(var xi = x; xi < x+20; xi+=5) {
+        for(var yi = y; yi < y+20; yi+=5) {
             noStroke();
             fill(random(0,50),random(0,50),random(225,255));
-            rect(xi,yi,4,4);
+            rect(xi,yi,5,5);
         }
     }
     break;
