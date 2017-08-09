@@ -126,7 +126,7 @@ function arrows() {
    thingie += '<td><button onclick="down()"> ⇓ </button></td>';
    thingie += '<td><button onclick="right()">⇒</button></td></tr></table></td>';
   
-  thingie += "<td>';
+  thingie += '<td>';
   // buttons go here
   thingie += '<button onclick="talk()">talk</button> ';
   thingie += '<button onclick="check()">check</button> ';
