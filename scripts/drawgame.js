@@ -8,45 +8,59 @@ void setup() {
   //noLoop();
 }
 
-/*
 var brk = {
   "canPass":false,
-  "draw": 'brick'
+  "draw": 'brick',
+  'canCheck': false
 };
 
 var rug = {
   "canPass":true,
-  "draw": 'rug'
+  "draw": 'rug',
+  'canCheck': true,
+  'check': function() {
+    text.innerHTML = 'No problems found here. While you are tempted, you refuse to sweep your problems under the rug.';
+  }
 };
 
 var grs = {
   "canPass":true,
-  "draw": 'grass'
+  "draw": 'grass',
+    'canCheck': true,
+  'check': function() {
+    text.innerHTML = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
+    text.innerHTML += ' the grass in the distance looks greener now.';
+  }
 };
 
 var smp = {
   'canPass':true,
-  'draw':'swamp'
+  'draw':'swamp',
+  'canCheck': false
 };
 
 var snd = {
   'canPass':true,
-  'draw':'sand'
+  'draw':'sand',
+  'canCheck': false
 };
 
 var pth = {
   'canPass':true,
-  'draw':'path'
+  'draw':'path',
+  'canCheck': false
 };
 
 var flr = {
   'canPass':true,
-  'draw':'floor'
+  'draw':'floor',
+  'canCheck': false
 };
 
 var wtr = {
   'canPass':false,
-  'draw':'water'
+  'draw':'water',
+  'canCheck': false
 };
   
 var map = [[wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
@@ -66,7 +80,7 @@ var map = [[wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,
            [wtr,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,wtr],
            [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
            [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr]];
-*/
+
 
 
 void draw() {
