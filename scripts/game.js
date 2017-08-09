@@ -211,7 +211,7 @@ function check() {
                return 0;
             } 
         default:
-          thingie = 'Your explore the area under your feet and to the ' + player.facing;
+          thingie = 'You explore the area under your feet and to the ' + player.facing;
           thingie += ', but do not find anything of interest. You note these findings in your journal ';
           thingie += ' and press on.';
           text.innerHTML = thingie;
