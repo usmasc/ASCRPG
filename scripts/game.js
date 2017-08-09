@@ -22,8 +22,9 @@ var grs = {
   "draw": 'grass',
   'canCheck': true,
   check() {
-    text.innerHTML = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
-    text.innerHTML += ' the grass in the distance looks greener now.';
+    var thingie = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
+    thingie += ' the grass in the distance looks greener now.';
+    text.innerHTML;
   }
 };
 
@@ -157,6 +158,7 @@ function arrows() {
 }
 
 function check() {
+  var thingie = '';
   if (map[player.mapY][player.mapX].canCheck) {
     text.innerHTML = map[player.mapY][player.mapX].check();
     return 0;
@@ -185,9 +187,10 @@ function check() {
                return 0;
             } 
         default:
-          text.innerHTML = 'Your explore the area under your feet and to the ' + player.facing;
-          text.innerHTML += ', but do not find anything of interest. You note these findings in your journal ';
-          text.innerHTML += ' and press on.';
+          thingie = 'Your explore the area under your feet and to the ' + player.facing;
+          thingie += ', but do not find anything of interest. You note these findings in your journal ';
+          thingie += ' and press on.';
+          text.innerHTML = thingie;
        }
     }
   }
