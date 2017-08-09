@@ -147,7 +147,7 @@ function arrows() {
    thingie += '<td><button onclick="down()"> ⇓ </button></td>';
    thingie += '<td><button onclick="right()">⇒</button></td>';
    thingie += '<td><button onclick="check()">check</button></td>';
-   thingie += '<td><button onclick="stats()">status</button></td>'
+   thingie += '<td><button onclick="stats()">status</button></td>';
    thingie += '</tr></table>';
   
    sumbit.innerHTML = thingie;
@@ -188,6 +188,6 @@ function check() {
 
 
 function start() {
-  text.innerHTML = 'In the year 201X ...';
+  text.innerHTML = 'In the year 202X ...';
   arrows();
 }
