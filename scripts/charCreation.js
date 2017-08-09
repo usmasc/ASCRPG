@@ -17,7 +17,9 @@ var player = {
     'nextLevel': 100,
     'money': 0,
      x: 280,
-     y: 100
+     y: 100,
+    'facing':'down',
+    'items':['shirt','pants','shoes']
  };
 
 var command = 'Enter X';
