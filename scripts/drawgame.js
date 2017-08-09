@@ -134,7 +134,7 @@ void reload() {
 
 void draw_PlayerFacingDown() {
   var newx = player.x-10;
-  var newy = player.x-20;
+  var newy = player.y-20;
   fill(player.skin[0],player.skin[1],player.skin[2]);
   //ears
   ellipse(newx-6-player.face*2,newy-12,4,4);
