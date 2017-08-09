@@ -132,7 +132,7 @@ function arrows() {
   thingie += '<button onclick="check()">check</button> ';
   thingie += '<button onclick="items()">items</button> ';
   thingie += '<button onclick="stats()">stats</button> ';
-  thingie += "</td></tr></table>';
+  thingie += '</td></tr></table>';
   
    sumbit.innerHTML = thingie;
 }
