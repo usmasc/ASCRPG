@@ -6,12 +6,16 @@ var sumbit = document.getElementById('submitButtonArea');
 function up() {
    if (map[player.mapY-1][player.mapX].canPass){
      player.mapY--;
+   } else {
+     text.innerHTML = 'None shall pass ' + map[player.mapY-1][player.mapX].draw;
    }
 }
 
 function down() {
    if (map[player.mapY+1][player.mapX].canPass){
      player.mapY++;
+   } else {
+     text.innerHTML = 'None shall pass ' + map[player.mapY+1][player.mapX].draw;
    }
 }
 
@@ -19,12 +23,16 @@ function down() {
 function left() {
    if (map[player.mapY][player.mapX-1].canPass){
      player.mapX--;
+   } else {
+     text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX-1].draw;
    }
 }
 
 function right() {
    if (map[player.mapY][player.mapX+1].canPass){
      player.mapX++;
+   } else {
+     text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX+1].draw;
    }
 }
 
