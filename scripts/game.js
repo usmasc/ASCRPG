@@ -161,24 +161,24 @@ function check() {
       switch(player.facing) {
         case 'North':
             if (map[player.mapY-1][player.mapX].canCheck) {
-               text.innerHTML = map[player.mapY-1][player.mapX].check();
+               map[player.mapY-1][player.mapX].check();
                return 0;
             } 
         
         case 'South':
             if (map[player.mapY+1][player.mapX].canCheck) {
-               text.innerHTML = map[player.mapY+1][player.mapX].check();
+               map[player.mapY+1][player.mapX].check();
                return 0;
             } 
 
         case 'West':
             if (map[player.mapY][player.mapX-1].canCheck) {
-               text.innerHTML = map[player.mapY][player.mapX-1].check();
+               map[player.mapY][player.mapX-1].check();
                return 0;
             } 
         case 'East':
             if (map[player.mapY][player.mapX+1].canCheck) {
-               text.innerHTML = map[player.mapY][player.mapX+1].check();
+               map[player.mapY][player.mapX+1].check();
                return 0;
             } 
         default:
