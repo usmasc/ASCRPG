@@ -360,7 +360,7 @@ void draw_bg(bgo, x,y) {
   }
 }
 
-function up() {
+void up() {
    if (map[player.mapY-1][player.mapX].canPass){
      player.mapY--;
      text.innerHTML = 'Going up.';
@@ -369,7 +369,7 @@ function up() {
    }
 }
 
-function down() {
+void down() {
    if (map[player.mapY+1][player.mapX].canPass){
      player.mapY++;
      text.innerHTML = 'Going dowm.';
@@ -379,7 +379,7 @@ function down() {
 }
 
 
-function left() {
+void left() {
    if (map[player.mapY][player.mapX-1].canPass){
      player.mapX--;
      text.innerHTML = 'Going left.';
@@ -388,7 +388,7 @@ function left() {
    }
 }
 
-function right() {
+void right() {
    if (map[player.mapY][player.mapX+1].canPass){
      text.innerHTML = 'Going right.';
      player.mapX++;
