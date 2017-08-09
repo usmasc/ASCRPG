@@ -11,81 +11,57 @@ void setup() {
   //noLoop();
 }
 
-
-var text = document.getElementById('textArea');
-
-var brk = {
-  "canPass":false,
-  "draw": 'brick',
-  'canCheck': false
+var brD = {
+  "draw": 'brick'
 };
 
-var rug = {
-  "canPass":true,
-  "draw": 'rug',
-  'canCheck': true,
-   check: void() {
-    text.innerHTML = 'No problems found here. While you are tempted, you refuse to sweep your problems under the rug.';
-  }
+var ruD = {
+  "draw": 'rug'
 };
 
-var grs = {
-  "canPass":true,
-  "draw": 'grass',
-  'canCheck': true,
-  check: void() {
-    text.innerHTML = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
-    text.innerHTML += ' the grass in the distance looks greener now.';
-  }
+var grD = {
+  "draw": 'grass'
 };
 
-var smp = {
+var smD = {
   'canPass':true,
   'draw':'swamp',
   'canCheck': false
 };
 
-var snd = {
-  'canPass':true,
+var snD = {
   'draw':'sand',
-  'canCheck': false
 };
 
-var pth = {
-  'canPass':true,
+var ptD = {
   'draw':'path',
-  'canCheck': false
 };
 
-var flr = {
-  'canPass':true,
-  'draw':'floor',
-  'canCheck': false
+var flD = {
+  'draw':'floor'
 };
 
-var wtr = {
-  'canPass':false,
-  'draw':'water',
-  'canCheck': false
+var wtD = {
+  'draw':'water'
 };
 
-var map = [[wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
-           [wtr,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,wtr],
-           [wtr,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,wtr],
-           [wtr,grs,brk,brk,brk,brk,brk,brk,grs,grs,grs,brk,brk,brk,brk,brk,brk,grs,grs,brk,brk,brk,brk,brk,brk,grs,grs,wtr],
-           [wtr,grs,brk,flr,flr,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
-           [wtr,grs,brk,flr,flr,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
-           [wtr,grs,brk,flr,flr,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
-           [wtr,grs,brk,flr,flr,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
-           [wtr,grs,brk,brk,flr,brk,brk,brk,grs,grs,grs,brk,brk,brk,rug,brk,brk,grs,grs,brk,brk,brk,brk,flr,brk,grs,grs,wtr],
-           [wtr,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,wtr],
-           [wtr,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,wtr],
-           [wtr,grs,grs,grs,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,grs,grs,grs,wtr],
-           [wtr,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,pth,pth,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,wtr],
-           [wtr,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,wtr],
-           [wtr,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,wtr],
-           [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
-           [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr]];
+var mapD = [[wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD],
+            [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
+            [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
+            [wtD,grD,brD,brD,brD,brD,brD,brD,grD,grD,grD,brD,brD,brD,brD,brD,brD,grD,grD,brD,brD,brD,brD,brD,brD,grD,grD,wtD],
+            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
+            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
+            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
+            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
+            [wtD,grD,brD,brD,flD,brD,brD,brD,grD,grD,grD,brD,brD,brD,ruD,brD,brD,grD,grD,brD,brD,brD,brD,flD,brD,grD,grD,wtD],
+            [wtD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,wtD],
+            [wtD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,wtD],
+            [wtD,grD,grD,grD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,grD,grD,grD,wtD],
+            [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
+            [wtD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,wtD],
+            [wtD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,wtD], 
+            [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD],
+            [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD]];
 
 void draw() {
   
@@ -100,7 +76,7 @@ void draw() {
       for(var x = 1; x < 29; x++) {
         mapXi = x + mapX0;
         if (mapXi > -1 && mapXi < map[y].length) {
-          draw_bg(map[mapYi][mapXi].draw,x,y);
+          draw_bg(mapD[mapYi][mapXi].draw,x,y);
         }
       }
     }
