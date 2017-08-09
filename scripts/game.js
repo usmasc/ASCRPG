@@ -62,26 +62,30 @@ var map = [[wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,
 
 function up() {
    if (map[player.mapY-1][player.mapX].canPass){
+
      player.mapY--;
      text.innerHTML = 'Going up.';
+            if (map[player.mapY-1][player.mapX] == grs){
+    text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
+  }
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY-1][player.mapX].draw;
    }
-  if (map[player.mapY-1][player.mapX] == grs){
-    text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
-  }
+
 }
 
 function down() {
    if (map[player.mapY+1][player.mapX].canPass){
+
      player.mapY++;
      text.innerHTML = 'Going dowm.';
+             if (map[player.mapY+1][player.mapX] == grs){
+    text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
+  }
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY+1][player.mapX].draw;
    }
-   if (map[player.mapY+1][player.mapX] == grs){
-    text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
-  }
+
 }
 
 
@@ -89,24 +93,26 @@ function left() {
    if (map[player.mapY][player.mapX-1].canPass){
      player.mapX--;
      text.innerHTML = 'Going left.';
+         if (map[player.mapY][player.mapX-1] == grs){
+    text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
+  }
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX-1].draw;
    }
-    if (map[player.mapY][player.mapX-1] == grs){
-    text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
-  }
+
 }
 
 function right() {
    if (map[player.mapY][player.mapX+1].canPass){
      text.innerHTML = 'Going right.';
      player.mapX++;
-   } else {
-     text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX+1].draw;
-   }
+        }
    if (map[player.mapY][player.mapX+1] == grs){
     text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
   }
+   } else {
+     text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX+1].draw;
+
 }
 
 function arrows() {
