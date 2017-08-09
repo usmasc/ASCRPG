@@ -1,8 +1,8 @@
-var horBlks = 28;
-var verBlks = 10;
+int horBlks = 28;
+int verBlks = 10;
 
-var w = horBlks * 20;
-var h = verBlks * 20;
+int w = horBlks * 20;
+int h = verBlks * 20;
 
 
 void setup() { 
