@@ -66,7 +66,7 @@ function up() {
      
      text.innerHTML = 'Going up.';
      if (map[player.mapY-1][player.mapX] == grs){
-      text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
+      text.innerHTML = 'Stay off the grass';
       }
      player.mapY--;
    } else {
@@ -81,7 +81,7 @@ function down() {
      
      text.innerHTML = 'y-=1.';
      if (map[player.mapY+1][player.mapX] == grs){
-        text.innerHTML = 'Stay off the ' + map[player.mapY+1][player.mapX].draw;
+        text.innerHTML =  'Stay off the grass';
       }
      player.mapY++;
    } else {
@@ -96,7 +96,7 @@ function left() {
      
      text.innerHTML = 'Going left.';
      if (map[player.mapY][player.mapX-1] == grs){
-        text.innerHTML = 'Stay off the ' + map[player.mapY][player.mapX-1].draw;
+        text.innerHTML =  'Stay off the grass';
      }
      player.mapX--;
    } else {
@@ -110,7 +110,7 @@ function right() {
 
      
      if (map[player.mapY][player.mapX+1] == grs){
-       text.innerHTML = 'Stay off the ' + map[player.mapY][player.mapX+1].draw;
+       text.innerHTML =  'Stay off the grass';
      }
      player.mapX++;
    } else {
@@ -119,11 +119,20 @@ function right() {
 }
 
 function arrows() {
-  
-   thingie = '<table><tr><td></td><td> <button onclick="up()"> ⇑ </button></td><td></td></tr>';
+   thingie = '<table><tr><td>';
+   // arrows
+   thingie += '<table><tr><td></td><td> <button onclick="up()"> ⇑ </button></td><td></td></tr>';
    thingie += '<tr><td><button onclick="left()">⇐</button></td>';
    thingie += '<td><button onclick="down()"> ⇓ </button></td>';
-   thingie += '<td><button onclick="right()">⇒</button></td></tr>';
+   thingie += '<td><button onclick="right()">⇒</button></td></tr></table></td>';
+  
+  thingie += "<td>';
+  // buttons go here
+  thingie += '<button onclick="talk()">talk</button> ';
+  thingie += '<button onclick="check()">check</button> ';
+  thingie += '<button onclick="items()">items</button> ';
+  thingie += '<button onclick="stats()">stats</button> ';
+  thingie += "</td></tr></table>';
   
    sumbit.innerHTML = thingie;
 }
