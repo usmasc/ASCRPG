@@ -245,11 +245,11 @@ void draw_bg(bgo, x,y) {
         noStroke();
         x = 20*x-20;
         y = 20*y-20;
-        for(var xi = x; xi < x+20; xi+=4) {
-          for(var yi = y; yi < y+20; yi+=4) {
+        for(var xi = x; xi < x+20; xi+=8) {
+          for(var yi = y; yi < y+20; yi+=8) {
             noStroke();
             fill(random(175,200), 0, 0);
-            rect(xi,yi,4,4);
+            rect(xi,yi,8,8);
           }
         }
         break;
