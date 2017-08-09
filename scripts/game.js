@@ -6,6 +6,7 @@ var sumbit = document.getElementById('submitButtonArea');
 function up() {
    if (map[player.mapY-1][player.mapX].canPass){
      player.mapY--;
+     text.innerHTML = 'Going up.';
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY-1][player.mapX].draw;
    }
@@ -14,6 +15,7 @@ function up() {
 function down() {
    if (map[player.mapY+1][player.mapX].canPass){
      player.mapY++;
+     text.innerHTML = 'Going dowm.';
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY+1][player.mapX].draw;
    }
@@ -23,6 +25,7 @@ function down() {
 function left() {
    if (map[player.mapY][player.mapX-1].canPass){
      player.mapX--;
+     text.innerHTML = 'Going left.';
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX-1].draw;
    }
@@ -30,6 +33,7 @@ function left() {
 
 function right() {
    if (map[player.mapY][player.mapX+1].canPass){
+     text.innerHTML = 'Going right.';
      player.mapX++;
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX+1].draw;
