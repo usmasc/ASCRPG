@@ -32,7 +32,7 @@ function arrows() {
    thingie = '<button onclick="up()">⇑</button><br>';
    thingie += '<button onclick="left()">⇐</button> ';
    thingie += '<button onclick="right()">⇒</button><br>';
-   thingie += '<button onclick="down()">⇒</button>';
+   thingie += '<button onclick="down()">⇓</button>';
    sumbit.innerHTML = thingie;
 }
 
