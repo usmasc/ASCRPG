@@ -174,7 +174,7 @@ function setHairColor(o) {
         player.hairColor = [230,206,168];
         break;
   }
-  reload();
+  //reload();
 }
 
 
@@ -203,7 +203,7 @@ function setShirtColor(o) {
     player.tColor = [0,0,0];
     break;
   }
-  reload();
+  //reload();
 }
 
 
@@ -222,7 +222,7 @@ function setPantsColor(o) {
     player.pColor = [0,0,0];
     break;
   }
-  reload();
+  //reload();
 }
 
 function pickPantsColor() {
@@ -270,12 +270,12 @@ function setTshirt(o) {
      player.tshirt = 'λ';
      break;
   }
-  reload();
+  //reload();
 }
 
 function setFaceShape(o) {
   player.face = o;
-  reload();
+  //reload();
 }
 
 function setSkinTone(o) {
@@ -296,7 +296,7 @@ function setSkinTone(o) {
     player.skin = [255,219,172];
     break;
   }
-  reload();
+  //reload();
 }
 
 
