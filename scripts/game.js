@@ -67,6 +67,9 @@ function up() {
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY-1][player.mapX].draw;
    }
+  if (map[player.mapY-1][player.mapX] == grs){
+    text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
+  }
 }
 
 function down() {
@@ -76,6 +79,9 @@ function down() {
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY+1][player.mapX].draw;
    }
+   if (map[player.mapY+1][player.mapX] == grs){
+    text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
+  }
 }
 
 
@@ -86,6 +92,9 @@ function left() {
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX-1].draw;
    }
+    if (map[player.mapY][player.mapX-1] == grs){
+    text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
+  }
 }
 
 function right() {
@@ -95,6 +104,9 @@ function right() {
    } else {
      text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX+1].draw;
    }
+   if (map[player.mapY][player.mapX+1] == grs){
+    text.innerHTML = 'Stay off the ' + map[player.mapY-1][player.mapX].draw;
+  }
 }
 
 function arrows() {
