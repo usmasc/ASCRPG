@@ -12,7 +12,7 @@ void setup() {
 }
 
 
-/*
+
 var brD = {
   "draw": 'brick'
 };
@@ -62,7 +62,7 @@ var mapD = [[wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD
             [wtD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,wtD], 
             [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD],
             [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD]];
-*/
+
 void draw() {
   
   var mapX0 = player.mapX - player.x/20;
@@ -81,7 +81,7 @@ void draw() {
       }
     }
   }
-draw_PlayerFacingDown(); 
+//draw_PlayerFacingDown(); 
 }
 
 
@@ -89,7 +89,7 @@ void reload() {
   redraw();
 }
 
-
+/*
 void draw_PlayerFacingDown() {
   var newx = player.x-10;
   var newy = player.y-20;
@@ -116,7 +116,7 @@ void draw_PlayerFacingDown() {
   fill(0,0,100);
   rect(newx-player.face-6-3, newy-21, 3, 2);
   */
-
+/*
   // tshirt logo
   fill(255,255,255);
   text(player.tshirt,newx-3,newy+10);
@@ -155,6 +155,7 @@ void draw_PlayerFacingDown() {
   rect(newx-5,newy+18,5,2);
   rect(newx+2,newy+18,5,2);
 }
+*/
 
 
 void draw_bg(bgo, x,y) {
