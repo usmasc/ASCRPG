@@ -8,7 +8,7 @@ void setup() {
   //noLoop();
 }
 
-
+/*
 var brk = {
   "canPass":false,
   "draw": 'brick'
@@ -66,7 +66,7 @@ var map = [[wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,
            [wtr,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,wtr],
            [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
            [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr]];
-
+*/
 
 
 void draw() {
@@ -89,38 +89,6 @@ void draw() {
   }
   
 
- /*
-  for(var y = 1; y < 11; y++) {
-     draw_bg(wtr.draw,1,y);
-     draw_bg(smp.draw,2,y);
-     draw_bg(grs.draw,3,y);
-     draw_bg(pth.draw,4,y);
-     draw_bg(brk.draw,5,y);
-     draw_bg('brick',26,y);
-     draw_bg(snd.draw,27,y);    
-     draw_bg('sand',28,y);
-   }
-  
-  draw_bg('brick',6,1);
-  draw_bg('brick',6,10);
-    draw_bg('brick',25,1);
-  draw_bg('brick',25,10);
-  
-    for(var y = 2; y < 10; y++) {
-     draw_bg(flr.draw,6,y);
-     draw_bg('floor',25,y);
-   }
-
-  for(var x = 7; x < 25; x++) {
-    draw_bg('brick',x,1);
-    draw_bg('brick',x,10);
-    draw_bg('floor',x,9);
-    draw_bg('floor',x,2);
-    for(var y = 3; y < 9; y++) {
-      draw_bg(map[4][3].draw,x,y);
-    }
-  }
-  */
   
   
  
