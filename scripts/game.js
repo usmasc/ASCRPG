@@ -13,7 +13,8 @@ var rug = {
   "draw": 'rug',
   'canCheck': true,
    check: function() {
-    text.innerHTML = 'No problems found here. While you are tempted, you refuse to sweep your problems under the rug.';
+    var thingie = 'No problems found here. While you are tempted, you refuse to sweep your problems under the rug.';
+    text.innerHTML = thingie;
   }
 };
 
@@ -24,7 +25,7 @@ var grs = {
   check: function() {
     var thingie = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
     thingie += ' the grass in the distance looks greener now.';
-    text.innerHTML;
+    text.innerHTML = thingie;
   }
 };
 
