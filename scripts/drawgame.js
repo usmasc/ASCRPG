@@ -12,7 +12,7 @@ void setup() {
 }
 
 
-
+/*
 var brD = {
   "draw": 'brick'
 };
@@ -62,7 +62,7 @@ var mapD = [[wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD
             [wtD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,wtD], 
             [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD],
             [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD]];
-
+*/
 void draw() {
   
   var mapX0 = player.mapX - player.x/20;
@@ -76,7 +76,7 @@ void draw() {
       for(var x = 1; x <= horBlks; x++) {
         mapXi = x + mapX0;
         if (mapXi > -1 && mapXi < map[y].length) {
-          draw_bg(mapD[mapYi][mapXi].draw,x,y);
+          draw_bg(map[mapYi][mapXi].draw,x,y);
         }
       }
     }
