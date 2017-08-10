@@ -130,7 +130,7 @@ function down() {
      player.mapY++;
 
    } else {
-     text.innerHTML = 'None shall pass ' + map[player.mapY+1][player.mapX].draw;
+     text.innerHTML = 'Find another route.';
    }
 
 }
@@ -145,7 +145,7 @@ function left() {
      }
      player.mapX--;
    } else {
-     text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX-1].draw;
+     text.innerHTML = 'Find another route.';
    }
 
 }
@@ -158,8 +158,8 @@ function right() {
        text.innerHTML =  'Stay off the grass';
      }
      player.mapX++;
-   } else {
-     text.innerHTML = 'None shall pass ' + map[player.mapY][player.mapX+1].draw;
+   } else {     
+     text.innerHTML = 'Find another route.';
    }
 
 }
