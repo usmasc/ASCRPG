@@ -255,6 +255,24 @@ function talk() {
     }
   }
 
+function items() {
+  var thingie = '';
+  for (i = 0; i < player.items.length; i++) {
+    thingie += '<button onclick="item(' + i + ')">' + player.items[i].item + ': ' + player.items[i].n + '</button> ';
+  }
+  sumbit.innerHTML = thingie;
+}
+
+function item(i) {
+  var thingie = player.items[i].item + ': ' + player.items[i].n + '<br>';
+  thingie += player.items[i].desc;
+  text.innerHTML = thingie;
+  thingie = '<table><tr><td><button onclick="use(' + i ')'">Use</button></td>';
+  thingie += '<td><button onclick="arrows()">Back</button></td></tr></table>';
+  sumbit.innerHTML = thingie;
+}
+
+
 
 
 function start() {
