@@ -273,9 +273,11 @@ function item(i) {
   sumbit.innerHTML = thingie;
 }
 
-
-
-
+function stats() {
+  thingie = '<table><tr><td>defense:</td><td>' + player.def + '</td></tr>';
+  thingie += '<td>evasion:</td><td>' + player.eva + '</td></tr>';
+  text.innerHTML = thingie;
+}
 
 
 function start() {
