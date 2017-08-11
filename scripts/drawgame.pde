@@ -45,7 +45,7 @@ var wtD = {
   'draw':'water'
 };
 
-var mapD = [[wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD],
+var mapD = [[wtr,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD],
             [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
             [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
             [wtD,grD,brD,brD,brD,brD,brD,brD,grD,grD,grD,brD,brD,brD,brD,brD,brD,grD,grD,brD,brD,brD,brD,brD,brD,grD,grD,wtD],
@@ -72,11 +72,11 @@ void draw() {
   
   for(var y = 1; y <= verBlks; y++) {
     mapYi = y + mapY0;
-    if (mapYi > -1 && mapYi < map.length) {
+    if (mapYi > -1 && mapYi < mapD.length) {
       for(var x = 1; x <= horBlks; x++) {
         mapXi = x + mapX0;
-        if (mapXi > -1 && mapXi < map[y].length) {
-          draw_bg(map[mapYi][mapXi].draw,x,y);
+        if (mapXi > -1 && mapXi < mapD[y].length) {
+          draw_bg(mapD[mapYi][mapXi].draw,x,y);
         }
       }
     }
