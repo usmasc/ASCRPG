@@ -63,6 +63,8 @@ var mapD = [[wtr,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD
 void draw() {
 
   draw_bg(wtr['draw'],1,1);
+  draw_bg(wtr['draw'],1,2);
+  draw_bg(grs['draw'],1,3);
   /*
   int mapX0 = player.mapX - player.x/20;
   int mapY0 = player.mapY - player.y/20;
