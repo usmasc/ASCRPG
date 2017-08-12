@@ -143,11 +143,11 @@ var Frd = {
   'canTalk': true,
   'canCheck': true,
   check() {
-    var thingie = this.name + ": Hey, watch where you're touching";
+    var thingie = "Fred Paz, the village elder, looks worried.";
     text.innerHTML = thingie;
   },
   talk() {
-    var thingie = this.name + ": Hello, " + player.name + ". It is time that I tell you a story of grave importance.";
+    var thingie = "Fred Paz: Hello, " + player.name + ". It is time that I tell you a story of grave importance.";
     thingie += " Care to listen?";
     text.innerHTML = thingie;
     var buttons = '<button onclick="dialog(1)">Yes</button> <button onclick="dialog(2)">No</button>';
