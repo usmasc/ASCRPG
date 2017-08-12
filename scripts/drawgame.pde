@@ -61,7 +61,9 @@ var mapD = [[wtr,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD
             [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD]];
 
 void draw() {
-  
+
+  draw_bg(map[0][0].draw,1,1);
+  /*
   int mapX0 = player.mapX - player.x/20;
   int mapY0 = player.mapY - player.y/20;
   int yi = 1;
@@ -79,6 +81,7 @@ void draw() {
       }
     }
   }
+  */
  
 draw_PlayerFacingDown(); 
 }
