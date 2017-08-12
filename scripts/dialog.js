@@ -41,10 +41,10 @@ function dialog(n) {
       thingie += 'the electronic signals from these devices to convince people that they do not need to know how to do math. ';
       thingie += 'This has created a dire problem for our future. It will not be long before the aliens take over.';
       text.innerHTML = thingie;
-      buttons = '<button onclick="dialog(4)">Continue</button> <button onclick="dialog(2)">Ask to be dismissed.</button>';
+      buttons = '<button onclick="dialog(3.1)">Continue</button> <button onclick="dialog(2)">Ask to be dismissed.</button>';
       sumbit.innerHTML = buttons;
       break;
-    case 3:
+    case 3.1:
       thingie = "Fred Paz: We must work to overcome the alien's brainwashing. ";
       thingie += 'Unfortunately, the people who dearly need our help will fight against our efforts.';
       thingie += 'Like the incredibly long fight scene in the movie <em>They Live</em>, the most difficult fight will be ';
@@ -59,13 +59,13 @@ function dialog(n) {
     case 4:
       thingie = "Fred Paz: No, I am not going to give you a pair of sunglasses. ";
       thingie += "What gave you that idea? ";
-      thingie += 'However, I do have a business card with the url for <a href="https://withmathican.com" target="_blank">';
+      thingie += 'However, I do have a business card with the url for <a href="http://withMathIcan.com" target="_blank">';
 
-      thingie += 'https:withmathican.com</a><br>';
+      thingie += 'withmathican.com</a><br>';
       thingie += '(You recieve the With Math I Can Business Card)<br>';
       player.items.push({'item':'WMIC card',
         'n':1,
-        'desc':'A business card with the <a href="https://withmathican.com" target="_blank">https:withmathican.com</a> url. You can carry it in your right hand. Grants 9 attack, 6 defense, and 6 evasion.',
+        'desc':'A business card with the <a href="https://withmathican.com" target="_blank">withMathIcan.com</a> url. You can carry it in your right hand. Grants 9 attack, 6 defense, and 6 evasion.',
         'atk':9,
         'def':6,
         'eva':6,
