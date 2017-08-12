@@ -4,14 +4,11 @@ int verBlks = 10;
 int w = horBlks * 20;
 int h = verBlks * 20;
 
-
 void setup() { 
   size(w, h);
   background(1,1,1);
   //noLoop();
 }
-
-
 
 var brD = {
   "draw": 'brick'
@@ -69,12 +66,13 @@ void draw() {
   var mapY0 = player.mapY - player.y/20;
   var yi = 1;
   var xi = 1;
+  var mapRows = 16;
   
   
   
   for(var y = 1; y <= verBlks; y++) {
     yi = y + mapY0;
-    if (map.hasOwnProperty(yi)) {
+    if (yi > -1 && yi <= mapRows) {
       for(var x = 1; x <= horBlks; x++) {
         xi = x + mapX0;
         if (xi > -1 && xi < map[yi].length) {
