@@ -170,12 +170,12 @@ function item(i) {
 }
 
 function stats() {
-  thingie = '<table><tr><td>attack:</td><td>' + player.atk + '</td><td>Head:</td><td>'+player.head.item+'</td></tr>';
-  thingie = '<td>defense:</td><td>' + player.def + '</td><td>Left hand:</td><td>'+player.leftHand.item+'</td></tr>';
-  thingie += '<td>evasion:</td><td>' + player.eva + '</td><td>Body:</td><td>'+player.torso.item+'</td></tr>';
-  thingie += '<td></td><td></td><td>Right hand:</td><td>'+player.rightHand.item+'</td></tr>';
-  thingie += '<td></td><td></td><td>Legs:</td><td>'+player.legs.item+'</td></tr>';
-  thingie += '<td></td><td></td><td>Legs:</td><td>'+player.feet.item+'</td></tr>';
+  thingie = '<table><tr><td> attack: </td><td>' + player.atk + ' </td><td> Head: </td><td>'+player.head.item+' </td></tr>';
+  thingie = '<tr><td> defense: </td><td>' + player.def + ' </td><td> Left hand: </td><td> '+player.leftHand.item+' </td></tr>';
+  thingie += '<tr><td> evasion: </td><td>' + player.eva + ' </td><td> Body: </td><td> '+player.torso.item+' </td></tr>';
+  thingie += '<tr><td></td><td></td><td>Right hand:</td><td>'+player.rightHand.item+'</td></tr>';
+  thingie += '<tr><td></td><td></td><td> Legs: </td><td> '+player.legs.item+' </td></tr>';
+  thingie += '<tr><td></td><td></td><td> Feet: </td><td> '+player.feet.item+' </td></tr>';
   text.innerHTML = thingie;
 }
 
