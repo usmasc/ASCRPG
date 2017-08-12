@@ -9,7 +9,7 @@ void setup() {
   background(1,1,1);
   //noLoop();
 }
-
+/*
 var brD = {
   "draw": 'brick'
 };
@@ -41,24 +41,26 @@ var flD = {
 var wtD = {
   'draw':'water'
 };
+*/
 
-var mapD = [[wtr,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD],
-            [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
-            [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
-            [wtD,grD,brD,brD,brD,brD,brD,brD,grD,grD,grD,brD,brD,brD,brD,brD,brD,grD,grD,brD,brD,brD,brD,brD,brD,grD,grD,wtD],
-            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
-            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
-            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
-            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
-            [wtD,grD,brD,brD,flD,brD,brD,brD,grD,grD,grD,brD,brD,brD,ruD,brD,brD,grD,grD,brD,brD,brD,brD,flD,brD,grD,grD,wtD],
-            [wtD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,wtD],
-            [wtD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,wtD],
-            [wtD,grD,grD,grD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,grD,grD,grD,wtD],
-            [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
-            [wtD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,wtD],
-            [wtD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,wtD], 
-            [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD],
-            [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD]];
+var mapD = [
+ [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
+ [wtr,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,wtr],
+ [wtr,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,wtr],
+ [wtr,grs,brk,brk,brk,brk,brk,brk,grs,grs,grs,brk,brk,brk,brk,brk,brk,grs,grs,brk,brk,brk,brk,brk,brk,grs,grs,wtr],
+ [wtr,grs,brk,flr,flr,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
+ [wtr,grs,brk,flr,Frd,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
+ [wtr,grs,brk,flr,flr,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
+ [wtr,grs,brk,flr,flr,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
+ [wtr,grs,brk,brk,flr,brk,brk,brk,grs,grs,grs,brk,brk,brk,rug,brk,brk,grs,grs,brk,brk,brk,brk,flr,brk,grs,grs,wtr],
+ [wtr,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,wtr],
+ [wtr,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,wtr],
+ [wtr,grs,grs,grs,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,grs,grs,grs,wtr],
+ [wtr,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,pth,pth,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,wtr],
+ [wtr,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,wtr],
+ [wtr,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,wtr],
+ [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
+ [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr]];
 
 void draw() {
   /*
