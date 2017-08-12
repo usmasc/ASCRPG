@@ -65,20 +65,20 @@ var mapD = [[wtr,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD
 
 void draw() {
   
-  int mapX0 = player.mapX - player.x/20;
-  int mapY0 = player.mapY - player.y/20;
-  int mapYi = 1;
-  int mapXi = 1;
+  var mapX0 = player.mapX - player.x/20;
+  var mapY0 = player.mapY - player.y/20;
+  var yi = 1;
+  var xi = 1;
   
   
   
-  for(int y = 1; y <= verBlks; y++) {
-    mapYi = y + mapY0;
-    if (map.hasOwnProperty(mapYi)) {
-      for(int x = 1; x <= horBlks; x++) {
-        mapXi = x + mapX0;
-        if (mapXi > -1 && mapXi < map[mapYi].length) {
-          draw_bg(map[mapYi][mapXi].draw,x,y);
+  for(var y = 1; y <= verBlks; y++) {
+    yi = y + mapY0;
+    if (map.hasOwnProperty(yi)) {
+      for(var x = 1; x <= horBlks; x++) {
+        xi = x + mapX0;
+        if (xi > -1 && xi < map[yi].length) {
+          draw_bg(map[yi][xi].draw,x,y);
         }
       }
     }
