@@ -12,6 +12,7 @@ function dialog(n) {
       thingie += 'Unfortunately, the aliens have hacked into our cell phone and mobile devices and have been using the ';
       thingie += 'electronic signals from these devices to convince people that they do not need to know how to do math.';
       thingie += 'This has created a dire problem for our future. It will not be long before the aliens can take over.';
+      text.innerHTML = thingie;
       break;
     case 2:
       thingie = 'Fred Paz: That is understandable my dear ' + player.name + '. Please return when you are ready.';
