@@ -75,7 +75,7 @@ void draw() {
     if (map.hasOwnProperty(mapYi)) {
       for(var x = 1; x <= horBlks; x++) {
         mapXi = x + mapX0;
-        if (mapXi > -1 && mapXi < map[y].length) {
+        if (mapXi > -1 && mapXi < map[Yi].length) {
           draw_bg(map[mapYi][mapXi].draw,x,y);
         }
       }
