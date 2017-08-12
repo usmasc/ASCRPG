@@ -65,7 +65,8 @@ void draw() {
   draw_bg(wtr['draw'],1,1);
   draw_bg(wtr['draw'],1,2);
   draw_bg(grs['draw'],1,3);
-  draw_bg(map[1][1]['draw'],2,2);
+  fill(255,255,255);
+  text(map[1][1]['draw'],20,20);
   /*
   int mapX0 = player.mapX - player.x/20;
   int mapY0 = player.mapY - player.y/20;
