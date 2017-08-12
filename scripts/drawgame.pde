@@ -70,7 +70,7 @@ void draw() {
   int mapYi = 1;
   int mapXi = 1;
   
-  
+  /*
     for(int y = 1; y <= verBlks; y++) {
     mapYi = y + mapY0;
     if (map.hasOwnProperty(y-1)) {
@@ -82,8 +82,9 @@ void draw() {
       }
     }
   }
+  */
   
-  /*
+  
   for(int y = 1; y <= verBlks; y++) {
     mapYi = y + mapY0;
     if (map.hasOwnProperty(mapYi)) {
@@ -95,7 +96,7 @@ void draw() {
       }
     }
   }
-  */
+ 
 draw_PlayerFacingDown(); 
 }
 
