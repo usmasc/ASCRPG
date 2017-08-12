@@ -96,7 +96,7 @@ function dialog(n) {
       break;
         
   case 6:
-       thingie = '(You carry your With Math I Can card in your right hand.)';
+       thingie = '(You carry your With Math I Can card in your right hand.)<br>';
        player.rightHand = {'item':'WMIC card','atk':9,'def':6,'eva':6};
        player.atk = player.leftHand.atk + player.rightHand.atk;
        player.def = player.head.def + player.leftHand.def + player.rightHand.def + player.torso.def;
