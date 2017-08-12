@@ -67,6 +67,7 @@ var player = {
     'def': 3,
     'eva': 1,
     'atk': 1,
+     'questLog':[],
      x: 280,
      y: 100
  };
