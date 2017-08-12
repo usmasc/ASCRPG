@@ -171,17 +171,17 @@ function item(i) {
 
 function stats() {
   // line1
-  thingie = '<table><tr><td> attack: </td><td>' + player.atk + '&nbsp;&nbsp;</td>';
-  thingie += '<td>&nbsp;&nbsp;Head: </td><td>' + player.head.item + ' &nbsp;&nbsp;</td>';
-  thingie += '<td>&nbsp;&nbsp;Body: </td><td> '+ player.torso.item + ' </td></tr>';
+  thingie = '<table><tr><td> Attack: </td><td>' + player.atk.toString() + ' </td>';
+  thingie += '<td> Head: </td><td>' + player.head.item + ' </td>';
+  thingie += '<td> Body: </td><td> '+ player.torso.item + '</td></tr>';
   // line 2
-  thingie += '<tr><td> defense: </td><td>' + player.def + '&nbsp;&nbsp;</td>';
-  thingie += '<td>&nbsp;&nbsp;Left hand: </td><td> ' + player.leftHand.item + ' &nbsp;&nbsp;</td>';
-  thingie += '<td>&nbsp;&nbsp;Right hand:</td><td>' + player.rightHand.item + '</td></tr>';
+  thingie += '<tr><td> Defense: </td><td>' + player.def.toString()  + ' </td>';
+  thingie += '<td> Left hand: </td><td> ' + player.leftHand.item + ' </td>';
+  thingie += '<td> Right hand: </td><td>' + player.rightHand.item + '</td></tr>';
   // line 3
-   thingie += '<tr><td> evasion: </td><td>' + player.eva + '&nbsp;&nbsp;</td>;
-  thingie += '<td>&nbsp;&nbsp;Legs: </td><td> ' + player.legs.item + ' &nbsp;&nbsp;</td>';
-  thingie += '<td>&nbsp;&nbsp;Feet: </td><td> ' + player.feet.item + ' </td></tr></table>';
+  thingie += '<tr><td> Evasion: </td><td>' + player.eva.toString()  + ' </td>;
+  thingie += '<td> Legs: </td><td> ' + player.legs.item + ' </td>';
+  thingie += '<td> Feet: </td><td> ' + player.feet.item + ' </td></tr></table>';
   text.innerHTML = thingie;
 }
 
