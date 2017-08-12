@@ -23,7 +23,7 @@ function dialog(n) {
   var buttons = '';
   switch(n) {
     case 1:
-      thingie = 'Fred Paz: ' + player.name + ', our world has been invaded by aliens. They have been here for centuries. ';
+      thingie = 'Fred Paz: Our world has been invaded by aliens. They have been here for centuries. ';
       thingie += 'They have brainwashed much of the populus to believe that they are not capable of doing mathematics. ';
       thingie += 'We have been fortunate enough to have a segment of the population that has been immune to this sinister ';
       thingie += 'plot, and we were able to carry on without too many hiccups in the past.';
@@ -32,7 +32,7 @@ function dialog(n) {
       sumbit.innerHTML = buttons;
       break;
     case 2:
-      thingie = 'Fred Paz: That is understandable my dear ' + player.name + '. Please return when you are ready.';
+      thingie = 'Fred Paz: That is understandable. Please return when you are ready.';
       text.innerHTML = thingie;
       arrows();
       break;
@@ -94,6 +94,7 @@ function dialog(n) {
       buttons = '<button onclick="dialog(5)">Continue</button>';
       sumbit.innerHTML = buttons;
       break;
+        
   case 6:
        thingie = '(You carry your With Math I Can card in your right hand.)';
        player.rightHand = {'item':'WMIC card','atk':9,'def':6,'eva':6};
@@ -102,6 +103,7 @@ function dialog(n) {
        player.def += player.legs.def + player.feet.def;
        player.eva = player.head.eva + player.leftHand.eva + player.rightHand.eva + player.torso.eva;
        player.eva += player.legs.eva + player.feet.eva;
+        
    case 7:
        thingie += 'Fred Paz: Alright, now get out there and change some minds about math.';
        text.innerHTML = thingie;
@@ -111,7 +113,6 @@ function dialog(n) {
         thingie = 'Error: My name is Error.';
         text.innerHTML = thingie;
         arrows();
-        break;
   }
   
 }
