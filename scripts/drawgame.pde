@@ -67,7 +67,8 @@ void draw() {
   draw_bg(grs['draw'],1,3);
   fill(255,255,255);
   text(wtr['draw'],20,20);
-    text(map[0][0].draw,20,40);
+  text(grs.draw,20,20);
+  text(map.rows,20,40);
   /*
   int mapX0 = player.mapX - player.x/20;
   int mapY0 = player.mapY - player.y/20;
@@ -77,7 +78,7 @@ void draw() {
   
   for(int y = 1; y <= verBlks; y++) {
     yi = y + mapY0;
-    if (yi > -1 && yi < map.rows) {
+    if (yi > -1 && yi < map['rows']) {
       for(int x = 1; x <= horBlks; x++) {
         xi = x + mapX0;
         if (xi > -1 && xi < map[yi].length) {
