@@ -7,11 +7,11 @@ var sumbit = document.getElementById('submitButtonArea');
 
 
 function up() {
-   if (map[player.mapY-1][player.mapX].canPass){
+   if (map[(player.mapY-1).toString()][player.mapX].canPass){
      player.facing = 'North';
      
      text.innerHTML = 'facing '+player.facing;
-     if (map[player.mapY-1][player.mapX] == grs){
+     if (map[(player.mapY-1).toString()][player.mapX] == grs){
       text.innerHTML = 'Stay off the grass';
       }
      player.mapY--;
@@ -22,11 +22,11 @@ function up() {
 }
 
 function down() {
-   if (map[player.mapY+1][player.mapX].canPass){
+   if (map[(player.mapY+1).toString()][player.mapX].canPass){
 
      player.facing = 'South';
      text.innerHTML = 'facing '+player.facing;
-     if (map[player.mapY+1][player.mapX] == grs){
+     if (map[(player.mapY+1).toString()][player.mapX] == grs){
         text.innerHTML =  'Stay off the grass';
       }
      player.mapY++;
@@ -39,10 +39,10 @@ function down() {
 
 
 function left() {
-   if (map[player.mapY][player.mapX-1].canPass){
+   if (map[player.mapY.toString()][player.mapX-1].canPass){
      player.facing = 'West';    
      text.innerHTML = 'facing '+player.facing;
-     if (map[player.mapY][player.mapX-1] == grs){
+     if (map[player.mapY.toString()][player.mapX-1] == grs){
         text.innerHTML =  'Stay off the grass';
      }
      player.mapX--;
@@ -53,10 +53,10 @@ function left() {
 }
 
 function right() {
-   if (map[player.mapY][player.mapX+1].canPass){
+   if (map[player.mapY.toString()][player.mapX+1].canPass){
      player.facing = 'East';
      text.innerHTML = 'facing '+player.facing;
-     if (map[player.mapY][player.mapX+1] == grs){
+     if (map[player.mapY.toString()][player.mapX+1] == grs){
        text.innerHTML =  'Stay off the grass';
      }
      player.mapX++;
@@ -85,31 +85,31 @@ function arrows() {
 
 function check() {
   var thingie = '';
-  if (map[player.mapY][player.mapX].canCheck) {
-    map[player.mapY][player.mapX].check();
+  if (map[player.mapY.toString()][player.mapX].canCheck) {
+    map[player.mapY.toString()][player.mapX].check();
     return 0;
   } else {
       switch(player.facing) {
         case 'North':
-            if (map[player.mapY-1][player.mapX].canCheck) {
-               map[player.mapY-1][player.mapX].check();
+            if (map[(player.mapY-1).toString()][player.mapX].canCheck) {
+               map[(player.mapY-1).toString()][player.mapX].check();
                return 0;
             } 
         
         case 'South':
-            if (map[player.mapY+1][player.mapX].canCheck) {
-               map[player.mapY+1][player.mapX].check();
+            if (map[(player.mapY+1).toString()][player.mapX].canCheck) {
+               map[(player.mapY+1).toString()][player.mapX].check();
                return 0;
             } 
 
         case 'West':
-            if (map[player.mapY][player.mapX-1].canCheck) {
-               map[player.mapY][player.mapX-1].check();
+            if (map[(player.mapY).toString()][player.mapX-1].canCheck) {
+               map[(player.mapY).toString()][player.mapX-1].check();
                return 0;
             } 
         case 'East':
-            if (map[player.mapY][player.mapX+1].canCheck) {
-               map[player.mapY][player.mapX+1].check();
+            if (map[player.mapY.toString()][player.mapX+1].canCheck) {
+               map[player.mapY.toString()][player.mapX+1].check();
                return 0;
             } 
         default:
@@ -123,31 +123,31 @@ function check() {
 
 function talk() {
   var thingie = '';
-  if (map[player.mapY][player.mapX].canTalk) {
-    map[player.mapY][player.mapX].talk();
+  if (map[player.mapY.toString()][player.mapX].canTalk) {
+    map[player.mapY.toString()][player.mapX].talk();
     return 0;
   } else {
       switch(player.facing) {
         case 'North':
-            if (map[player.mapY-1][player.mapX].canTalk) {
-               map[player.mapY-1][player.mapX].talk();
+            if (map[(player.mapY-1).toString()][player.mapX].canTalk) {
+               map[(player.mapY-1).toString()][player.mapX].talk();
                return 0;
             } 
         
         case 'South':
-            if (map[player.mapY+1][player.mapX].canTalk) {
-               map[player.mapY+1][player.mapX].talk();
+            if (map[(player.mapY+1).toString()][player.mapX].canTalk) {
+               map[(player.mapY+1).toString()][player.mapX].talk();
                return 0;
             } 
 
         case 'West':
-            if (map[player.mapY][player.mapX-1].canTalk) {
-               map[player.mapY][player.mapX-1].talk();
+            if (map[player.mapY.toString()][player.mapX-1].canTalk) {
+               map[player.mapY.toString()][player.mapX-1].talk();
                return 0;
             } 
         case 'East':
-            if (map[player.mapY][player.mapX+1].canTalk) {
-               map[player.mapY][player.mapX+1].talk();
+            if (map[player.mapY.toString()][player.mapX+1].canTalk) {
+               map[player.mapY.toString()][player.mapX+1].talk();
                return 0;
             } 
         default:
