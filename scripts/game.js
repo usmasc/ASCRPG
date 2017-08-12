@@ -1,11 +1,6 @@
 var text = document.getElementById('textArea');
 var sumbit = document.getElementById('submitButtonArea');
 
-
-
-
-
-
 function up() {
    if (map[(player.mapY-1).toString()][player.mapX].canPass){
      player.facing = 'North';
@@ -36,7 +31,6 @@ function down() {
    }
 
 }
-
 
 function left() {
    if (map[player.mapY.toString()][player.mapX-1].canPass){
@@ -176,8 +170,12 @@ function item(i) {
 }
 
 function stats() {
-  thingie = '<table><tr><td>defense:</td><td>' + player.def + '</td></tr>';
-  thingie += '<td>evasion:</td><td>' + player.eva + '</td></tr>';
+  thingie = '<table><tr><td>attack:</td><td>' + player.atk + '</td><td>Head:</td><td>'+player.head.item+'</td></tr>';
+  thingie = '<td>defense:</td><td>' + player.def + '</td><td>Left hand:</td><td>'+player.leftHand.item+'</td></tr>';
+  thingie += '<td>evasion:</td><td>' + player.eva + '</td><td>Body:</td><td>'+player.torso.item+'</td></tr>';
+  thingie += '<td></td><td></td><td>Right hand:</td><td>'+player.rightHand.item+'</td></tr>';
+  thingie += '<td></td><td></td><td>Legs:</td><td>'+player.legs.item+'</td></tr>';
+  thingie += '<td></td><td></td><td>Legs:</td><td>'+player.feet.item+'</td></tr>';
   text.innerHTML = thingie;
 }
 
