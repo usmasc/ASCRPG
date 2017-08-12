@@ -70,7 +70,7 @@ void draw() {
   draw_bg(pth['draw'],1,6);
   draw_bg(flr['draw'],1,7);
   draw_bg(Frd['draw'],1,8);
-  draw_bg(map.0[9].draw,1,9);
+  draw_bg(map['8'][0].draw,1,9);
   fill(255,255,255);
   text(wtr['draw'],20,20);
   text(rug.draw,20,40);
