@@ -209,7 +209,6 @@ void draw_floor(x,y) {
     //stroke(30, 0, 0);
     fill(random(100,125),random(75,100),0);
     rect(xi,y+14,4,6);
-    break;
 }
 
 void draw_npc(x,y,skin,clothes,cc,hair,hairCol) {
@@ -311,10 +310,12 @@ void draw_bg(bgo, x,y) {
       
   case 'floor':
     draw_floor(x,y);
+    break;
     
   case 'Fred':
     draw_floor(x,y);
     draw_npc(x,y,[217, 183, 31],'cloak',[150,150,150],'bald',[100,100,100]);
+    break;
       
   case 'path':
     noStroke();
