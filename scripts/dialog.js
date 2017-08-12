@@ -63,7 +63,7 @@ function dialog(n) {
 
       thingie += 'https:withmathican.com</a><br>';
       thingie += '(You recieve the With Math I Can Business Card)<br>';
-      player.item.push({'item':'WMIC card',
+      player.items.push({'item':'WMIC card',
         'n':1,
         'desc':'A business card with the <a href="https://withmathican.com" target="_blank">https:withmathican.com</a> url. You can carry it in your right hand. Grants 9 attack, 6 defense, and 6 evasion.',
         'atk':9,
@@ -77,6 +77,7 @@ function dialog(n) {
            player.def += player.legs.def + player.feet.def;
            player.eva = player.head.eva + player.leftHand.eva + player.rightHand.eva + player.torso.eva;
            player.eva += player.legs.eva + player.feet.eva;
+         }
       });
       thingie += " Would you like to equip it?";
       text.innerHTML = thingie;
@@ -106,6 +107,11 @@ function dialog(n) {
        text.innerHTML = thingie;
        arrows();
        break;
+     default:
+        thingie = 'Error: My name is Error.';
+        text.innerHTML = thingie;
+        arrows();
+        break;
   }
   
 }
