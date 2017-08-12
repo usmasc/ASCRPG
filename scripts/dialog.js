@@ -10,8 +10,8 @@ function dialog(n) {
       thingie += 'We have been fortunate enough to have a segment of the population that has been immune to this sinister ';
       thingie += 'plot, and we were able to carry on without too many hiccups in the past.';
       thingie += 'Unfortunately, the aliens have hacked into our cell phone and mobile devices and have been using the ';
-      thingie += 'electronic signals from these devices to convince people that they do not need to know how to do math.';
-      thingie += 'This has created a dire problem for our future. It will not be long before the aliens can take over.';
+      thingie += 'electronic signals from these devices to convince people that they do not need to know how to do math. ';
+      thingie += 'This has created a dire problem for our future. It will not be long before the aliens take over.';
       text.innerHTML = thingie;
       break;
     case 2:
