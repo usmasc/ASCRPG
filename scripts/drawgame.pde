@@ -61,7 +61,7 @@ var mapD = [[wtr,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD
             [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD]];
 
 void draw() {
-
+  /*
   draw_bg(wtr['draw'],1,1);
   draw_bg(rug['draw'],1,2);
   draw_bg(grs['draw'],1,3);
@@ -75,9 +75,9 @@ void draw() {
   text(wtr['draw'],20,20);
   text(rug.draw,20,40);
   text(map.test,30,40);
-  
+  */
 
-  /*
+ 
   int mapX0 = player.mapX - player.x/20;
   int mapY0 = player.mapY - player.y/20;
   int yi = 1;
@@ -86,16 +86,16 @@ void draw() {
   
   for(int y = 1; y <= verBlks; y++) {
     yi = y + mapY0;
-    if (yi > -1 && yi < map['rows']) {
+    if (yi > -1 && yi < mapD.length) {
       for(int x = 1; x <= horBlks; x++) {
         xi = x + mapX0;
-        if (xi > -1 && xi < map[yi].length) {
-          draw_bg(map[yi][xi].draw,x,y);
+        if (xi > -1 && xi < mapD[yi].length) {
+          draw_bg(mapD[yi][xi].draw,x,y);
         }
       }
     }
   }
-  */
+ 
  
 draw_PlayerFacingDown(); 
 }
