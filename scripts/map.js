@@ -77,11 +77,15 @@ var Frd = {
     text.innerHTML = thingie;
   },
   talk() {
+    if (player.questLog.indexOf('Talked to Fred Paz.') === -1) {
     var thingie = "Fred Paz: Hello, " + player.name + ". It is time that I tell you a story of grave importance.";
     thingie += " Care to listen?";
     text.innerHTML = thingie;
     var buttons = '<button onclick="dialog(1)">Yes</button> <button onclick="dialog(2)">No</button>';
     sumbit.innerHTML = buttons;
+    } else {
+      dialog(7);
+    }
   }
 };
   
