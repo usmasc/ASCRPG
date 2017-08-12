@@ -37,7 +37,7 @@ function dialog(n) {
       arrows();
       break;
     case 3:
-      thingie = 'Fred Paz: Unfortunately, the aliens have hacked into our cell phone and mobile devices and have been using ';
+      thingie = 'Fred Paz: Unfortunately, the aliens have hacked into our cell phones and mobile devices and have been using ';
       thingie += 'the electronic signals from these devices to convince people that they do not need to know how to do math. ';
       thingie += 'This has created a dire problem for our future. It will not be long before the aliens take over.';
       text.innerHTML = thingie;
