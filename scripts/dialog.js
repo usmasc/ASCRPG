@@ -1,6 +1,23 @@
 var text = document.getElementById('textArea');
 var sumbit = document.getElementById('submitButtonArea');
 
+function arrows() {
+   thingie = '<table><tr><td>';
+   // row 1
+   thingie += '<table><tr><td></td><td> <button onclick="up()"> ⇑ </button></td><td></td>';
+   thingie += '<td><button onclick="talk()">talk</button></td>';
+   thingie += '<td><button onclick="items()">items</button></td></tr>';
+   // row 2
+   thingie += '<tr><td><button onclick="left()">⇐</button></td>';
+   thingie += '<td><button onclick="down()"> ⇓ </button></td>';
+   thingie += '<td><button onclick="right()">⇒</button></td>';
+   thingie += '<td><button onclick="check()">check</button></td>';
+   thingie += '<td><button onclick="stats()">status</button></td>';
+   thingie += '</tr></table>';
+  
+   sumbit.innerHTML = thingie;
+}
+
 function dialog(n) {
   var thingie = '';
   var buttons = '';
