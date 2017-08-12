@@ -88,10 +88,10 @@ function dialog(n) {
   
   case 5:
       thingie = "Fred Paz: I am dreadfully sorry. I did not mean to spoil the movie. ";
-      thingie += 'However, I would still recommend watching it.';
+      thingie += 'However, I would still recommend watching it. ';
       thingie += "With your parents' permission of course.";
       text.innerHTML = thingie;
-      buttons = '<button onclick="dialog(5)">Continue</button>';
+      buttons = '<button onclick="dialog(4)">Continue</button>';
       sumbit.innerHTML = buttons;
       break;
         
