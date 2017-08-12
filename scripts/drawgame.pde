@@ -214,6 +214,8 @@ void draw_floor(x,y) {
 }
 
 void draw_npc(x,y,skin,clothes,cc,hair,hairCol) {
+   x = 20*x-20;
+   y = 20*y-20;
   // face
   fill(skin[0],skin[1],skin[2]);
   ellipse(x+10,y+5,10,5);
