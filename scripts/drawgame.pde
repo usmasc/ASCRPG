@@ -218,13 +218,13 @@ void draw_npc(x,y,skin,clothes,cc,hair,hairCol) {
    y = 20*y-20;
   // face
   fill(skin[0],skin[1],skin[2]);
-  ellipse(x+10,y+5,10,5);
+  ellipse(x+10,y+5,20,10);
   // eyes
   fill(0,0,0);
   ellipse(x+5,y+5,2,4);
-  ellipse(x+15,y+1,2,4); 
+  ellipse(x+15,y+5,2,4); 
   // mouth
-  line(x+5,y+8,x+15,y+8);
+  rect(x+5,y+8,10,1);
   //hair
   switch(hair) {
     case 'bald':
