@@ -173,7 +173,73 @@ void draw_PlayerFacingDown() {
   rect(newx+2,newy+18,5,2);
 }
 
+void draw_floor(x,y) {
+    //stroke(255, 255, 255);
+    x = 20*x-20;
+    y = 20*y-20;
+    for(var xi = x; xi < x+16; xi+=8) {
+        //1st line
+        //stroke(51, 32, 2);
+        fill(random(100,125),random(75,100),0);
+        rect(xi,y,4,7);
+        fill(random(100,125),random(75,100),0);
+        rect(xi,y+7,4,7);
+        //stroke(30, 0, 0);
+        fill(random(100,125),random(75,100),0);
+        rect(xi,y+14,4,6);
+        //2nd line
+        noStroke();
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y,4,4);
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y+16,4,4);
+        //stroke(30, 0, 0);
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y+4,4,7);
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y+10,4,6);
+    }
+    //last line
+    var xi = x+16;
+    //stroke(51, 32, 2);
+    fill(random(100,125),random(75,100),0);
+    rect(xi,y,4,7);
+    fill(random(100,125),random(75,100),0);
+    rect(xi,y+7,4,7);
+    //stroke(30, 0, 0);
+    fill(random(100,125),random(75,100),0);
+    rect(xi,y+14,4,6);
+    break;
+}
 
+void draw_npc(x,y,skin,clothes,cc,hair,hairCol) {
+  // face
+  fill(skin[0],skin[1],skin[2]);
+  ellipse(x+10,y+5,10,5);
+  // eyes
+  fill(0,0,0);
+  ellipse(x+5,y+5,2,4);
+  ellipse(x+15,y+1,2,4); 
+  // mouth
+  line(x+5,y+8,x+15,y+8);
+  //hair
+  switch(hair) {
+    case 'bald':
+      break;
+  }
+  //body
+  switch(clothes) {
+    case 'cloak':
+      fill(cc[0],cc[1],cc[2]);
+      rect(x+4,y+10,12,10);
+      rect(x,y+10,4,5);
+      rect(x+16,4,5);
+      fill(skin[0],skin[1],skin[2]);
+      rect(x,y+15,4,4);
+      rect(x+16,y+15,4,4);
+      break;
+  }
+}
 
 void draw_bg(bgo, x,y) {
   switch(bgo) {
@@ -244,42 +310,11 @@ void draw_bg(bgo, x,y) {
   break;
       
   case 'floor':
-     //stroke(255, 255, 255);
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+16; xi+=8) {
-        //1st line
-        //stroke(51, 32, 2);
-        fill(random(100,125),random(75,100),0);
-        rect(xi,y,4,7);
-        fill(random(100,125),random(75,100),0);
-        rect(xi,y+7,4,7);
-        //stroke(30, 0, 0);
-        fill(random(100,125),random(75,100),0);
-        rect(xi,y+14,4,6);
-        //2nd line
-        noStroke();
-        fill(random(100,125),random(75,100),0);
-        rect(xi+4,y,4,4);
-        fill(random(100,125),random(75,100),0);
-        rect(xi+4,y+16,4,4);
-        //stroke(30, 0, 0);
-        fill(random(100,125),random(75,100),0);
-        rect(xi+4,y+4,4,7);
-        fill(random(100,125),random(75,100),0);
-        rect(xi+4,y+10,4,6);
-    }
-    //last line
-    var xi = x+16;
-    //stroke(51, 32, 2);
-    fill(random(100,125),random(75,100),0);
-    rect(xi,y,4,7);
-    fill(random(100,125),random(75,100),0);
-    rect(xi,y+7,4,7);
-    //stroke(30, 0, 0);
-    fill(random(100,125),random(75,100),0);
-    rect(xi,y+14,4,6);
-    break;
+    draw_floor(x,y);
+    
+  case 'Fred':
+    draw_floor(x,y);
+    draw_npc(x,y,[217, 183, 31],'cloak',[150,150,150],'bald',[100,100,100]);
       
   case 'path':
     noStroke();
