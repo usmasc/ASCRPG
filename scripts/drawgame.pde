@@ -63,13 +63,17 @@ var mapD = [[wtr,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD
 void draw() {
 
   draw_bg(wtr['draw'],1,1);
-  draw_bg(wtr['draw'],1,2);
+  draw_bg(rug['draw'],1,2);
   draw_bg(grs['draw'],1,3);
+  draw_bg(smp['draw'],1,4);
+  draw_bg(snd['draw'],1,5);
+  draw_bg(pth['draw'],1,6);
+  draw_bg(flr['draw'],1,7);
+  draw_bg(Frd['draw'],1,8);
   fill(255,255,255);
   text(wtr['draw'],20,20);
-  text(grs.draw,20,40);
-  text(map['test'],20,60);
-  text(map['test'],20+map['rows'],80);
+  text(rug.draw,20,40);
+
   /*
   int mapX0 = player.mapX - player.x/20;
   int mapY0 = player.mapY - player.y/20;
