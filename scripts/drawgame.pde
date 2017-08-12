@@ -70,7 +70,7 @@ void draw() {
   
   for(var y = 1; y <= verBlks; y++) {
     yi = y + mapY0;
-    if (yi > -1 && yi <= map.rows) {
+    if (yi > -1 && yi < map.rows) {
       for(var x = 1; x <= horBlks; x++) {
         xi = x + mapX0;
         if (xi > -1 && xi < map[yi].length) {
