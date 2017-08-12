@@ -73,6 +73,7 @@ void draw() {
   fill(255,255,255);
   text(wtr['draw'],20,20);
   text(rug.draw,20,40);
+  text(map.test,30,40);
 
   /*
   int mapX0 = player.mapX - player.x/20;
