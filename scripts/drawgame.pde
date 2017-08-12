@@ -70,19 +70,6 @@ void draw() {
   int mapYi = 1;
   int mapXi = 1;
   
-  /*
-    for(int y = 1; y <= verBlks; y++) {
-    mapYi = y + mapY0;
-    if (map.hasOwnProperty(y-1)) {
-      for(int x = 1; x <= horBlks; x++) {
-        mapXi = x + mapX0;
-        if (x-1 > -1 && x < map[y-1].length) {
-          draw_bg(map[y-1][x-1].draw,x,y);
-        }
-      }
-    }
-  }
-  */
   
   
   for(int y = 1; y <= verBlks; y++) {
@@ -90,7 +77,7 @@ void draw() {
     if (map.hasOwnProperty(mapYi)) {
       for(int x = 1; x <= horBlks; x++) {
         mapXi = x + mapX0;
-        if (mapXi > -1 && mapXi < map[Yi].length) {
+        if (mapXi > -1 && mapXi < map[mapYi].length) {
           draw_bg(map[mapYi][mapXi].draw,x,y);
         }
       }
