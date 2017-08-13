@@ -177,15 +177,15 @@ function item(i) {
 function stats() {
   // line1
   var thingie = '<table><tr>';
-   thingie += '<td> Attack: </td><td>' + player.atk + ' </td>';
-   thingie += '<td> Head: </td><td>' + player.head.item + ' </td>';
-   thingie += '<td> Body: </td><td> '+ player.torso.item + '</td>';
+   thingie += '<td> Attack: </td><td>' + player.atk + '&nbsp;&nbsp;</td>';
+   thingie += '<td>&nbsp;&nbsp; Head: </td><td>' + player.head.item + ' &nbsp;&nbsp;</td>';
+   thingie += '<td>&nbsp;&nbsp; Body: </td><td> '+ player.torso.item + '</td>';
   thingie += '</tr>';
   // line 2
   thingie += '<tr>';
-   thingie += '<td> Defense: </td><td>' + player.def  + ' </td>';
-   thingie += '<td> Left hand: </td><td> ' + player.leftHand.item + ' </td>';
-   thingie += '<td> Right hand: </td><td>' + player.rightHand.item + '</td>';
+   thingie += '<td> Defense: </td><td>' + player.def  + ' &nbsp;&nbsp;</td>';
+   thingie += '<td>&nbsp;&nbsp; LeftHand: </td><td> ' + player.leftHand.item + ' &nbsp;&nbsp;</td>';
+   thingie += '<td>&nbsp;&nbsp; RightHand: </td><td>' + player.rightHand.item + '</td>';
   thingie += '</tr>';
   // line 3
   thingie += '<tr>';
