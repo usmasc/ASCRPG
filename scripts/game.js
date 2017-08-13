@@ -174,28 +174,6 @@ function item(i) {
   sumbit.innerHTML = thingie;
 }
 
-function stats() {
-  // line1
-  var thingie = '<table><tr>';
-   thingie += '<td> Attack: </td><td>' + player.atk + ' </td>';
-   thingie += '<td> Head: </td><td>' + player.head.item + ' </td>';
-   thingie += '<td> Body: </td><td> '+ player.torso.item + '</td>';
-  thingie += '</tr>';
-  // line 2
-  thingie += '<tr>';
-   thingie += '<td> Defense: </td><td>' + player.def  + ' </td>';
-   thingie += '<td> Left hand: </td><td> ' + player.leftHand.item + ' </td>';
-   thingie += '<td> Right hand: </td><td>' + player.rightHand.item + '</td>';
-  thingie += '</tr>';
-  // line 3
-  thingie += '<tr>';
-   thingie += '<td> Evasion: </td><td>' + player.eva  + ' </td>;
-   thingie += '<td> Legs: </td><td> ' + player.legs.item + ' </td>';
-   thingie += '<td> Feet: </td><td> ' + player.feet.item + ' </td>';
-  thingie += '</tr></table>';
-  text.innerHTML = thingie;
-}
-
 
 
 
