@@ -87,7 +87,7 @@ function stats() {
   thingie += '</tr>';
   // line 3
   thingie += '<tr>';
-   thingie += '<td> Evasion: </td><td>' + player.eva  + ' </td>;
+   thingie += '<td> Evasion: </td><td>' + player.eva  + ' </td>';
    thingie += '<td> Legs: </td><td> ' + player.legs.item + ' </td>';
    thingie += '<td> Feet: </td><td> ' + player.feet.item + ' </td>';
   thingie += '</tr></table>';
