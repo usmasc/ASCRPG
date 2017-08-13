@@ -178,20 +178,20 @@ function stats() {
   // line1
   var thingie = '<table><tr>';
    thingie += '<td> Attack: </td><td>' + player.atk + '&nbsp;&nbsp;</td>';
-   thingie += '<td>&nbsp;&nbsp; Head: </td><td>' + player.head.item + ' &nbsp;&nbsp;</td>';
-   thingie += '<td>&nbsp;&nbsp; Body: </td><td> '+ player.torso.item + '</td>';
+   thingie += '<td>&nbsp;&nbsp;&nbsp;&nbsp Head: </td><td>' + player.head.item + ' &nbsp;&nbsp;</td>';
+   thingie += '<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;; Body: </td><td> '+ player.torso.item + '</td>';
   thingie += '</tr>';
   // line 2
   thingie += '<tr>';
    thingie += '<td> Defense: </td><td>' + player.def  + ' &nbsp;&nbsp;</td>';
-   thingie += '<td>&nbsp;&nbsp; LeftHand: </td><td> ' + player.leftHand.item + ' &nbsp;&nbsp;</td>';
-   thingie += '<td>&nbsp;&nbsp; RightHand: </td><td>' + player.rightHand.item + '</td>';
+   thingie += '<td> LeftHand: </td><td> ' + player.leftHand.item + ' &nbsp;&nbsp;</td>';
+   thingie += '<td> RightHand: </td><td>' + player.rightHand.item + '</td>';
   thingie += '</tr>';
   // line 3
   thingie += '<tr>';
    thingie += '<td> Evasion: </td><td>' + player.eva  + ' &nbsp;&nbsp;</td>';
-   thingie += '<td>&nbsp;&nbsp; Legs: </td><td> ' + player.legs.item + ' &nbsp;&nbsp;</td>';
-   thingie += '<td>&nbsp;&nbsp; Feet: </td><td> ' + player.feet.item + ' </td>';
+   thingie += '<td>&nbsp;&nbsp;&nbsp;&nbsp; Legs: </td><td> ' + player.legs.item + ' &nbsp;&nbsp;</td>';
+   thingie += '<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Feet: </td><td> ' + player.feet.item + ' </td>';
   thingie += '</tr></table>';
   text.innerHTML = thingie;
 }
