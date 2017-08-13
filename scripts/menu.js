@@ -184,8 +184,8 @@ function stats() {
   // line 2
   thingie += '<tr>';
    thingie += '<td> Defense: </td><td>' + player.def  + '&nbsp;&nbsp;</td>';
-   thingie += '<td> LeftHand: </td><td> ' + player.leftHand.item + ' &nbsp;&nbsp;</td>';
-   thingie += '<td> RightHand: </td><td>' + player.rightHand.item + '</td>';
+   thingie += '<td>LeftHand: </td><td> ' + player.leftHand.item + ' &nbsp;&nbsp;</td>';
+   thingie += '<td>RightHand: </td><td>' + player.rightHand.item + '</td>';
   thingie += '</tr>';
   // line 3
   thingie += '<tr>';
