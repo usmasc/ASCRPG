@@ -171,17 +171,21 @@ function item(i) {
 
 function stats() {
   // line1
-  thingie = '<table><tr><td> Attack: </td><td>' + player.atk.toString() + ' </td>';
-  thingie += '<td> Head: </td><td>' + player.head.item + ' </td>';
-  thingie += '<td> Body: </td><td> '+ player.torso.item + '</td></tr>';
+  thingie = '<table><tr>';
+   thingie += '<td> Attack: </td><td>' + player.atk.toString() + ' </td>';
+  //thingie += '<td> Head: </td><td>' + player.head.item + ' </td>';
+  //thingie += '<td> Body: </td><td> '+ player.torso.item + '</td>';
+  thingie += '</tr>';
   // line 2
   thingie += '<tr><td> Defense: </td><td>' + player.def.toString()  + ' </td>';
-  thingie += '<td> Left hand: </td><td> ' + player.leftHand.item + ' </td>';
-  thingie += '<td> Right hand: </td><td>' + player.rightHand.item + '</td></tr>';
+  //thingie += '<td> Left hand: </td><td> ' + player.leftHand.item + ' </td>';
+  //thingie += '<td> Right hand: </td><td>' + player.rightHand.item + '</td>';
+  thingie += '</tr>';
   // line 3
   thingie += '<tr><td> Evasion: </td><td>' + player.eva.toString()  + ' </td>;
-  thingie += '<td> Legs: </td><td> ' + player.legs.item + ' </td>';
-  thingie += '<td> Feet: </td><td> ' + player.feet.item + ' </td></tr></table>';
+  //thingie += '<td> Legs: </td><td> ' + player.legs.item + ' </td>';
+  //thingie += '<td> Feet: </td><td> ' + player.feet.item + ' </td>';
+   thingie += '</tr></table>';
   text.innerHTML = thingie;
 }
 
