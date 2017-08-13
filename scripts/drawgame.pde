@@ -9,39 +9,6 @@ void setup() {
   background(1,1,1);
   //noLoop();
 }
-/*
-var brD = {
-  "draw": 'brick'
-};
-
-var ruD = {
-  "draw": 'rug'
-};
-
-var grD = {
-  "draw": 'grass'
-};
-
-var smD = {
-  'draw':'swamp'
-};
-
-var snD = {
-  'draw':'sand'
-};
-
-var ptD = {
-  'draw':'path'
-};
-
-var flD = {
-  'draw':'floor'
-};
-
-var wtD = {
-  'draw':'water'
-};
-*/
 
 var mapD = [
  [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
@@ -63,28 +30,11 @@ var mapD = [
  [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr]];
 
 void draw() {
-  /*
-  draw_bg(wtr['draw'],1,1);
-  draw_bg(rug['draw'],1,2);
-  draw_bg(grs['draw'],1,3);
-  draw_bg(smp['draw'],1,4);
-  draw_bg(snd['draw'],1,5);
-  draw_bg(pth['draw'],1,6);
-  draw_bg(flr['draw'],1,7);
-  draw_bg(Frd['draw'],1,8);
-  //draw_bg(map['8'][0].draw,1,9);
-  fill(255,255,255);
-  text(wtr['draw'],20,20);
-  text(rug.draw,20,40);
-  text(map.test,30,40);
-  */
 
- 
   int mapX0 = player.mapX - player.x/20;
   int mapY0 = player.mapY - player.y/20;
   int yi = 1;
   int xi = 1;
-  
   
   for(int y = 1; y <= verBlks; y++) {
     yi = y + mapY0;
@@ -98,16 +48,8 @@ void draw() {
     }
   }
  
- 
 draw_PlayerFacingDown(); 
 }
-
-/*
-void reload() {
-  redraw();
-}
-*/
-
 
 void draw_PlayerFacingDown() {
   var newx = player.x-10;
@@ -236,7 +178,7 @@ void draw_npc(x,y,skin,clothes,cc,hair,hairCol) {
       fill(cc[0],cc[1],cc[2]);
       rect(x+4,y+10,12,10);
       rect(x,y+10,4,5);
-      rect(x+16,4,5);
+      rect(x+16,y+10,4,5);
       fill(skin[0],skin[1],skin[2]);
       rect(x,y+15,4,4);
       rect(x+16,y+15,4,4);
