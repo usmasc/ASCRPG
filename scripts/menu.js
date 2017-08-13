@@ -189,9 +189,9 @@ function stats() {
   thingie += '</tr>';
   // line 3
   thingie += '<tr>';
-   thingie += '<td> Evasion: </td><td>' + player.eva  + ' </td>';
-   thingie += '<td> Legs: </td><td> ' + player.legs.item + ' </td>';
-   thingie += '<td> Feet: </td><td> ' + player.feet.item + ' </td>';
+   thingie += '<td> Evasion: </td><td>' + player.eva  + ' &nbsp;&nbsp;</td>';
+   thingie += '<td>&nbsp;&nbsp; Legs: </td><td> ' + player.legs.item + ' &nbsp;&nbsp;</td>';
+   thingie += '<td>&nbsp;&nbsp; Feet: </td><td> ' + player.feet.item + ' </td>';
   thingie += '</tr></table>';
   text.innerHTML = thingie;
 }
