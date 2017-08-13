@@ -77,6 +77,11 @@ function arrows() {
    sumbit.innerHTML = thingie;
 }
 
+function start() {
+  text.innerHTML = 'In the year 202X ...';
+  arrows();
+}
+
 function check() {
   var thingie = '';
   if (map[player.mapY.toString()][player.mapX].canCheck) {
@@ -171,28 +176,27 @@ function item(i) {
 
 function stats() {
   // line1
-  thingie = '<table><tr>';
-   thingie += '<td> Attack: </td><td>' + player.atk.toString() + ' </td>';
-  //thingie += '<td> Head: </td><td>' + player.head.item + ' </td>';
-  //thingie += '<td> Body: </td><td> '+ player.torso.item + '</td>';
+  var thingie = '<table><tr>';
+   thingie += '<td> Attack: </td><td>' + player.atk + ' </td>';
+   thingie += '<td> Head: </td><td>' + player.head.item + ' </td>';
+   thingie += '<td> Body: </td><td> '+ player.torso.item + '</td>';
   thingie += '</tr>';
   // line 2
-  thingie += '<tr><td> Defense: </td><td>' + player.def.toString()  + ' </td>';
-  //thingie += '<td> Left hand: </td><td> ' + player.leftHand.item + ' </td>';
-  //thingie += '<td> Right hand: </td><td>' + player.rightHand.item + '</td>';
+  thingie += '<tr>';
+   thingie += '<td> Defense: </td><td>' + player.def  + ' </td>';
+   thingie += '<td> Left hand: </td><td> ' + player.leftHand.item + ' </td>';
+   thingie += '<td> Right hand: </td><td>' + player.rightHand.item + '</td>';
   thingie += '</tr>';
   // line 3
-  thingie += '<tr><td> Evasion: </td><td>' + player.eva.toString()  + ' </td>;
-  //thingie += '<td> Legs: </td><td> ' + player.legs.item + ' </td>';
-  //thingie += '<td> Feet: </td><td> ' + player.feet.item + ' </td>';
-   thingie += '</tr></table>';
+  thingie += '<tr>';
+   thingie += '<td> Evasion: </td><td>' + player.eva  + ' </td>;
+   thingie += '<td> Legs: </td><td> ' + player.legs.item + ' </td>';
+   thingie += '<td> Feet: </td><td> ' + player.feet.item + ' </td>';
+  thingie += '</tr></table>';
   text.innerHTML = thingie;
 }
 
 
-function start() {
-  text.innerHTML = 'In the year 202X ...';
-  arrows();
-}
+
 
 
