@@ -4,92 +4,52 @@ int verBlks = 10;
 int w = horBlks * 20;
 int h = verBlks * 20;
 
-
 void setup() { 
   size(w, h);
   background(1,1,1);
   //noLoop();
 }
 
-
-
-var brD = {
-  "draw": 'brick'
-};
-
-var ruD = {
-  "draw": 'rug'
-};
-
-var grD = {
-  "draw": 'grass'
-};
-
-var smD = {
-  'draw':'swamp'
-};
-
-var snD = {
-  'draw':'sand'
-};
-
-var ptD = {
-  'draw':'path'
-};
-
-var flD = {
-  'draw':'floor'
-};
-
-var wtD = {
-  'draw':'water'
-};
-
-var mapD = [[wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD],
-            [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
-            [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
-            [wtD,grD,brD,brD,brD,brD,brD,brD,grD,grD,grD,brD,brD,brD,brD,brD,brD,grD,grD,brD,brD,brD,brD,brD,brD,grD,grD,wtD],
-            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
-            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
-            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
-            [wtD,grD,brD,flD,flD,flD,flD,brD,grD,grD,grD,brD,ruD,ruD,ruD,ruD,brD,grD,grD,brD,flD,flD,flD,flD,brD,grD,grD,wtD],
-            [wtD,grD,brD,brD,flD,brD,brD,brD,grD,grD,grD,brD,brD,brD,ruD,brD,brD,grD,grD,brD,brD,brD,brD,flD,brD,grD,grD,wtD],
-            [wtD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,wtD],
-            [wtD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,grD,grD,grD,wtD],
-            [wtD,grD,grD,grD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,ptD,grD,grD,grD,wtD],
-            [wtD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,ptD,ptD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,grD,wtD],
-            [wtD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,wtD],
-            [wtD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,snD,wtD], 
-            [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD],
-            [wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD,wtD]];
+var mapD = [
+ [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
+ [wtr,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,wtr],
+ [wtr,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,wtr],
+ [wtr,grs,brk,brk,brk,brk,brk,brk,grs,grs,grs,brk,brk,brk,brk,brk,brk,grs,grs,brk,brk,brk,brk,brk,brk,grs,grs,wtr],
+ [wtr,grs,brk,flr,flr,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
+ [wtr,grs,brk,flr,Frd,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
+ [wtr,grs,brk,flr,flr,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
+ [wtr,grs,brk,flr,flr,flr,flr,brk,grs,grs,grs,brk,rug,rug,rug,rug,brk,grs,grs,brk,flr,flr,flr,flr,brk,grs,grs,wtr],
+ [wtr,grs,brk,brk,flr,brk,brk,brk,grs,grs,grs,brk,brk,brk,rug,brk,brk,grs,grs,brk,brk,brk,brk,flr,brk,grs,grs,wtr],
+ [wtr,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,wtr],
+ [wtr,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,grs,grs,grs,grs,grs,pth,grs,grs,grs,wtr],
+ [wtr,grs,grs,grs,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,pth,grs,grs,grs,wtr],
+ [wtr,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,pth,pth,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,grs,wtr],
+ [wtr,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,wtr],
+ [wtr,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,snd,wtr],
+ [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr],
+ [wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr,wtr]];
 
 void draw() {
+
+  int mapX0 = player.mapX - player.x/20;
+  int mapY0 = player.mapY - player.y/20;
+  int yi = 1;
+  int xi = 1;
   
-  var mapX0 = player.mapX - player.x/20;
-  var mapY0 = player.mapY -player.y/20;
-  var mapYi = 1;
-  var mapXi = 1;
-  
-  for(var y = 1; y <= verBlks; y++) {
-    mapYi = y + mapY0;
-    if (mapYi > -1 && mapYi < mapD.length) {
-      for(var x = 1; x <= horBlks; x++) {
-        mapXi = x + mapX0;
-        if (mapXi > -1 && mapXi < mapD[y].length) {
-          draw_bg(mapD[mapYi][mapXi].draw,x,y);
+  for(int y = 1; y <= verBlks; y++) {
+    yi = y + mapY0;
+    if (yi > -1 && yi < mapD.length) {
+      for(int x = 1; x <= horBlks; x++) {
+        xi = x + mapX0;
+        if (xi > -1 && xi < mapD[yi].length) {
+          draw_bg(mapD[yi][xi].draw,x,y);
         }
       }
     }
   }
+ 
 draw_PlayerFacingDown(); 
 }
-
-/*
-void reload() {
-  redraw();
-}
-*/
-
 
 void draw_PlayerFacingDown() {
   var newx = player.x-10;
@@ -157,7 +117,74 @@ void draw_PlayerFacingDown() {
   rect(newx+2,newy+18,5,2);
 }
 
+void draw_floor(x,y) {
+    //stroke(255, 255, 255);
+    x = 20*x-20;
+    y = 20*y-20;
+    for(var xi = x; xi < x+16; xi+=8) {
+        //1st line
+        //stroke(51, 32, 2);
+        fill(random(100,125),random(75,100),0);
+        rect(xi,y,4,7);
+        fill(random(100,125),random(75,100),0);
+        rect(xi,y+7,4,7);
+        //stroke(30, 0, 0);
+        fill(random(100,125),random(75,100),0);
+        rect(xi,y+14,4,6);
+        //2nd line
+        noStroke();
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y,4,4);
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y+16,4,4);
+        //stroke(30, 0, 0);
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y+4,4,7);
+        fill(random(100,125),random(75,100),0);
+        rect(xi+4,y+10,4,6);
+    }
+    //last line
+    var xi = x+16;
+    //stroke(51, 32, 2);
+    fill(random(100,125),random(75,100),0);
+    rect(xi,y,4,7);
+    fill(random(100,125),random(75,100),0);
+    rect(xi,y+7,4,7);
+    //stroke(30, 0, 0);
+    fill(random(100,125),random(75,100),0);
+    rect(xi,y+14,4,6);
+}
 
+void draw_npc(x,y,skin,clothes,cc,hair,hairCol) {
+   x = 20*x-20;
+   y = 20*y-20;
+  // face
+  fill(skin[0],skin[1],skin[2]);
+  ellipse(x+10,y+5,20,10);
+  // eyes
+  fill(0,0,0);
+  ellipse(x+5,y+5,2,4);
+  ellipse(x+15,y+5,2,4); 
+  // mouth
+  rect(x+5,y+8,10,1);
+  //hair
+  switch(hair) {
+    case 'bald':
+      break;
+  }
+  //body
+  switch(clothes) {
+    case 'cloak':
+      fill(cc[0],cc[1],cc[2]);
+      rect(x+4,y+10,12,10);
+      rect(x,y+10,4,5);
+      rect(x+16,y+10,4,5);
+      fill(skin[0],skin[1],skin[2]);
+      rect(x,y+15,4,4);
+      rect(x+16,y+15,4,4);
+      break;
+  }
+}
 
 void draw_bg(bgo, x,y) {
   switch(bgo) {
@@ -228,41 +255,12 @@ void draw_bg(bgo, x,y) {
   break;
       
   case 'floor':
-     //stroke(255, 255, 255);
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+16; xi+=8) {
-        //1st line
-        //stroke(51, 32, 2);
-        fill(random(100,125),random(75,100),0);
-        rect(xi,y,4,7);
-        fill(random(100,125),random(75,100),0);
-        rect(xi,y+7,4,7);
-        //stroke(30, 0, 0);
-        fill(random(100,125),random(75,100),0);
-        rect(xi,y+14,4,6);
-        //2nd line
-        noStroke();
-        fill(random(100,125),random(75,100),0);
-        rect(xi+4,y,4,4);
-        fill(random(100,125),random(75,100),0);
-        rect(xi+4,y+16,4,4);
-        //stroke(30, 0, 0);
-        fill(random(100,125),random(75,100),0);
-        rect(xi+4,y+4,4,7);
-        fill(random(100,125),random(75,100),0);
-        rect(xi+4,y+10,4,6);
-    }
-    //last line
-    var xi = x+16;
-    //stroke(51, 32, 2);
-    fill(random(100,125),random(75,100),0);
-    rect(xi,y,4,7);
-    fill(random(100,125),random(75,100),0);
-    rect(xi,y+7,4,7);
-    //stroke(30, 0, 0);
-    fill(random(100,125),random(75,100),0);
-    rect(xi,y+14,4,6);
+    draw_floor(x,y);
+    break;
+    
+  case 'Fred':
+    draw_floor(x,y);
+    draw_npc(x,y,[217, 183, 31],'cloak',[150,150,150],'bald',[100,100,100]);
     break;
       
   case 'path':
