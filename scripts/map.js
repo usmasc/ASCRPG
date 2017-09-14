@@ -90,10 +90,13 @@ var Frd = {
 };
 
 /* Map key
+// bbb = bullitin board
 // bbT = bullitin board Top
 // bbB = bullitin board Bottom
 // bsL = black shelf left
 // bsR = black shelf right
+// brs = barstool
+// brt = barstool table
 // chR = round chair
 // ctR = circle table on rug
 // ctC = circle table on carpet
@@ -103,6 +106,7 @@ var Frd = {
 // cLR = circle table lower Right
 // cpr = copier
 // crp = carpet
+// crB = carpet Boundary
 // dkB = bottom desk
 // dkT = top desk
 // dcT = top desk with computer
@@ -128,6 +132,9 @@ var Frd = {
 // tcL = Think Center chair facing left
 // tcR = Think Center chair facing Right
 // tcU = Think Center chair facing UP
+// tcT = technology cabinent Top
+// tcM = techology cabinet Middle
+// tcB = techology cabinet Bottom
 // vfb = vertical felt board
 // vwb = vertical white board
 // wal = wall
@@ -157,7 +164,11 @@ var map = {
 '13':[wal,wal,fcs,til,dTc,til,til,til,til,til,til,wal,wal,til,til,til,bbT,til,til,til,til,til,til,til,wal],
 '14':[wnT,vwb,til,ZSt,dvM,til,til,til,til,til,til,cpr,wal,til,til,til,bbB,til,til,til,til,til,til,til,wal],
 '15':[wnT,vwb,til,dhL,dcR,til,cUL,cUR,til,til,til,til,wal,wal,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
-'16':[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,til,til,til,dLc,dRc,dkL,dkR,til,til,tcD,ctC,gwv],
-  'rows':17,
+'16':[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,tcD,ctC,gwv],
+'17':[bbb,til,til,til,til,til,til,til,til,til,til,til,til,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcL,gwv],
+'18':[wal,til,til,til,til,til,til,til,til,til,til,til,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
+'19':[wnT,til,til,til,til,cUL,cUR,til,til,til,til,tcT,wal,cfT,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wbv],
+'19':[wnB,til,cUL,cUR,til,cLL,cLR,til,til,til,til,tcM,wal,cfB,crp,crp,crp,crp,ESn,crp,crp,crp,crp,brs,gwv],
+  'rows':20,
   'test':'test'
 };
