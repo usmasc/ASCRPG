@@ -67,26 +67,31 @@ var wtr = {
   'canCheck': false
 };
 
-var Frd = {
-  'name': 'Fred Paz',
+var SGP = {
+  'name': 'Kaitlyn Dorris',
+  'heshe': "She",
   'canPass': false,
   'draw': 'Fred',
   'canTalk': true,
   'canCheck': true,
   check() {
-    var thingie = "Fred Paz, the village elder, looks worried.";
+    var thingie = "This is " + this.name + ". " + this.she + " is the SGA President.";
     text.innerHTML = thingie;
   },
   talk() {
-    if (player.questLog.indexOf('Talked to Fred Paz.') === -1) {
-    var thingie = "Fred Paz: Hello, " + player.name + ". It is time that I tell you a story of grave importance.";
-    thingie += " Care to listen?";
-    text.innerHTML = thingie;
-    var buttons = '<button onclick="dialog(1)">Yes</button> <button onclick="dialog(2)">No</button>';
-    sumbit.innerHTML = buttons;
-    } else {
-      dialog(7);
-    }
+    var thingie = "Kaitlyn Dorris: Hi, I am " + this.name + '.';
+    thingie += "I am the SGA President. I love the library. It's a great place to study. "; 
+    thingie += "The scenery is great too.";
+    thingie += "Casey Baker: It sure is.";
+    thingie += "Kaitlyn Dorris: I'm talking about the artwork.";
+    thingie += "Casey Baker: I was too.";
+    thingie += "Kaitlyn Dorris: I can't believe this is in the game.";
+    thingie += "Casey Baker: I am too. I would have thought they would have you say something about what the SGA is all about. ";
+    thingie += "Kaitlyn Dorris: I know, right. Well you can find out more about the SGA at ";
+    thingie += '<a href="https://www.usm.edu/gulfcoast/student-government-association">';
+    thingie += 'https://www.usm.edu/gulfcoast/student-government-association';
+    
+
   }
 };
 
