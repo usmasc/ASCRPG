@@ -8,6 +8,7 @@ var brk = {
   'canCheck': false
 };
 
+
 var rug = {
   "canPass": true,
   "draw": 'rug',
@@ -89,6 +90,219 @@ var Frd = {
   }
 };
 
+var bbb = {
+  // bbb = bullitin board
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var bbT = {
+  // bbT = bullitin board Top
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var bbB = {
+  // bbB = bullitin board Bottom
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var bSL = {
+// bsL = black shelf left  
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var bSR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var brs = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var brt = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var chR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var ctR = {
+  // ctR = circle table on rug
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var ctC = {
+  // ctR = circle table on carpet
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var cUL = {
+  // cUL = circle table upper left
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var cUR = {
+  // cUL = circle table upper left
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var cLL = {
+  // cUL = circle table lower left
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var cLR = {
+  // cUL = circle table lower right
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var cpr = {
+  // cpr = copier
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var crp = {
+  "canPass": true,
+  "draw": 'rug',
+  'canCheck': false,
+  'canTalk': false,
+};
+
+var crB = {
+  // crB = carpet Boundary
+  "canPass": false,
+  "draw": 'rug',
+  'canCheck': false,
+  'canTalk': false,
+};
+
+var dkT = {
+  // dkT = top desk
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var dkB = {
+  // dkB = bottom desk
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var dcT = {
+  // dcT = top desk with computer
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var dLc = {
+  // dLc = hor. desk left end with computer
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var dRc = {
+  // dRc = hor. desk right end with computer
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var dkL = {
+// dkL = hor. desk left end 
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var dkR = {
+// dkR = hor. desk right end 
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var dhL = {
+// dhL = desk horizontal Left end
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var dcR = {
+// dcR = desk corner lower Right
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+
+var fcs = {
+// fcs = file cabinet short
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var hwb = {
+// hwb = horizontal white board
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var ltc = {
+// ltc = laptop cart
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+
+
+
+var wal = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+
+
+
 /* Map key
 // bbb = bullitin board
 // bbT = bullitin board Top
@@ -145,7 +359,10 @@ var Frd = {
 // shl = shelf
 // ZSt = Zachary Stewart
 */
-  
+
+
+
+
 
 var map = {
  '0':[wal,wal,wal,wal,wal,SGP,wal,wal,MLb,wal,wal,StL,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
