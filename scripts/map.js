@@ -1,100 +1,6 @@
 var text = document.getElementById('textArea');
 var sumbit = document.getElementById('submitButtonArea');
 
-
-var brk = {
-  "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-
-var rug = {
-  "canPass": true,
-  "draw": 'rug',
-  'canCheck': true,
-  'canTalk': false,
-   check() {
-    var thingie = 'No problems found here. While you are tempted, you refuse to sweep your problems under the rug.';
-    text.innerHTML = thingie;
-  }
-};
-
-var grs = {
-  "canPass": true,
-  "draw": 'grass',
-  'canCheck': true,
-  'canTalk': false,
-  check() {
-    var thingie = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
-    thingie += ' the grass in the distance looks greener now.';
-    text.innerHTML = thingie;
-  }
-};
-
-var smp = {
-  'canPass':true,
-  'draw':'swamp',
-  'canCheck': false,
-  'canTalk': false
-};
-
-var snd = {
-  'canPass':true,
-  'draw':'sand',
-  'canCheck': false,
-  'canTalk': false
-};
-
-var pth = {
-  'canPass':true,
-  'draw':'path',
-  'canCheck': false,
-  'canTalk': false
-};
-
-var flr = {
-  'canPass':true,
-  'draw':'floor',
-   'canTalk': false,
-  'canCheck': false
-};
-
-var wtr = {
-  'canPass':false,
-  'draw':'water',
-  'canTalk': false,
-  'canCheck': false
-};
-
-var SGP = {
-  'name': 'Kaitlyn Dorris',
-  'heshe': "She",
-  'canPass': false,
-  'draw': 'Fred',
-  'canTalk': true,
-  'canCheck': true,
-  check() {
-    var thingie = "This is " + this.name + ". " + this.she + " is the SGA President.";
-    text.innerHTML = thingie;
-  },
-  talk() {
-    var thingie = "Kaitlyn Dorris: Hi, I am " + this.name + '.';
-    thingie += "I am the SGA President. I love the library. It's a great place to study. "; 
-    thingie += "The scenery is great too.";
-    thingie += "Casey Baker: It sure is.";
-    thingie += "Kaitlyn Dorris: I'm talking about the artwork.";
-    thingie += "Casey Baker: I was too.";
-    thingie += "Kaitlyn Dorris: I can't believe this is in the game.";
-    thingie += "Casey Baker: I am too. I would have thought they would have you say something about what the SGA is all about. ";
-    thingie += "Kaitlyn Dorris: I know, right. Well you can find out more about the SGA at ";
-    thingie += '<a href="https://www.usm.edu/gulfcoast/student-government-association">';
-    thingie += 'https://www.usm.edu/gulfcoast/student-government-association';
-    
-
-  }
-};
-
 var bbb = {
   // bbb = bullitin board
    "canPass": false,
@@ -116,15 +22,8 @@ var bbB = {
   'canCheck': false
 };
 
-var bSL = {
-// bsL = black shelf left  
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-var bSR = {
-   "canPass": false,
+var brk = {
+  "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
@@ -136,6 +35,19 @@ var brs = {
 };
 
 var brt = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var bSL = {
+// bsL = black shelf left  
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var bSR = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -282,6 +194,26 @@ var fcs = {
   'canCheck': false
 };
 
+// floor
+var flr = {
+  'canPass':true,
+  'draw':'floor',
+   'canTalk': false,
+  'canCheck': false
+};
+
+var grs = {
+  "canPass": true,
+  "draw": 'grass',
+  'canCheck': true,
+  'canTalk': false,
+  check() {
+    var thingie = 'You could have sworn that the grass looked greener from further away. However, after closer analysis';
+    thingie += ' the grass in the distance looks greener now.';
+    text.innerHTML = thingie;
+  }
+};
+
 var hwb = {
 // hwb = horizontal white board
    "canPass": false,
@@ -296,16 +228,265 @@ var ltc = {
   'canCheck': false
 };
 
+// MLb = Media Lab
+var MLb = {
+  'canPass': false,
+  'draw': 'brick',
+  'canTalk': false,
+  'canCheck': true,
+  check() {
+    var thingie = "This is the media lab. You can practice presentations here or use the computer for video editting.";
+    text.innerHTML = thingie;
+  },
+};
 
 
+// otT = ottoman on tile
+var otT = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
 
+// otR = ottoman on rug
+var otR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// plt = plant
+var plt = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// path
+var pth = {
+  'canPass':true,
+  'draw':'path',
+  'canCheck': false,
+  'canTalk': false
+};
+
+var rug = {
+  "canPass": true,
+  "draw": 'rug',
+  'canCheck': true,
+  'canTalk': false,
+   check() {
+    var thingie = 'No problems found here. While you are tempted, you refuse to sweep your problems under the rug.';
+    text.innerHTML = thingie;
+  }
+};
+
+// sfB = black sofa
+var sfB = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// shl = shelf
+var shl = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// Student Government President
+var SGP = {
+  'name': 'Kaitlyn Dorris',
+  'heshe': "She",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is the SGA President.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this.name + ": Hi, I am " + this.name + '. ';
+    thingie += "I am the SGA President. I love the library. It's a great place to study. "; 
+    thingie += "The scenery is great too.<br>";
+    thingie += "Casey Baker: It sure is.<br>";
+    thingie += this.name + ": I'm talking about the artwork.<br>";
+    thingie += "Casey Baker: I was too.<br>";
+    thingie += this.name + ": I can't believe this is in the game.<br>";
+    thingie += "Casey Baker: I am too. I would have thought they would have you say something about "; 
+    thingie += "what the SGA is all about.<br>";
+    thingie += this.name + ": I know, right. Well you can find out more about the SGA at ";
+    thingie += '<a href="https://www.usm.edu/gulfcoast/student-government-association">';
+    thingie += 'https://www.usm.edu/gulfcoast/student-government-association</a>.';   
+  }
+};
+
+// SGS = SGA Secretary
+var SGP = {
+  'name': '',
+  'heshe': "She",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is the SGA Secretary.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + '. ';
+    thingie += "I am the SGA Secretary. "; 
+  }
+};
+
+// swamp
+var smp = {
+  'canPass':true,
+  'draw':'swamp',
+  'canCheck': false,
+  'canTalk': false
+};
+
+// SmS = Seymour Shelf
+var SmS = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// sand
+var snd = {
+  'canPass':true,
+  'draw':'sand',
+  'canCheck': false,
+  'canTalk': false
+};
+
+// StL = Staff Lounge
+var StL = {
+  'canPass': false,
+  'draw': 'brick',
+  'canTalk': false,
+  'canCheck': true,
+  check() {
+    var thingie = "Staff only.";
+    text.innerHTML = thingie;
+  },
+};
+
+// til = tile
+var til = {
+  'canPass':true,
+  'draw':'floor',
+   'canTalk': false,
+  'canCheck': false
+};
+
+
+// trs = trash
+var trs = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// tcD = Think Center chair facing down
+var tcD = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// tcL = Think Center chair facing left
+var tcL = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// tcR = Think Center chair facing Right
+var tcR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// tcU = Think Center chair facing UP
+var tcU = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// tcT = technology cabinent Top
+var tcT = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// tcM = techology cabinet Middle
+var tcM = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// tcB = techology cabinet Bottom
+var tcB = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// vfb = vertical felt board
+var vfb = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// vwb = vertical white board
+var vwb = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// wall
 var wal = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
+// water
+var wtr = {
+  'canPass':false,
+  'draw':'water',
+  'canTalk': false,
+  'canCheck': false
+};
 
+// ZSt = Zachary Stewart
+var ZSt = {
+  'name': 'Zachary Stewart',
+  'heshe': "He",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is one of the graduate assistants in the ASC.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + '. ';
+    thingie += "I am  one of the graduate assistants in the ASC. "; 
+  }
+};
 
 
 /* Map key
@@ -338,12 +519,15 @@ var wal = {
 // fcs = file cabinet short
 // hwb = horizontal white board
 // ltc = laptop cart
-// MLb = MLb
+// MLb = Media Lab
 // otT = ottoman on tile
 // otR = ottoman on rug
 // plt = plant
+// sfB = black sofa
 // SGP = SGA President
 // SGS = SGA Secretary
+// shl = shelf
+// SmS = Seymour Shelf
 // StL = Staff Lounge
 // til = tile
 // trs = trash
@@ -359,15 +543,8 @@ var wal = {
 // wal = wall
 // wnB = bottoom window
 // wnT = top window
-// sfB = black sofa
-// SmS = Seymour Shelf
-// shl = shelf
 // ZSt = Zachary Stewart
 */
-
-
-
-
 
 var map = {
  '0':[wal,wal,wal,wal,wal,SGP,wal,wal,MLb,wal,wal,StL,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
