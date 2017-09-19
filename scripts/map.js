@@ -1,8 +1,9 @@
 var text = document.getElementById('textArea');
 var sumbit = document.getElementById('submitButtonArea');
 
-var bbb = {
+
   // bbb = bullitin board
+var bbb = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
