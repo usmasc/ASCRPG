@@ -508,13 +508,15 @@ var ZSt = {
 
 
 /* Map key
+// AdT = Adam Terrell*
 // bbb = bullitin board
 // bbT = bullitin board Top
 // bbB = bullitin board Bottom
-// bsL = black shelf left
-// bsR = black shelf right
 // brs = barstool
 // brt = barstool table
+// bsL = black shelf left
+// bsR = black shelf right
+// bsv = vertical black shelf*
 // chR = round chair
 // ctR = circle table on rug
 // ctC = circle table on carpet
@@ -534,14 +536,30 @@ var ZSt = {
 // dkR = hor. desk right end
 // dhL = desk horizontal Left end
 // dcR = desk corner lower Right
+// fdR = front desk right*
+// fdL = front desk left*
 // fcs = file cabinet short
+// gsT = top gray shelf *
+// gsB = bottom gray shelf *
+// gsR = right gray shelf *
+// gsL = left gray shelf *
 // hwb = horizontal white board
+// hUL = hexagon table Upper Left*
+// hUR = hexagon table Upper Right*
+// hML = hexagon table Middle Left*
+// hMR = hexagon table Middle Right*
+// hLL = hexagon table Lower Left*
+// hLR = hexagon table Lower Right*
+// JBo = Jensa Besse office*
 // ltc = laptop cart
 // MLb = Media Lab
 // otT = ottoman on tile
 // otR = ottoman on rug
 // plt = plant
+// sch = schedule
 // sfB = black sofa
+// sid = sign in desk
+// SFG = Scott Geyer
 // SGp = SGA President
 // SGs = SGA Secretary
 // shl = shelf
@@ -556,11 +574,19 @@ var ZSt = {
 // tcT = technology cabinent Top
 // tcM = techology cabinet Middle
 // tcB = techology cabinet Bottom
+// TSL = Teneala Spencer
 // vfb = vertical felt board
 // vwb = vertical white board
 // wal = wall
+// wbL = white board Left*
+// wbM = white board Middle*
+// wbR = white board Right*
 // wnB = bottoom window
 // wnT = top window
+// wsh = white shelf*
+// wtL = white board table left*
+// wtR = white board table Right*
+// VSn = Victoria Snyder*
 // ZSt = Zachary Stewart
 */
 
@@ -581,11 +607,27 @@ var map = {
 '13':[wal,wal,fcs,til,dTc,til,til,til,til,til,til,wal,wal,til,til,til,bbT,til,til,til,til,til,til,til,wal],
 '14':[wnT,vwb,til,ZSt,dvM,til,til,til,til,til,til,cpr,wal,til,til,til,bbB,til,til,til,til,til,til,til,wal],
 '15':[wnT,vwb,til,dhL,dcR,til,cUL,cUR,til,til,til,til,wal,wal,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
-'16':[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,tcD,ctC,gwv],
+'16':[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,SFG,ctC,gwv],
 '17':[bbb,til,til,til,til,til,til,til,til,til,til,til,til,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcL,gwv],
 '18':[wal,til,til,til,til,til,til,til,til,til,til,til,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
 '19':[wnT,til,til,til,til,cUL,cUR,til,til,til,til,tcT,wal,cfT,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wbv],
 '20':[wnB,til,cUL,cUR,til,cLL,cLR,til,til,til,til,tcM,wal,cfB,crp,crp,crp,crp,ESn,crp,crp,crp,crp,brs,gwv],
-  'rows':21,
+'21':[wal,til,cLL,cLR,til,til,til,til,til,til,til,tcM,wal,bsv,crp,crp,crp,tcR,ctC,tcL,crp,crp,crp,bst,gwv],
+'22':[wal,til,til,til,til,til,til,til,til,til,til,tcM,wal,wsh,crp,crp,crp,crp,crp,crp,crp,crp,crp,brs,gwv],
+'23':[wal,til,til,til,til,til,til,til,til,til,til,tcM,wal,gsT,crp,crp,crp,crp,crp,crp,crp,crp,crp,wal,gwv],
+'24':[wal,wal,til,til,til,til,til,gsL,gsR,bsL,bsR,tcM,wal,gsB,crp,crp,crp,hUL,hUR,crp,crp,crp,crp,crp,gwv],
+'25':[wal,wal,wal,wbL,wbM,wbM,wbR,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,hML,hMR,crp,crp,crp,crp,crp,gwv],
+'26':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,JBo,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,wtL,wtR,gwv],
+'27':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,crp,crp,gwv],
+'28':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
+'29':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,TSL,AdT,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
+'30':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wtL,wtR,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
+'31':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,wtL,wtR,gwv],
+'32':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,VSn,crp,crp,crp,crp,crp,crp,gwv],
+'32':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,fdL,fdR,crp,crp,crp,crp,crp,gwv],
+'33':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,tcL,ctC,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcU,gwv],
+'34':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,wal,tcU,crp,crp,crp,sid,sch,crp,crp,crp,tcU,wal,gwv],
+'35':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,gwh,gwh,gwh,gwh,crp,crp,gwh,gwh,gwh,gwh,gwh,gwh,gwh,gwv],
+  'rows':36,
   'test':'test'
 };
