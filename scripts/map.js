@@ -314,7 +314,7 @@ var shl = {
 };
 
 // Student Government President
-var SGP = {
+var SGp = {
   'name': 'Kaitlyn Dorris',
   'heshe': "She",
   'canPass': false,
@@ -342,7 +342,7 @@ var SGP = {
 };
 
 // SGS = SGA Secretary
-var SGP = {
+var SGs = {
   'name': '',
   'heshe': "She",
   'canPass': false,
@@ -542,8 +542,8 @@ var ZSt = {
 // otR = ottoman on rug
 // plt = plant
 // sfB = black sofa
-// SGP = SGA President
-// SGS = SGA Secretary
+// SGp = SGA President
+// SGs = SGA Secretary
 // shl = shelf
 // SmS = Seymour Shelf
 // StL = Staff Lounge
@@ -565,8 +565,8 @@ var ZSt = {
 */
 
 var map = {
- '0':[wal,wal,wal,wal,wal,SGP,wal,wal,MLb,wal,wal,StL,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
- '1':[wnT,til,til,SGS,dkT,til,til,til,til,til,til,til,til,til,til,chR,sfB,sfB,til,til,til,til,til,til,wal],
+ '0':[wal,wal,wal,wal,wal,SGp,wal,wal,MLb,wal,wal,StL,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
+ '1':[wnT,til,til,SGs,dkT,til,til,til,til,til,til,til,til,til,til,chR,sfB,sfB,til,til,til,til,til,til,wal],
  '2':[wnB,til,til,til,dkB,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,wal],
  '3':[wal,til,til,til,til,til,til,til,til,til,til,til,til,til,til,rug,ctR,bsL,bsR,til,til,til,til,til,wal],
  '4':[wal,til,til,til,til,til,til,til,til,til,til,til,til,til,til,rug,rug,rug,rug,til,til,til,til,til,wal],
