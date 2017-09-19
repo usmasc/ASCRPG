@@ -187,6 +187,23 @@ var dcR = {
   'canCheck': false
 };
 
+// Elizabeth Snyder
+var ESn = {
+  'name': 'Elizabeth Snyder',
+  'heshe': "He",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is a mth tutor in the ASC.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + '. ';
+    thingie += "I am  one of the math tutors in the ASC. "; 
+  }
+};
 
 var fcs = {
 // fcs = file cabinet short
