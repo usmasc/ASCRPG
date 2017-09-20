@@ -1,6 +1,23 @@
 var text = document.getElementById('textArea');
 var sumbit = document.getElementById('submitButtonArea');
 
+// AdT = Adam Terrell*
+var ESn = {
+  'name': 'Adam Terrell',
+  'heshe': "He",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is a writing, speaking, and Geography tutor in the ASC.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + '. ';
+    thingie += "I am  one of the math tutors in the ASC. "; 
+  }
+};
 
   // bbb = bullitin board
 var bbb = {
@@ -49,6 +66,13 @@ var bSL = {
 };
 
 var bSR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// bsv = vertical black shelf*
+var bsv = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -190,7 +214,7 @@ var dcR = {
 // Elizabeth Snyder
 var ESn = {
   'name': 'Elizabeth Snyder',
-  'heshe': "He",
+  'heshe': "She",
   'canPass': false,
   'draw': 'Fred',
   'canTalk': true,
@@ -207,6 +231,55 @@ var ESn = {
 
 var fcs = {
 // fcs = file cabinet short
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// fdR = front desk right*
+var fdR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// fdL = front desk left*
+var fdL = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// fcs = file cabinet short
+var fcs = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// gsT = top gray shelf *
+var gsT = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// gsB = bottom gray shelf *
+var gsB = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// gsR = right gray shelf *
+var gsR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// gsL = left gray shelf *
+var gsL = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -239,6 +312,14 @@ var hwb = {
   'canCheck': false
 };
 
+// hUL = hexagon table Upper Left*
+// hUR = hexagon table Upper Right*
+// hML = hexagon table Middle Left*
+// hMR = hexagon table Middle Right*
+// hLL = hexagon table Lower Left*
+// hLR = hexagon table Lower Right*
+// JBo = Jensa Besse office*
+
 var ltc = {
 // ltc = laptop cart
    "canPass": false,
@@ -257,7 +338,6 @@ var MLb = {
     text.innerHTML = thingie;
   },
 };
-
 
 // otT = ottoman on tile
 var otT = {
@@ -402,7 +482,6 @@ var til = {
   'canCheck': false
 };
 
-
 // trs = trash
 var trs = {
    "canPass": false,
@@ -491,7 +570,7 @@ var wtr = {
 // ZSt = Zachary Stewart
 var ZSt = {
   'name': 'Zachary Stewart',
-  'heshe': "He",
+  'she': "He",
   'canPass': false,
   'draw': 'Fred',
   'canTalk': true,
