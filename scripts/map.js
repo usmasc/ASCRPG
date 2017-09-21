@@ -587,15 +587,19 @@ var ZSt = {
 
 
 /* Map key
+// AMc = Adrienne McPhaul #
 // AdT = Adam Terrell*
 // bbb = bullitin board
 // bbT = bullitin board Top
 // bbB = bullitin board Bottom
+// bbL = bullitin board Left
+// bbR = bullitin board Right
 // brs = barstool
 // brt = barstool table
 // bsL = black shelf left
 // bsR = black shelf right
 // bsv = vertical black shelf*
+// cct = computer card catologue #
 // chR = round chair
 // ctR = circle table on rug
 // ctC = circle table on carpet
@@ -603,10 +607,15 @@ var ZSt = {
 // cUR = circle table upper right
 // cLL = circle table lower left
 // cLR = circle table lower Right
+// coT = column top #
+// coB = column bottom #
+// CpL = computer Lab #
 // cpr = copier
 // crp = carpet
 // crB = carpet Boundary
 // dkB = bottom desk
+// dkM = middle desk verticle #
+// dkH = middle desk Horizontal
 // dkT = top desk
 // dcT = top desk with computer
 // dLc = hor. desk left end with computer
@@ -615,6 +624,8 @@ var ZSt = {
 // dkR = hor. desk right end
 // dhL = desk horizontal Left end
 // dcR = desk corner lower Right
+// drT = top door
+// drB = bottom door
 // fdR = front desk right*
 // fdL = front desk left*
 // fcs = file cabinet short
@@ -631,20 +642,26 @@ var ZSt = {
 // hLR = hexagon table Lower Right*
 // JBo = Jensa Besse office*
 // ltc = laptop cart
+// Lps = Library Public Serives #
+// Lrs = Library Research Services Unit
 // MLb = Media Lab
 // otT = ottoman on tile
 // otR = ottoman on rug
+// PDn = Peter Dean #
 // plt = plant
 // sch = schedule
 // sfB = black sofa
 // sid = sign in desk
-// SFG = Scott Geyer
+// siL = library sign
+// SfG = Scott Geyer
 // SGp = SGA President
 // SGs = SGA Secretary
 // shl = shelf
 // SmS = Seymour Shelf
 // StL = Staff Lounge
+// str = stair
 // til = tile
+// tiB = tile boundary
 // trs = trash
 // tcD = Think Center chair facing down
 // tcL = Think Center chair facing left
@@ -653,7 +670,7 @@ var ZSt = {
 // tcT = technology cabinent Top
 // tcM = techology cabinet Middle
 // tcB = techology cabinet Bottom
-// TSL = Teneala Spencer
+// TSl = Teneala Spencer
 // vfb = vertical felt board
 // vwb = vertical white board
 // wal = wall
@@ -686,7 +703,7 @@ var map = {
 '13':[wal,wal,fcs,til,dTc,til,til,til,til,til,til,wal,wal,til,til,til,bbT,til,til,til,til,til,til,til,wal],
 '14':[wnT,vwb,til,ZSt,dvM,til,til,til,til,til,til,cpr,wal,til,til,til,bbB,til,til,til,til,til,til,til,wal],
 '15':[wnT,vwb,til,dhL,dcR,til,cUL,cUR,til,til,til,til,wal,wal,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
-'16':[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,SFG,ctC,gwv],
+'16':[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,SfG,ctC,gwv],
 '17':[bbb,til,til,til,til,til,til,til,til,til,til,til,til,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcL,gwv],
 '18':[wal,til,til,til,til,til,til,til,til,til,til,til,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
 '19':[wnT,til,til,til,til,cUL,cUR,til,til,til,til,tcT,wal,cfT,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wbv],
@@ -699,7 +716,7 @@ var map = {
 '26':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,JBo,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,wtL,wtR,gwv],
 '27':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,crp,crp,gwv],
 '28':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
-'29':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,TSL,AdT,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
+'29':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,TSl,AdT,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
 '30':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wtL,wtR,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
 '31':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,wtL,wtR,gwv],
 '32':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,VSn,crp,crp,crp,crp,crp,crp,gwv],
@@ -707,6 +724,26 @@ var map = {
 '33':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,tcL,ctC,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcU,gwv],
 '34':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,wal,tcU,crp,crp,crp,sid,sch,crp,crp,crp,tcU,wal,gwv],
 '35':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,gwh,gwh,gwh,gwh,crp,crp,gwh,gwh,gwh,gwh,gwh,gwh,gwh,gwv],
+'36':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crB],
+'37':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crB],
+'38':[wal,til,til,til,til,til,til,til,til,til,dkT,til,crp,crp,cUL,cUR,crp,crp,crp,cUL,cUR,crp,crp,crp,crB],
+'39':[wal,til,til,til,til,til,til,til,til,til,dkM,til,crp,crp,cLL,cLR,crp,crp,crp,cLL,cLR,crp,crp,crp,crB],
+'40':[wal,til,til,til,til,til,til,til,til,til,dkM,til,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crB],
+'41':[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+'42':[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,til,coT,coT,til,coT,til,coT,til,coT,til,coT,tiB],
+'43':[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,siL,coB,coB,til,coB,til,coB,til,coB,til,coB,tiB],
+'44':[wal,til,til,til,til,til,til,AMc,til,PDn,dkM,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+'45':[wal,wal,wal,bbL,bbR,wal,dkH,dkH,Lrs,dkH,Lps,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+'46':[drT,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+'47':[drB,til,til,til,til,til,til,til,til,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
+'48':[wal,til,til,til,til,til,til,til,til,til,til,til,til,str,str,str,str,str,str,str,str,str,str,str,str],
+'49':[drT,til,til,til,til,til,til,til,til,cct,til,til,til,str,str,str,str,str,str,str,str,str,str,str,str],
+'50':[drB,til,til,til,til,til,til,til,til,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
+'51':[wal,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+'52':[drT,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+'53':[drB,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,til,til,coT,coT,til,coT,til,coT,til,coT,til,coT,tiB],
+'54':[wal,wal,bbL,bbR,wal,wal,crp,crp,crp,crp,crp,CpL,til,til,coB,coB,til,coB,til,coB,til,coB,til,coB,tiB],
+'55':[wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wal,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB]
   'rows':36,
   'test':'test'
 };
