@@ -1,6 +1,10 @@
 var text = document.getElementById('textArea');
 var sumbit = document.getElementById('submitButtonArea');
 
+function print(str) {
+  text.innerHTML = str;
+}
+
 // AdT = Adam Terrell*
 var AdT = {
   'name': 'Adam Terrell',
@@ -17,6 +21,16 @@ var AdT = {
     var thingie = this. name  + ": Hi, I am " + this.name + '. ';
     thingie += "I am  one of the math tutors in the ASC. "; 
   }
+};
+
+// AMc = Adrienne McPhaul #
+var AMc = {
+  'name': 'Adrienne McPhaul',
+  'she': "She",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': false,
+  'canCheck': false
 };
 
   // bbb = bullitin board
@@ -40,18 +54,21 @@ var bbB = {
   'canCheck': false
 };
 
+// brick
 var brk = {
   "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
+// barstool
 var brs = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
+// barstool table
 var brt = {
    "canPass": false,
   "draw": 'brick',
@@ -65,6 +82,7 @@ var bSL = {
   'canCheck': false
 };
 
+// black shelf Right
 var bSR = {
    "canPass": false,
   "draw": 'brick',
@@ -78,35 +96,14 @@ var bsv = {
   'canCheck': false
 };
 
+// cct = computer card catologue #
+var cct = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 var chR = {
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-var ctR = {
-  // ctR = circle table on rug
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-var ctC = {
-  // ctR = circle table on carpet
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-var cUL = {
-  // cUL = circle table upper left
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-var cUR = {
-  // cUL = circle table upper left
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -126,6 +123,31 @@ var cLR = {
   'canCheck': false
 };
 
+// coB = column bottom #
+var coB = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// coT = column top #
+var coT = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// CpL = computer Lab #
+var CpL = {
+  canPass: false,
+  draw: 'brick',
+  canCheck: true,
+  check() {
+    var thingie = "This is the future site of a computer lab.";
+    text.innerHTML = thingie;
+  }
+};
+
 var cpr = {
   // cpr = copier
    "canPass": false,
@@ -133,6 +155,14 @@ var cpr = {
   'canCheck': false
 };
 
+// crB = carpet Boundary
+var crB = {
+   "canPass": false,
+  "draw": 'rug',
+  'canCheck': false
+};
+
+// carpet
 var crp = {
   "canPass": true,
   "draw": 'rug',
@@ -140,23 +170,36 @@ var crp = {
   'canTalk': false,
 };
 
-var crB = {
-  // crB = carpet Boundary
-  "canPass": false,
-  "draw": 'rug',
-  'canCheck': false,
-  'canTalk': false,
-};
-
-var dkT = {
-  // dkT = top desk
+var ctC = {
+  // ctC = circle table on carpet
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
-var dkB = {
-  // dkB = bottom desk
+var ctR = {
+  // ctR = circle table on rug
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var cUL = {
+  // cUL = circle table upper left
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var cUR = {
+  // cUR = circle table upper right
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var dcR = {
+// dcR = desk corner lower Right
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -169,6 +212,13 @@ var dcT = {
   'canCheck': false
 };
 
+var dhL = {
+// dhL = desk horizontal Left end
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 var dLc = {
   // dLc = hor. desk left end with computer
    "canPass": false,
@@ -176,8 +226,8 @@ var dLc = {
   'canCheck': false
 };
 
-var dRc = {
-  // dRc = hor. desk right end with computer
+var dkB = {
+  // dkB = bottom desk
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -190,6 +240,13 @@ var dkL = {
   'canCheck': false
 };
 
+// dkM = middle desk verticle #
+var dkM = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 var dkR = {
 // dkR = hor. desk right end 
    "canPass": false,
@@ -197,15 +254,15 @@ var dkR = {
   'canCheck': false
 };
 
-var dhL = {
-// dhL = desk horizontal Left end
+var dkT = {
+  // dkT = top desk
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
-var dcR = {
-// dcR = desk corner lower Right
+var dRc = {
+  // dRc = hor. desk right end with computer
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -225,19 +282,13 @@ var ESn = {
   },
   talk() {
     var thingie = this. name  + ": Hi, I am " + this.name + '. ';
-    thingie += "I am  one of the math tutors in the ASC. "; 
+    thingie += "I am  one of the math tutors in the ASC. ";
+    print(thingie);
   }
 };
 
 var fcs = {
 // fcs = file cabinet short
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-// fdR = front desk right*
-var fdR = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -250,36 +301,8 @@ var fdL = {
   'canCheck': false
 };
 
-// fcs = file cabinet short
-var fcs = {
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-// gsT = top gray shelf *
-var gsT = {
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-// gsB = bottom gray shelf *
-var gsB = {
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-// gsR = right gray shelf *
-var gsR = {
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-// gsL = left gray shelf *
-var gsL = {
+// fdR = front desk right*
+var fdR = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -293,6 +316,7 @@ var flr = {
   'canCheck': false
 };
 
+// grass
 var grs = {
   "canPass": true,
   "draw": 'grass',
@@ -305,36 +329,29 @@ var grs = {
   }
 };
 
-var hwb = {
-// hwb = horizontal white board
+// gsB = bottom gray shelf *
+var gsB = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
-// hUL = hexagon table Upper Left*
-var hUL = {
+// gsL = left gray shelf *
+var gsL = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
-// hUR = hexagon table Upper Right*
-var hUR = {
+// gsR = right gray shelf *
+var gsR = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
-// hML = hexagon table Middle Left*
-var hML = {
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-// hMR = hexagon table Middle Right*
-var hMR = {
+// gsT = top gray shelf *
+var gsT = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -354,6 +371,41 @@ var hLR = {
   'canCheck': false
 };
 
+// hML = hexagon table Middle Left*
+var hML = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// hMR = hexagon table Middle Right*
+var hMR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// hUL = hexagon table Upper Left*
+var hUL = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// hUR = hexagon table Upper Right*
+var hUR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var hwb = {
+// hwb = horizontal white board
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // JBo = Jensa Besse office*
 var JBo = {
    "canPass": false,
@@ -361,6 +413,28 @@ var JBo = {
   'canCheck': true,
   check() {
     var thingie = "This is Jensa Besse's office.";
+    text.innerHTML = thingie;
+  }
+};
+
+// Lps = Library Public Serives #
+var Lps = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': true,
+   check() {
+    var thingie = "This is the Library Public Services Dept. We check out books. Find books, and other fun stuff.";
+    text.innerHTML = thingie;
+  }
+};
+
+// Lrs = Library Research Services Unit
+var Lrs = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': true,
+   check() {
+    var thingie = "This is the Research Services Unit. We help you perform research and search databases.";
     text.innerHTML = thingie;
   }
 };
@@ -388,6 +462,13 @@ var MLb = {
   },
 };
 
+// otR = ottoman on rug
+var otR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // otT = ottoman on tile
 var otT = {
    "canPass": false,
@@ -395,11 +476,23 @@ var otT = {
   'canCheck': false
 };
 
-// otR = ottoman on rug
-var otR = {
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
+// PDn = Peter Dean #
+var PDn = {
+  'name': 'Peter Dean',
+  'heOrShe': "He",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = '';
+    thingie += 'https://www.usm.edu/gulfcoast/student-government-association</a>.';
+    text.innerHTML = thingie;
+  }
 };
 
 // plt = plant
@@ -417,6 +510,7 @@ var pth = {
   'canTalk': false
 };
 
+// rug
 var rug = {
   "canPass": true,
   "draw": 'rug',
@@ -430,13 +524,6 @@ var rug = {
 
 // sfB = black sofa
 var sfB = {
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
-};
-
-// shl = shelf
-var shl = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -467,6 +554,7 @@ var SGp = {
     thingie += this.name + ": I know, right. Well you can find out more about the SGA at ";
     thingie += '<a href="https://www.usm.edu/gulfcoast/student-government-association">';
     thingie += 'https://www.usm.edu/gulfcoast/student-government-association</a>.';   
+    print(thingie);
   }
 };
 
@@ -484,8 +572,16 @@ var SGs = {
   },
   talk() {
     var thingie = this. name  + ": Hi, I am " + this.name + '. ';
-    thingie += "I am the SGA Secretary. "; 
+    thingie += "I am the SGA Secretary. ";
+    print(thingie);
   }
+};
+
+// shl = shelf
+var shl = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
 };
 
 // swamp
@@ -523,16 +619,8 @@ var StL = {
   },
 };
 
-// til = tile
-var til = {
-  'canPass':true,
-  'draw':'floor',
-   'canTalk': false,
-  'canCheck': false
-};
-
-// trs = trash
-var trs = {
+// tcB = techology cabinet Bottom
+var tcB = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -552,15 +640,15 @@ var tcL = {
   'canCheck': false
 };
 
-// tcR = Think Center chair facing Right
-var tcR = {
+// tcM = techology cabinet Middle
+var tcM = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
-// tcU = Think Center chair facing UP
-var tcU = {
+// tcR = Think Center chair facing Right
+var tcR = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -573,18 +661,53 @@ var tcT = {
   'canCheck': false
 };
 
-// tcM = techology cabinet Middle
-var tcM = {
+// tcU = Think Center chair facing UP
+var tcU = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
-// tcB = techology cabinet Bottom
-var tcB = {
+// til = tile
+var til = {
+  'canPass':true,
+  'draw':'floor',
+   'canTalk': false,
+  'canCheck': false
+};
+
+// tiB = tile boundary
+var tiB = {
+  'canPass':false,
+  'draw':'floor',
+   'canTalk': false,
+  'canCheck': false
+};
+
+// trs = trash
+var trs = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
+};
+
+// TSl = Teneala Spencer
+var TSl = {
+  'name': 'Victoria',
+  'she': "She",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is a math, Spanish, and Computer Science tutor.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + ', if you need help with math, Spanish, or Computer Science ';
+    thingie += 'make an <a href="http://usm.mywconline.com" target="_blank">appointment</a> with me at ';
+    thingie += '<a href="http://usm.mywconline.com" target="_blank">usm.mywconline.com</a>'; 
+  }
 };
 
 // vfb = vertical felt board
@@ -608,12 +731,87 @@ var wal = {
   'canCheck': false
 };
 
+// wbL = white board Left*
+var wbL = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// wbM = white board Middle*
+var wbM = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// wbR = white board Right*
+var wbR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// wnB = bottoom window
+var wnB = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// wnT = top window
+var wnT = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// wsh = white shelf*
+var wsh = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// wtL = white board table left*
+var wtL = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // water
 var wtr = {
   'canPass':false,
   'draw':'water',
   'canTalk': false,
   'canCheck': false
+};
+
+// wtR = white board table Right*
+var wtR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// VSn = Victoria Snyder*
+var ZSt = {
+  'name': 'Victoria',
+  'she': "She",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is our front desk person.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + ', I can help you make an ';
+    thingie += '<a href="http://usm.mywconline.com" target="_blank">appointment</a> or help you find ';
+    thingie += "the resource that you need."; 
+  }
 };
 
 // ZSt = Zachary Stewart
@@ -634,15 +832,14 @@ var ZSt = {
   }
 };
 
-
 /* Map key
-// AMc = Adrienne McPhaul #
 // AdT = Adam Terrell*
+// AMc = Adrienne McPhaul #
 // bbb = bullitin board
-// bbT = bullitin board Top
 // bbB = bullitin board Bottom
 // bbL = bullitin board Left
 // bbR = bullitin board Right
+// bbT = bullitin board Top
 // brs = barstool
 // brt = barstool table
 // bsL = black shelf left
@@ -650,18 +847,18 @@ var ZSt = {
 // bsv = vertical black shelf*
 // cct = computer card catologue #
 // chR = round chair
-// ctR = circle table on rug
-// ctC = circle table on carpet
-// cUL = circle table upper left
-// cUR = circle table upper right
 // cLL = circle table lower left
 // cLR = circle table lower Right
 // coT = column top #
 // coB = column bottom #
 // CpL = computer Lab #
 // cpr = copier
+// crB = carpet Boundary #
 // crp = carpet
-// crB = carpet Boundary
+// ctC = circle table on carpet
+// ctR = circle table on rug
+// cUL = circle table upper left
+// cUR = circle table upper right
 // dkB = bottom desk
 // dkM = middle desk verticle #
 // dkH = middle desk Horizontal
@@ -692,7 +889,7 @@ var ZSt = {
 // JBo = Jensa Besse office*
 // ltc = laptop cart
 // Lps = Library Public Serives #
-// Lrs = Library Research Services Unit
+// Lrs = Library Research Services Unit #
 // MLb = Media Lab
 // otT = ottoman on tile
 // otR = ottoman on rug
@@ -701,17 +898,14 @@ var ZSt = {
 // sch = schedule
 // sfB = black sofa
 // sid = sign in desk
-// siL = library sign
+// siL = library sign #
 // SfG = Scott Geyer
 // SGp = SGA President
 // SGs = SGA Secretary
 // shl = shelf
 // SmS = Seymour Shelf
 // StL = Staff Lounge
-// str = stair
-// til = tile
-// tiB = tile boundary
-// trs = trash
+// str = stair #
 // tcD = Think Center chair facing down
 // tcL = Think Center chair facing left
 // tcR = Think Center chair facing Right
@@ -719,6 +913,9 @@ var ZSt = {
 // tcT = technology cabinent Top
 // tcM = techology cabinet Middle
 // tcB = techology cabinet Bottom
+// til = tile
+// tiB = tile boundary
+// trs = trash
 // TSl = Teneala Spencer
 // vfb = vertical felt board
 // vwb = vertical white board
