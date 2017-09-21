@@ -522,12 +522,44 @@ var rug = {
   }
 };
 
+// sch = schedule
+var sch = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': true,
+  check() {
+    var thingie = 'View the schedule at ';
+    thingie += '<a href="http://usm.mywconline.com" target="_blank">usm.mywconline.com</a>'; 
+    print(thingie);
+  }
+};
+
 // sfB = black sofa
 var sfB = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
+
+// SfG = Scott Geyer
+var SfG = {
+  'name': 'Scott',
+  'she': "He",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is a math and stats tutor.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + ', if you need help with math or stats ';
+    thingie += 'make an <a href="http://usm.mywconline.com" target="_blank">appointment</a> with me at ';
+    thingie += '<a href="http://usm.mywconline.com" target="_blank">usm.mywconline.com</a>'; 
+  }
+};
+
 
 // Student Government President
 var SGp = {
@@ -584,12 +616,29 @@ var shl = {
   'canCheck': false
 };
 
+// siL = library sign #
+var siL = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': true,
+  check() {
+    var thingie = "Library stuff";
+    print(thingie);
+  }
+};
+
 // swamp
 var smp = {
   'canPass':true,
   'draw':'swamp',
   'canCheck': false,
   'canTalk': false
+};
+
+var shl = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
 };
 
 // SmS = Seymour Shelf
@@ -617,6 +666,13 @@ var StL = {
     var thingie = "Staff only.";
     text.innerHTML = thingie;
   },
+};
+
+// str = stair #
+var str = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
 };
 
 // tcB = techology cabinet Bottom
@@ -990,6 +1046,6 @@ var map = {
 '53':[drB,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,til,til,coT,coT,til,coT,til,coT,til,coT,til,coT,tiB],
 '54':[wal,wal,bbL,bbR,wal,wal,crp,crp,crp,crp,crp,CpL,til,til,coB,coB,til,coB,til,coB,til,coB,til,coB,tiB],
 '55':[wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wal,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB]
-  'rows':36,
+  'rows':56,
   'test':'test'
 };
