@@ -2,7 +2,7 @@ var text = document.getElementById('textArea');
 var sumbit = document.getElementById('submitButtonArea');
 
 // AdT = Adam Terrell*
-var ESn = {
+var AdT = {
   'name': 'Adam Terrell',
   'heshe': "He",
   'canPass': false,
@@ -313,18 +313,67 @@ var hwb = {
 };
 
 // hUL = hexagon table Upper Left*
+var hUL = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // hUR = hexagon table Upper Right*
+var hUR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // hML = hexagon table Middle Left*
+var hML = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // hMR = hexagon table Middle Right*
+var hMR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // hLL = hexagon table Lower Left*
+var hLL = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // hLR = hexagon table Lower Right*
+var hLR = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // JBo = Jensa Besse office*
+var JBo = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': true,
+  check() {
+    var thingie = "This is Jensa Besse's office.";
+    text.innerHTML = thingie;
+  }
+};
 
 var ltc = {
 // ltc = laptop cart
    "canPass": false,
   "draw": 'brick',
-  'canCheck': false
+  'canCheck': true,
+   check() {
+    var thingie = "This is the laptop cart. Speak to an ASC tutor to check out a laptop. Please have your student ID ready.";
+    text.innerHTML = thingie;
+  }
 };
 
 // MLb = Media Lab
