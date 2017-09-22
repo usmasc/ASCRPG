@@ -11,27 +11,63 @@ void setup() {
 }
 
 var mapD = [
- [wal,wal,wal,wal,wal,SGp,wal,wal,MLb,wal,wal,StL,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
- [wnT,til,til,SGs,dkT,til,til,til,til,til,til,til,til,til,til,chR,sfB,sfB,til,til,til,til,til,til,wal],
- [wnB,til,til,til,dkB,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,wal],
- [wal,til,til,til,til,til,til,til,til,til,til,til,til,til,til,rug,ctR,bsL,bsR,til,til,til,til,til,wal],
- [wal,til,til,til,til,til,til,til,til,til,til,til,til,til,til,rug,rug,rug,rug,til,til,til,til,til,wal],
- [wal,wal,hwb,hwb,til,til,til,til,til,til,til,til,til,til,otT,rug,rug,rug,otR,til,til,til,til,til,wal],
- [wal,SmS,til,til,til,til,til,cUL,cUR,til,til,til,til,til,til,rug,otR,rug,rug,til,til,til,til,til,wal],
- [wal,shl,til,til,til,til,til,cLL,cLR,til,til,til,til,til,til,rug,rug,rug,rug,til,til,til,til,til,wal],
- [wnT,til,til,cUL,cUR,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,wal],
- [wnB,til,til,cLL,cLR,til,til,til,til,til,til,til,til,til,til,til,til,vfb,til,til,til,til,til,til,wal],
- [wal,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,trs,vfb,til,til,til,til,til,til,wal],
- [wal,wal,plt,til,til,til,til,til,til,til,til,til,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,wal,wal],
- [wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,til,wal,wal,til,til,til,wal,til,til,til,til,til,til,til,wal],
- [wal,wal,fcs,til,dTc,til,til,til,til,til,til,wal,wal,til,til,til,bbT,til,til,til,til,til,til,til,wal],
- [wnT,vwb,til,ZSt,dvM,til,til,til,til,til,til,cpr,wal,til,til,til,bbB,til,til,til,til,til,til,til,wal],
- [wnT,vwb,til,dhL,dcR,til,cUL,cUR,til,til,til,til,wal,wal,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
- [wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,tcD,ctC,gwv],
- [bbb,til,til,til,til,til,til,til,til,til,til,til,til,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcL,gwv],
- [wal,til,til,til,til,til,til,til,til,til,til,til,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
- [wnT,til,til,til,til,cUL,cUR,til,til,til,til,tcT,wal,cfT,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wbv],
- [wnB,til,cUL,cUR,til,cLL,cLR,til,til,til,til,tcM,wal,cfB,crp,crp,crp,crp,ESn,crp,crp,crp,crp,brs,gwv]
+[wal,wal,wal,wal,wal,SGp,wal,wal,MLb,wal,wal,StL,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
+[wnT,til,til,SGs,dkT,til,til,til,til,til,til,til,til,til,til,chR,sfB,sfB,til,til,til,til,til,til,wal],
+[wnB,til,til,til,dkB,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,wal],
+[wal,til,til,til,til,til,til,til,til,til,til,til,til,til,til,rug,ctR,bsL,bsR,til,til,til,til,til,wal],
+[wal,til,til,til,til,til,til,til,til,til,til,til,til,til,til,rug,rug,rug,rug,til,til,til,til,til,wal],
+[wal,wal,hwb,hwb,til,til,til,til,til,til,til,til,til,til,otT,rug,rug,rug,otR,til,til,til,til,til,wal],
+[wal,SmS,til,til,til,til,til,cUL,cUR,til,til,til,til,til,til,rug,otR,rug,rug,til,til,til,til,til,wal],
+[wal,shl,til,til,til,til,til,cLL,cLR,til,til,til,til,til,til,rug,rug,rug,rug,til,til,til,til,til,wal],
+[wnT,til,til,cUL,cUR,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,wal],
+[wnB,til,til,cLL,cLR,til,til,til,til,til,til,til,til,til,til,til,til,vfb,til,til,til,til,til,til,wal],
+[wal,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,trs,vfb,til,til,til,til,til,til,wal],
+[wal,wal,plt,til,til,til,til,til,til,til,til,til,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,wal,wal],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,til,wal,wal,til,til,til,wal,til,til,til,til,til,til,til,wal],
+[wal,wal,fcs,til,dTc,til,til,til,til,til,til,wal,wal,til,til,til,bbT,til,til,til,til,til,til,til,wal],
+[wnT,vwb,til,ZSt,dvM,til,til,til,til,til,til,cpr,wal,til,til,til,bbB,til,til,til,til,til,til,til,wal],
+[wnT,vwb,til,dhL,dcR,til,cUL,cUR,til,til,til,til,wal,wal,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
+[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,SfG,ctC,gwv],
+[bbb,til,til,til,til,til,til,til,til,til,til,til,til,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcL,gwv],
+[wal,til,til,til,til,til,til,til,til,til,til,til,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
+[wnT,til,til,til,til,cUL,cUR,til,til,til,til,tcT,wal,cfT,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wbv],
+[wnB,til,cUL,cUR,til,cLL,cLR,til,til,til,til,tcM,wal,cfB,crp,crp,crp,crp,ESn,crp,crp,crp,crp,brs,gwv],
+[wal,til,cLL,cLR,til,til,til,til,til,til,til,tcM,wal,bsv,crp,crp,crp,tcR,ctC,tcL,crp,crp,crp,bst,gwv],
+[wal,til,til,til,til,til,til,til,til,til,til,tcM,wal,wsh,crp,crp,crp,crp,crp,crp,crp,crp,crp,brs,gwv],
+[wal,til,til,til,til,til,til,til,til,til,til,tcM,wal,gsT,crp,crp,crp,crp,crp,crp,crp,crp,crp,wal,gwv],
+[wal,wal,til,til,til,til,til,gsL,gsR,bsL,bsR,tcM,wal,gsB,crp,crp,crp,hUL,hUR,crp,crp,crp,crp,crp,gwv],
+[wal,wal,wal,wbL,wbM,wbM,wbR,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,hML,hMR,crp,crp,crp,crp,crp,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,JBo,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,wtL,wtR,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,crp,crp,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,TSl,AdT,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wtL,wtR,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,wtL,wtR,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,VSn,crp,crp,crp,crp,crp,crp,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,fdL,fdR,crp,crp,crp,crp,crp,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,tcL,ctC,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcU,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,wal,tcU,crp,crp,crp,sid,sch,crp,crp,crp,tcU,wal,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,gwh,gwh,gwh,gwh,crp,crp,gwh,gwh,gwh,gwh,gwh,gwh,gwh,gwv],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crB],
+[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crB],
+[wal,til,til,til,til,til,til,til,til,til,dkT,til,crp,crp,cUL,cUR,crp,crp,crp,cUL,cUR,crp,crp,crp,crB],
+[wal,til,til,til,til,til,til,til,til,til,dkM,til,crp,crp,cLL,cLR,crp,crp,crp,cLL,cLR,crp,crp,crp,crB],
+[wal,til,til,til,til,til,til,til,til,til,dkM,til,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crB],
+[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,til,coT,coT,til,coT,til,coT,til,coT,til,coT,tiB],
+[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,siL,coB,coB,til,coB,til,coB,til,coB,til,coB,tiB],
+[wal,til,til,til,til,til,til,AMc,til,PDn,dkM,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+[wal,wal,wal,bbL,bbR,wal,dkH,dkH,Lrs,dkH,Lps,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+[drT,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+[drB,til,til,til,til,til,til,til,til,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
+[wal,til,til,til,til,til,til,til,til,til,til,til,til,str,str,str,str,str,str,str,str,str,str,str,str],
+[drT,til,til,til,til,til,til,til,til,cct,til,til,til,str,str,str,str,str,str,str,str,str,str,str,str],
+[drB,til,til,til,til,til,til,til,til,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
+[wal,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+[drT,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+[drB,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,til,til,coT,coT,til,coT,til,coT,til,coT,til,coT,tiB],
+[wal,wal,bbL,bbR,wal,wal,crp,crp,crp,crp,crp,CpL,til,til,coB,coB,til,coB,til,coB,til,coB,til,coB,tiB],
+[wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wal,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB],
 ];
 
 void draw() {
@@ -320,16 +356,5 @@ void draw_bg(bgo, x,y) {
         }
     }
     break;
-  
   }
 }
-
-
-
-  
-  
-
- 
-
-
-           
