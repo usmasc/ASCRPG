@@ -5,33 +5,7 @@ function print(str) {
   text.innerHTML = str;
 }
 
-// AdT = Adam Terrell*
-var AdT = {
-  'name': 'Adam Terrell',
-  'heshe': "He",
-  'canPass': false,
-  'draw': 'Fred',
-  'canTalk': true,
-  'canCheck': true,
-  check() {
-    var thingie = "This is " + this.name + ". " + this.she + " is a writing, speaking, and Geography tutor in the ASC.";
-    text.innerHTML = thingie;
-  },
-  talk() {
-    var thingie = this. name  + ": Hi, I am " + this.name + '. ';
-    thingie += "I am  one of the math tutors in the ASC. "; 
-  }
-};
-
-// AMc = Adrienne McPhaul #
-var AMc = {
-  'name': 'Adrienne McPhaul',
-  'she': "She",
-  'canPass': false,
-  'draw': 'Fred',
-  'canTalk': false,
-  'canCheck': false
-};
+// TrA = Adam Terrell*
 
   // bbb = bullitin board
 var bbb = {
@@ -103,21 +77,22 @@ var cct = {
   'canCheck': false
 };
 
+// chair on rug
 var chR = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
+// cLL = circle table lower left
 var cLL = {
-  // cUL = circle table lower left
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
 };
 
+ // circle table lower right
 var cLR = {
-  // cUL = circle table lower right
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -219,11 +194,15 @@ var dhL = {
   'canCheck': false
 };
 
-var dLc = {
-  // dLc = hor. desk left end with computer
+// DiO = Director's office Jensa Besse office*
+var DiO = {
    "canPass": false,
   "draw": 'brick',
-  'canCheck': false
+  'canCheck': true,
+  check() {
+    var thingie = "This is Jensa Besse's office.";
+    text.innerHTML = thingie;
+  }
 };
 
 var dkB = {
@@ -268,23 +247,11 @@ var dRc = {
   'canCheck': false
 };
 
-// Elizabeth Snyder
-var ESn = {
-  'name': 'Elizabeth Snyder',
-  'heshe': "She",
-  'canPass': false,
-  'draw': 'Fred',
-  'canTalk': true,
-  'canCheck': true,
-  check() {
-    var thingie = "This is " + this.name + ". " + this.she + " is a mth tutor in the ASC.";
-    text.innerHTML = thingie;
-  },
-  talk() {
-    var thingie = this. name  + ": Hi, I am " + this.name + '. ';
-    thingie += "I am  one of the math tutors in the ASC. ";
-    print(thingie);
-  }
+var dLc = {
+  // dLc = hor. desk left end with computer
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
 };
 
 var fcs = {
@@ -406,13 +373,21 @@ var hwb = {
   'canCheck': false
 };
 
-// JBo = Jensa Besse office*
-var JBo = {
-   "canPass": false,
-  "draw": 'brick',
+// LEP = Library Ed & Psych = Peter Dean #
+var LEP = {
+  'name': 'Peter Dean',
+  'heOrShe': "He",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
   'canCheck': true,
   check() {
-    var thingie = "This is Jensa Besse's office.";
+    var thingie = "";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = '';
+    thingie += 'https://www.usm.edu/gulfcoast/student-government-association</a>.';
     text.innerHTML = thingie;
   }
 };
@@ -437,6 +412,16 @@ var Lrs = {
     var thingie = "This is the Research Services Unit. We help you perform research and search databases.";
     text.innerHTML = thingie;
   }
+};
+
+// Librarian Science & Tech #
+var LST = {
+  'name': 'Adrienne McPhaul',
+  'she': "She",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': false,
+  'canCheck': false
 };
 
 var ltc = {
@@ -474,25 +459,6 @@ var otT = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
-};
-
-// PDn = Peter Dean #
-var PDn = {
-  'name': 'Peter Dean',
-  'heOrShe': "He",
-  'canPass': false,
-  'draw': 'Fred',
-  'canTalk': true,
-  'canCheck': true,
-  check() {
-    var thingie = "";
-    text.innerHTML = thingie;
-  },
-  talk() {
-    var thingie = '';
-    thingie += 'https://www.usm.edu/gulfcoast/student-government-association</a>.';
-    text.innerHTML = thingie;
-  }
 };
 
 // plt = plant
@@ -541,26 +507,6 @@ var sfB = {
   'canCheck': false
 };
 
-// SfG = Scott Geyer
-var SfG = {
-  'name': 'Scott',
-  'she': "He",
-  'canPass': false,
-  'draw': 'Fred',
-  'canTalk': true,
-  'canCheck': true,
-  check() {
-    var thingie = "This is " + this.name + ". " + this.she + " is a math and stats tutor.";
-    text.innerHTML = thingie;
-  },
-  talk() {
-    var thingie = this. name  + ": Hi, I am " + this.name + ', if you need help with math or stats ';
-    thingie += 'make an <a href="http://usm.mywconline.com" target="_blank">appointment</a> with me at ';
-    thingie += '<a href="http://usm.mywconline.com" target="_blank">usm.mywconline.com</a>'; 
-  }
-};
-
-
 // Student Government President
 var SGp = {
   'name': 'Kaitlyn Dorris',
@@ -593,7 +539,7 @@ var SGp = {
 // SGS = SGA Secretary
 var SGs = {
   'name': '',
-  'heshe': "She",
+  'she': "She",
   'canPass': false,
   'draw': 'Fred',
   'canTalk': true,
@@ -724,6 +670,24 @@ var tcU = {
   'canCheck': false
 };
 
+// TG1 = Tutor Graduate Assistant Zachary Stewart
+var TG1 = {
+  'name': 'Zachary Stewart',
+  'she': "He",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is one of the graduate assistants in the ASC.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + '. ';
+    thingie += "I am  one of the graduate assistants in the ASC. "; 
+  }
+};
+
 // til = tile
 var til = {
   'canPass':true,
@@ -740,15 +704,25 @@ var tiB = {
   'canCheck': false
 };
 
-// trs = trash
-var trs = {
-   "canPass": false,
-  "draw": 'brick',
-  'canCheck': false
+var Tr1 = {
+  'name': 'Adam Terrell',
+  'heshe': "He",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is a writing, speaking, and Geography tutor in the ASC.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + '. ';
+    thingie += "I am  one of the math tutors in the ASC. "; 
+  }
 };
 
-// TSl = Teneala Spencer
-var TSl = {
+// Tr2 = Teneala Spencer
+var Tr2 = {
   'name': 'Victoria',
   'she': "She",
   'canPass': false,
@@ -764,6 +738,51 @@ var TSl = {
     thingie += 'make an <a href="http://usm.mywconline.com" target="_blank">appointment</a> with me at ';
     thingie += '<a href="http://usm.mywconline.com" target="_blank">usm.mywconline.com</a>'; 
   }
+};
+
+// Tr3 = Scott Geyer
+var Tr3 = {
+  'name': 'Scott',
+  'she': "He",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is a math and stats tutor.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + ', if you need help with math or stats ';
+    thingie += 'make an <a href="http://usm.mywconline.com" target="_blank">appointment</a> with me at ';
+    thingie += '<a href="http://usm.mywconline.com" target="_blank">usm.mywconline.com</a>'; 
+  }
+};
+
+// Elizabeth Snyder
+var Tr4 = {
+  'name': 'Elizabeth Snyder',
+  'heshe': "She",
+  'canPass': false,
+  'draw': 'Fred',
+  'canTalk': true,
+  'canCheck': true,
+  check() {
+    var thingie = "This is " + this.name + ". " + this.she + " is a mth tutor in the ASC.";
+    text.innerHTML = thingie;
+  },
+  talk() {
+    var thingie = this. name  + ": Hi, I am " + this.name + '. ';
+    thingie += "I am  one of the math tutors in the ASC. ";
+    print(thingie);
+  }
+};
+
+// trs = trash
+var trs = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
 };
 
 // vfb = vertical felt board
@@ -851,8 +870,8 @@ var wtR = {
   'canCheck': false
 };
 
-// VSn = Victoria Snyder*
-var ZSt = {
+// FDP = Front Desk Person = Victoria Snyder*
+var FDP = {
   'name': 'Victoria',
   'she': "She",
   'canPass': false,
@@ -870,27 +889,7 @@ var ZSt = {
   }
 };
 
-// ZSt = Zachary Stewart
-var ZSt = {
-  'name': 'Zachary Stewart',
-  'she': "He",
-  'canPass': false,
-  'draw': 'Fred',
-  'canTalk': true,
-  'canCheck': true,
-  check() {
-    var thingie = "This is " + this.name + ". " + this.she + " is one of the graduate assistants in the ASC.";
-    text.innerHTML = thingie;
-  },
-  talk() {
-    var thingie = this. name  + ": Hi, I am " + this.name + '. ';
-    thingie += "I am  one of the graduate assistants in the ASC. "; 
-  }
-};
-
 /* Map key
-// AdT = Adam Terrell*
-// AMc = Adrienne McPhaul #
 // bbb = bullitin board
 // bbB = bullitin board Bottom
 // bbL = bullitin board Left
@@ -918,6 +917,7 @@ var ZSt = {
 // dcR = desk corner lower Right
 // dcT = top desk with computer
 // dhL = desk horizontal Left end
+// DiO = Director's Office = Jensa Besse office*
 // dkB = bottom desk
 // dkH = middle desk Horizontal
 // dkL = hor. desk left end 
@@ -942,18 +942,18 @@ var ZSt = {
 // hUL = hexagon table Upper Left*
 // hUR = hexagon table Upper Right*
 // hwb = horizontal white board
-// JBo = Jensa Besse office*
-// ltc = laptop cart
+// LEP = Library Ed & Psych = Peter Dean #
 // Lps = Library Public Serives #
 // Lrs = Library Research Services Unit #
+// LST = Library Science & Tech = Adrienne McPhaul #
+// ltc = laptop cart
 // MLb = Media Lab
 // otR = ottoman on rug
 // otT = ottoman on tile
-// PDn = Peter Dean #
 // plt = plant
 // sch = schedule
 // sfB = black sofa
-// SfG = Scott Geyer
+// Tr3 = Scott Geyer
 // SGp = SGA President
 // SGs = SGA Secretary
 // shl = shelf
@@ -971,8 +971,9 @@ var ZSt = {
 // tcU = Think Center chair facing UP
 // til = tile
 // tiB = tile boundary
+// Tr1 = Adam Terrell*
+// Tr2 = Teneala Spencer
 // trs = trash
-// TSl = Teneala Spencer
 // vfb = vertical felt board
 // vwb = vertical white board
 // wal = wall
@@ -984,8 +985,8 @@ var ZSt = {
 // wsh = white shelf*
 // wtL = white board table left*
 // wtR = white board table Right*
-// VSn = Victoria Snyder*
-// ZSt = Zachary Stewart
+// FDP = Victoria Snyder*
+// TG1 = Zachary Stewart
 */
 
 var map = {
@@ -1003,25 +1004,25 @@ var map = {
 '11':[wal,wal,plt,til,til,til,til,til,til,til,til,til,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,wal,wal],
 '12':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,til,wal,wal,til,til,til,wal,til,til,til,til,til,til,til,wal],
 '13':[wal,wal,fcs,til,dTc,til,til,til,til,til,til,wal,wal,til,til,til,bbT,til,til,til,til,til,til,til,wal],
-'14':[wnT,vwb,til,ZSt,dvM,til,til,til,til,til,til,cpr,wal,til,til,til,bbB,til,til,til,til,til,til,til,wal],
+'14':[wnT,vwb,til,TG1,dvM,til,til,til,til,til,til,cpr,wal,til,til,til,bbB,til,til,til,til,til,til,til,wal],
 '15':[wnT,vwb,til,dhL,dcR,til,cUL,cUR,til,til,til,til,wal,wal,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
-'16':[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,SfG,ctC,gwv],
+'16':[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,Tr4,ctC,gwv],
 '17':[bbb,til,til,til,til,til,til,til,til,til,til,til,til,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcL,gwv],
 '18':[wal,til,til,til,til,til,til,til,til,til,til,til,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
 '19':[wnT,til,til,til,til,cUL,cUR,til,til,til,til,tcT,wal,cfT,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wbv],
-'20':[wnB,til,cUL,cUR,til,cLL,cLR,til,til,til,til,tcM,wal,cfB,crp,crp,crp,crp,ESn,crp,crp,crp,crp,brs,gwv],
+'20':[wnB,til,cUL,cUR,til,cLL,cLR,til,til,til,til,tcM,wal,cfB,crp,crp,crp,crp,Tr3,crp,crp,crp,crp,brs,gwv],
 '21':[wal,til,cLL,cLR,til,til,til,til,til,til,til,tcM,wal,bsv,crp,crp,crp,tcR,ctC,tcL,crp,crp,crp,bst,gwv],
 '22':[wal,til,til,til,til,til,til,til,til,til,til,tcM,wal,wsh,crp,crp,crp,crp,crp,crp,crp,crp,crp,brs,gwv],
 '23':[wal,til,til,til,til,til,til,til,til,til,til,tcM,wal,gsT,crp,crp,crp,crp,crp,crp,crp,crp,crp,wal,gwv],
 '24':[wal,wal,til,til,til,til,til,gsL,gsR,bsL,bsR,tcM,wal,gsB,crp,crp,crp,hUL,hUR,crp,crp,crp,crp,crp,gwv],
 '25':[wal,wal,wal,wbL,wbM,wbM,wbR,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,hML,hMR,crp,crp,crp,crp,crp,gwv],
-'26':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,JBo,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,wtL,wtR,gwv],
+'26':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,DiO,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,wtL,wtR,gwv],
 '27':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,crp,crp,gwv],
 '28':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
-'29':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,TSl,AdT,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
+'29':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,Tr2,Tr1,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
 '30':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wtL,wtR,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
 '31':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,wtL,wtR,gwv],
-'32':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,VSn,crp,crp,crp,crp,crp,crp,gwv],
+'32':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,FDP,crp,crp,crp,crp,crp,crp,gwv],
 '33':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,fdL,fdR,crp,crp,crp,crp,crp,gwv],
 '34':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,tcL,ctC,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcU,gwv],
 '35':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,wal,tcU,crp,crp,crp,sid,sch,crp,crp,crp,tcU,wal,gwv],
@@ -1034,7 +1035,7 @@ var map = {
 '42':[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
 '43':[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,til,coT,coT,til,coT,til,coT,til,coT,til,coT,tiB],
 '44':[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,siL,coB,coB,til,coB,til,coB,til,coB,til,coB,tiB],
-'45':[wal,til,til,til,til,til,til,AMc,til,PDn,dkM,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+'45':[wal,til,til,til,til,til,til,LST,til,LEP,dkM,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
 '46':[wal,wal,wal,bbL,bbR,wal,dkH,dkH,Lrs,dkH,Lps,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
 '47':[drT,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
 '48':[drB,til,til,til,til,til,til,til,til,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
