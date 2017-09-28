@@ -49,7 +49,7 @@ var brt = {
   'canCheck': false
 };
 
-var bSL = {
+var bsL = {
 // bsL = black shelf left  
    "canPass": false,
   "draw": 'brick',
@@ -57,7 +57,7 @@ var bSL = {
 };
 
 // black shelf Right
-var bSR = {
+var bsR = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
