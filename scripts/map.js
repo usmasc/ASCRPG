@@ -28,6 +28,20 @@ var bbB = {
   'canCheck': false
 };
 
+var bbL = {
+  // bbB = bullitin board left
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+var bbR = {
+  // bbB = bullitin board right
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // brick
 var brk = {
   "canPass": false,
@@ -226,6 +240,14 @@ var dkB = {
   'canCheck': false
 };
 
+// dkH = middle desk Horizontal
+var dkH = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+
 var dkL = {
 // dkL = hor. desk left end 
    "canPass": false,
@@ -254,8 +276,23 @@ var dkT = {
   'canCheck': false
 };
 
+// drB = bottom door
+var drB = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+
 var dRc = {
   // dRc = hor. desk right end with computer
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// drT = top door
+var drT = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -333,6 +370,20 @@ var gsR = {
 
 // gsT = top gray shelf *
 var gsT = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// gwh = glass wall horizontal
+var gwh = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// gwv = glass wall vertical
+var gwv = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -571,6 +622,13 @@ var SGs = {
 
 // shl = shelf
 var shl = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// sign in desk
+var sid = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -943,6 +1001,7 @@ var FDP = {
 // dLc = hor. desk left end with computer
 // drB = bottom door
 // dRc = hor. desk right end with computer
+// drB = bottom door
 // drT = top door
 // fdL = front desk left*
 // fdR = front desk right*
@@ -951,6 +1010,8 @@ var FDP = {
 // gsL = left gray shelf *
 // gsR = right gray shelf *
 // gsT = top gray shelf *
+// gwh = glass wall horizontal
+// gwv = glass wall vertical
 // hLL = hexagon table Lower Left*
 // hLR = hexagon table Lower Right*
 // hML = hexagon table Middle Left*
@@ -1025,7 +1086,7 @@ var map = {
 '16':[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,Tr4,ctC,gwv],
 '17':[bbb,til,til,til,til,til,til,til,til,til,til,til,til,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcL,gwv],
 '18':[wal,til,til,til,til,til,til,til,til,til,til,til,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
-'19':[wnT,til,til,til,til,cUL,cUR,til,til,til,til,tcT,wal,cfT,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wbv],
+'19':[wnT,til,til,til,til,cUL,cUR,til,til,til,til,tcT,wal,cfT,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
 '20':[wnB,til,cUL,cUR,til,cLL,cLR,til,til,til,til,tcM,wal,cfB,crp,crp,crp,crp,Tr3,crp,crp,crp,crp,brs,gwv],
 '21':[wal,til,cLL,cLR,til,til,til,til,til,til,til,tcM,wal,bsv,crp,crp,crp,tcR,ctC,tcL,crp,crp,crp,bst,gwv],
 '22':[wal,til,til,til,til,til,til,til,til,til,til,tcM,wal,wsh,crp,crp,crp,crp,crp,crp,crp,crp,crp,brs,gwv],
