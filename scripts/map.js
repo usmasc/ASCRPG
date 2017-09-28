@@ -180,8 +180,8 @@ var dcR = {
   'canCheck': false
 };
 
-var dcT = {
-  // dcT = top desk with computer
+var dTc = {
+  // dTc = top desk with computer
    "canPass": false,
   "draw": 'brick',
   'canCheck': false
@@ -915,7 +915,7 @@ var FDP = {
 // cUL = circle table upper left
 // cUR = circle table upper right
 // dcR = desk corner lower Right
-// dcT = top desk with computer
+// dTc = top desk with computer
 // dhL = desk horizontal Left end
 // DiO = Director's Office = Jensa Besse office*
 // dkB = bottom desk
@@ -1004,8 +1004,8 @@ var map = {
 '11':[wal,wal,plt,til,til,til,til,til,til,til,til,til,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,wal,wal],
 '12':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,til,wal,wal,til,til,til,wal,til,til,til,til,til,til,til,wal],
 '13':[wal,wal,fcs,til,dTc,til,til,til,til,til,til,wal,wal,til,til,til,bbT,til,til,til,til,til,til,til,wal],
-'14':[wnT,vwb,til,TG1,dvM,til,til,til,til,til,til,cpr,wal,til,til,til,bbB,til,til,til,til,til,til,til,wal],
-'15':[wnT,vwb,til,dhL,dcR,til,cUL,cUR,til,til,til,til,wal,wal,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
+'14':[wnT,vwb,til,TG1,dkM,til,til,til,til,til,til,cpr,wal,til,til,til,bbB,til,til,til,til,til,til,til,wal],
+'15':[wnB,vwb,til,dhL,dcR,til,cUL,cUR,til,til,til,til,wal,wal,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
 '16':[wal,til,til,til,til,til,cUL,cUR,til,til,til,ltc,wal,crp,crp,crp,dLc,dRc,dkL,dkR,til,til,Tr4,ctC,gwv],
 '17':[bbb,til,til,til,til,til,til,til,til,til,til,til,til,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcL,gwv],
 '18':[wal,til,til,til,til,til,til,til,til,til,til,til,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,gwv],
