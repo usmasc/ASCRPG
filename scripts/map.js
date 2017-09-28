@@ -77,6 +77,20 @@ var cct = {
   'canCheck': false
 };
 
+// cfB = coffee table bottom
+var cfB = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
+// cfT = coffee table top
+var cfT = {
+   "canPass": false,
+  "draw": 'brick',
+  'canCheck': false
+};
+
 // chair on rug
 var chR = {
    "canPass": false,
@@ -906,6 +920,8 @@ var FDP = {
 // cLR = circle table lower Right
 // coT = column top #
 // coB = column bottom #
+// cfB = coffee table bottom
+// cfT = coffee table top
 // CpL = computer Lab #
 // cpr = copier
 // crB = carpet Boundary #
@@ -1014,7 +1030,7 @@ var map = {
 '21':[wal,til,cLL,cLR,til,til,til,til,til,til,til,tcM,wal,bsv,crp,crp,crp,tcR,ctC,tcL,crp,crp,crp,bst,gwv],
 '22':[wal,til,til,til,til,til,til,til,til,til,til,tcM,wal,wsh,crp,crp,crp,crp,crp,crp,crp,crp,crp,brs,gwv],
 '23':[wal,til,til,til,til,til,til,til,til,til,til,tcM,wal,gsT,crp,crp,crp,crp,crp,crp,crp,crp,crp,wal,gwv],
-'24':[wal,wal,til,til,til,til,til,gsL,gsR,bsL,bsR,tcM,wal,gsB,crp,crp,crp,hUL,hUR,crp,crp,crp,crp,crp,gwv],
+'24':[wal,wal,til,til,til,til,til,gsL,gsR,bsL,bsR,tcB,wal,gsB,crp,crp,crp,hUL,hUR,crp,crp,crp,crp,crp,gwv],
 '25':[wal,wal,wal,wbL,wbM,wbM,wbR,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,hML,hMR,crp,crp,crp,crp,crp,gwv],
 '26':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,DiO,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,wtL,wtR,gwv],
 '27':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,hLL,hLR,crp,crp,crp,crp,crp,gwv],
