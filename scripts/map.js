@@ -1080,7 +1080,7 @@ var wsh = {
 // wtL = white board table left*
 var wtL = {
   canPass: false,
-  draw: "brick",
+  draw: "whiteboardTable",
   canTalk: false,
   canCheck: false
 };
@@ -1096,7 +1096,7 @@ var wtr = {
 // wtR = white board table Right*
 var wtR = {
   canPass: false,
-  draw: "brick",
+  draw: "whiteboardTable",
   canTalk: false,
   canCheck: false
 };
