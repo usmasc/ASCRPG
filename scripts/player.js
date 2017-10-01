@@ -14,7 +14,7 @@ var player = {
     'mp': 10,
     'maxhp': 50,
     'maxmp': 10,
-    'mapX': 18,
+    'mapX': 51,
     'mapY': 3,
     'xp': 0,
     'nextLevel': 100,
@@ -23,7 +23,7 @@ var player = {
     'items': [{'item':'shirt',
              'n':1,
              'def':1,
-             'desc':'A shirt with a math symbol.',
+             'desc':'A snazzy USM shirt obtained from one of the various events on campus.',
              use(){
                text.innerHTML = 'You put on the shirt.';
                player.torso = {'item':'shirt','def':1,'eva':0}; 
@@ -33,30 +33,14 @@ var player = {
                player.eva += player.legs.eva + player.feet.eva;  
              }
             },
-             {'item':'pants',
+             {'item':'student id',
              'n':1,
-             'desc':'A pair of pants.',
+             'desc':'Your student id.',
               'def':1,
              use(){
-               text.innerHTML = 'You put on the pants.';
-               player.leg = {'item':'pants','def':1,'eva':0};
-               player.def = player.head.def + player.leftHand.def + player.rightHand.def + player.torso.def;
-               player.def += player.legs.def + player.feet.def;
-               player.eva = player.head.eva + player.leftHand.eva + player.rightHand.eva + player.torso.eva;
-               player.eva += player.legs.eva + player.feet.eva;
+               text.innerHTML = 'You can use this to check out a laptop at the ASC.';
              }
             },
-              {'item':'shoes',
-                'n':1,
-                 'desc':'A pair of shoes.',
-                use(){
-                    text.innerHTML = 'You put on the shoes.';
-                    player.feet = {'item':'shoes','def':1,'eva':1};
-                    player.def = player.head.def + player.leftHand.def + player.rightHand.def + player.torso.def;
-                    player.def += player.legs.def + player.feet.def;
-                    player.eva = player.head.eva + player.leftHand.eva + player.rightHand.eva + player.torso.eva;
-                    player.eva += player.legs.eva + player.feet.eva;  
-              }
             }],
     'head':{'item':'None','def':0,'eva':0},
     'leftHand':{'item':'None','atk':0,'def':0,'eva':0},
