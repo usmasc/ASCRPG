@@ -923,7 +923,7 @@ var Tr1 = {
 
 // Tr2 = Teneala Spencer
 var Tr2 = {
-  name: "Victoria",
+  name: "Teneala",
   she: "She",
   canPass: false,
   draw: "Fred",
