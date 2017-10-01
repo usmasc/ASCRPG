@@ -120,7 +120,7 @@ void draw_PlayerFacingDown() {
   */
 
   // tshirt logo
-  fill(255,255,255);
+  fill(0,0,0);
   text(player.tshirt,newx-3,newy+10);
 
   // eye whites
