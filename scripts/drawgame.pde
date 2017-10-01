@@ -168,6 +168,14 @@ void draw_PlayerFacingDown() {
   rect(newx+2,newy+18,5,2);
 }
 
+void draw_whiteboardTable(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  noStroke();
+  fill(255,255,255);
+  rect(x,y,20,20);  
+}
+
 void draw_floor(x,y) {
     //stroke(255, 255, 255);
     x = 20*x-20;
@@ -239,6 +247,10 @@ void draw_npc(x,y,skin,clothes,cc,hair,hairCol) {
 
 void draw_bg(bgo, x,y) {
   switch(bgo) {
+    case 'whiteBoardTable':
+      draw_whiteboardTable();
+      break;
+      
     case 'brick':
       //stroke(255, 255, 255);
       x = 20*x-20;
