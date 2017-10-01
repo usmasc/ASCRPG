@@ -53,7 +53,7 @@ var player = {
     "skin": [217, 183, 31],
     "hair": 0,
     "hairColor": [0, 0, 0],
-    "tshirt": 'U',
+    "tshirt": '↑',
     "tColor": [100, 84, 0],
     'pColor': [0, 50, 0],
     'hp': 50,
