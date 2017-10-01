@@ -14,7 +14,7 @@ var shirt = {
    player.eva = player.head.eva + player.leftHand.eva + player.rightHand.eva + player.torso.eva;
    player.eva += player.legs.eva + player.feet.eva;  
    }
-}
+};
 
 var studentID = {
   item:'student id',
@@ -24,23 +24,11 @@ var studentID = {
    text.innerHTML = "You give the ASC tutor your student id. The ASC tutor gives you a laptop.";
    for (i = 0; i < player.items.length; i++) {
        if (player.items[i]== studentID) {
-         player.items[i] = {
-            item:'laptop',
-            n: 1,
-            desc:'A macbook pro. Give this back to a tutor to get your id back.',
-            use(){
-             text.innerHTML = "You give the ASC tutor the laptop. The ASC tutor returns your student id.";
-             for (i = 0; i < player.items.length; i++) {
-               if (player.items[i].item == 'laptop') {
-                 player.items[i] = studentID;
-               }
-             }
-           }
-        }; 
+         player.items[i] = laptop;
       } // close if
     } // close for
   } // close use
-}
+};
      
 var laptop = {
   item:'laptop',
@@ -54,7 +42,7 @@ var laptop = {
      }
    }
  }
-}
+};
 
 var player = {
     "name": "",
@@ -77,7 +65,7 @@ var player = {
     'facing':'South',
     'items': [shirt,
             studentID,
-            }],
+            ],
     'head':{'item':'None','def':0,'eva':0},
     'leftHand':{'item':'None','atk':0,'def':0,'eva':0},
     'rightHand':{'item':'None','atk':0,'def':0,'eva':0},
