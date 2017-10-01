@@ -5,8 +5,6 @@ function print(str) {
   text.innerHTML = str;
 }
 
-// TrA = Adam Terrell*
-
   // bbb = bullitin board
 var bbb = {
    "canPass": false,
@@ -575,7 +573,7 @@ var sfB = {
 // Student Government President
 var SGp = {
   'name': 'Kaitlyn Dorris',
-  'heshe': "She",
+  'she': "She",
   'canPass': false,
   'draw': 'Fred',
   'canTalk': true,
@@ -778,7 +776,7 @@ var tiB = {
 
 var Tr1 = {
   'name': 'Adam Terrell',
-  'heshe': "He",
+  'she': "He",
   'canPass': false,
   'draw': 'Fred',
   'canTalk': true,
@@ -834,7 +832,7 @@ var Tr3 = {
 // Elizabeth Snyder
 var Tr4 = {
   'name': 'Elizabeth Snyder',
-  'heshe': "She",
+  'she': "She",
   'canPass': false,
   'draw': 'Fred',
   'canTalk': true,
