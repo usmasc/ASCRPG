@@ -12,7 +12,8 @@ var shirt = {
    player.def = player.head.def + player.leftHand.def + player.rightHand.def + player.torso.def;
    player.def += player.legs.def + player.feet.def;
    player.eva = player.head.eva + player.leftHand.eva + player.rightHand.eva + player.torso.eva;
-   player.eva += player.legs.eva + player.feet.eva;  
+   player.eva += player.legs.eva + player.feet.eva;
+   items();
    }
 };
 
@@ -27,6 +28,7 @@ var studentID = {
          player.items[i] = laptop;
       } // close if
     } // close for
+   items();
   } // close use
 };
      
@@ -41,6 +43,7 @@ var laptop = {
        player.items[i] = studentID;
      }
    }
+   items();
  }
 };
 
@@ -50,8 +53,8 @@ var player = {
     "skin": [217, 183, 31],
     "hair": 0,
     "hairColor": [0, 0, 0],
-    "tshirt": 'e',
-    "tColor": [255, 0, 0],
+    "tshirt": 'U',
+    "tColor": [100, 84, 0],
     'pColor': [0, 50, 0],
     'hp': 50,
     'mp': 10,
