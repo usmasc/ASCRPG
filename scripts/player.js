@@ -24,10 +24,22 @@ var studentID = {
    text.innerHTML = "You give the ASC tutor your student id. The ASC tutor gives you a laptop.";
    for (i = 0; i < player.items.length; i++) {
        if (player.items[i]== studentID) {
-         player.items[i] = laptop; 
-      }
-    }
-  }
+         player.items[i] = {
+            item:'laptop',
+            n: 1,
+            desc:'A macbook pro. Give this back to a tutor to get your id back.',
+            use(){
+             text.innerHTML = "You give the ASC tutor the laptop. The ASC tutor returns your student id.";
+             for (i = 0; i < player.items.length; i++) {
+               if (player.items[i].item == 'laptop') {
+                 player.items[i] = studentID;
+               }
+             }
+           }
+        }; 
+      } // close if
+    } // close for
+  } // close use
 }
      
 var laptop = {
@@ -37,7 +49,7 @@ var laptop = {
   use(){
    text.innerHTML = "You give the ASC tutor the laptop. The ASC tutor returns your student id.";
    for (i = 0; i < player.items.length; i++) {
-     if (player.items[i]== laptop) {
+     if (player.items[i].item == 'laptop') {
        player.items[i] = studentID;
      }
    }
