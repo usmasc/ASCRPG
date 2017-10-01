@@ -1,6 +1,49 @@
 var text = document.getElementById('textArea');
 var sumbit = document.getElementById('submitButtonArea');
 
+var shirt = {
+  'item':'shirt',
+ 'n':1,
+ 'def':1,
+ 'desc':'A snazzy USM shirt obtained from one of the various events on campus.',
+ use(){
+   text.innerHTML = 'You put on the shirt.';
+   player.torso = {'item':'shirt','def':1,'eva':0}; 
+   player.def = player.head.def + player.leftHand.def + player.rightHand.def + player.torso.def;
+   player.def += player.legs.def + player.feet.def;
+   player.eva = player.head.eva + player.leftHand.eva + player.rightHand.eva + player.torso.eva;
+   player.eva += player.legs.eva + player.feet.eva;  
+   }
+}
+
+var studentID = {
+  item:'student id',
+ n:1,
+ desc:'You can use this to check out a laptop at the ASC.',
+ use(){
+   text.innerHTML = "You give the ASC tutor your student id. The ASC tutor gives you a laptop.";
+   for (i = 0; i < player.items.length; i++) {
+       if (player.items[i]== studentID) {
+         player.items[i] = laptop; 
+      }
+    }
+  }
+}
+     
+var laptop = {
+  item:'laptop',
+  n: 1,
+  desc:'A macbook pro. Give this back to a tutor to get your id back.',
+  use(){
+   text.innerHTML = "You give the ASC tutor the laptop. The ASC tutor returns your student id.";
+   for (i = 0; i < player.items.length; i++) {
+     if (player.items[i]== laptop) {
+       player.items[i] = studentID;
+     }
+   }
+ }
+}
+
 var player = {
     "name": "",
     "face": 3,
@@ -20,27 +63,8 @@ var player = {
     'nextLevel': 100,
     'money': 0,
     'facing':'South',
-    'items': [{'item':'shirt',
-             'n':1,
-             'def':1,
-             'desc':'A snazzy USM shirt obtained from one of the various events on campus.',
-             use(){
-               text.innerHTML = 'You put on the shirt.';
-               player.torso = {'item':'shirt','def':1,'eva':0}; 
-               player.def = player.head.def + player.leftHand.def + player.rightHand.def + player.torso.def;
-               player.def += player.legs.def + player.feet.def;
-               player.eva = player.head.eva + player.leftHand.eva + player.rightHand.eva + player.torso.eva;
-               player.eva += player.legs.eva + player.feet.eva;  
-             }
-            },
-             {'item':'student id',
-             'n':1,
-             'desc':'Your student id.',
-              'def':1,
-             use(){
-               text.innerHTML = 'You can use this to check out a laptop at the ASC.';
-             }
-            },
+    'items': [shirt,
+            studentID,
             }],
     'head':{'item':'None','def':0,'eva':0},
     'leftHand':{'item':'None','atk':0,'def':0,'eva':0},
