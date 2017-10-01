@@ -61,7 +61,7 @@ var player = {
     'maxhp': 50,
     'maxmp': 10,
     'mapX': 51,
-    'mapY': 3,
+    'mapY': 13,
     'xp': 0,
     'nextLevel': 100,
     'money': 0,
