@@ -5,10 +5,11 @@ function print(str) {
   text.innerHTML = str;
 }
 
-  // bbb = bullitin board
+// bbb = bullitin board
 var bbb = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -16,6 +17,7 @@ var bbT = {
   // bbT = bullitin board Top
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -23,20 +25,23 @@ var bbB = {
   // bbB = bullitin board Bottom
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
 var bbL = {
-  // bbB = bullitin board left
+  // bbL = bullitin board left
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
 var bbR = {
-  // bbB = bullitin board right
+  // bbR = bullitin board right
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -44,6 +49,7 @@ var bbR = {
 var brk = {
   "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -51,6 +57,7 @@ var brk = {
 var brs = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -58,6 +65,7 @@ var brs = {
 var brt = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -65,6 +73,7 @@ var bsL = {
 // bsL = black shelf left  
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -72,6 +81,7 @@ var bsL = {
 var bsR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -79,6 +89,7 @@ var bsR = {
 var bsv = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -86,6 +97,7 @@ var bsv = {
 var cct = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -93,6 +105,7 @@ var cct = {
 var cfB = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -100,6 +113,7 @@ var cfB = {
 var cfT = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -107,6 +121,7 @@ var cfT = {
 var chR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -114,6 +129,7 @@ var chR = {
 var cLL = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -121,6 +137,7 @@ var cLL = {
 var cLR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -128,6 +145,7 @@ var cLR = {
 var coB = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -135,6 +153,7 @@ var coB = {
 var coT = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -143,6 +162,7 @@ var CpL = {
   canPass: false,
   draw: 'brick',
   canCheck: true,
+   canTalk: false,
   check() {
     var thingie = "This is the future site of a computer lab.";
     text.innerHTML = thingie;
@@ -153,6 +173,7 @@ var cpr = {
   // cpr = copier
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -160,6 +181,7 @@ var cpr = {
 var crB = {
    "canPass": false,
   "draw": 'rug',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -175,6 +197,7 @@ var ctC = {
   // ctC = circle table on carpet
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -182,6 +205,7 @@ var ctR = {
   // ctR = circle table on rug
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -189,6 +213,7 @@ var cUL = {
   // cUL = circle table upper left
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -196,6 +221,7 @@ var cUR = {
   // cUR = circle table upper right
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -203,6 +229,7 @@ var dcR = {
 // dcR = desk corner lower Right
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -210,6 +237,7 @@ var dTc = {
   // dTc = top desk with computer
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -217,16 +245,19 @@ var dhL = {
 // dhL = desk horizontal Left end
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
 // DiO = Director's office Jensa Besse office*
 var DiO = {
+	 name = "Jensa Besse";
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': true,
   check() {
-    var thingie = "This is Jensa Besse's office.";
+    var thingie = "This is the director of the ASC, " + this.name + "'s, office.";
     text.innerHTML = thingie;
   }
 };
@@ -235,6 +266,7 @@ var dkB = {
   // dkB = bottom desk
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -242,6 +274,7 @@ var dkB = {
 var dkH = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -250,6 +283,7 @@ var dkL = {
 // dkL = hor. desk left end 
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -257,6 +291,7 @@ var dkL = {
 var dkM = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -264,6 +299,7 @@ var dkR = {
 // dkR = hor. desk right end 
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -271,6 +307,7 @@ var dkT = {
   // dkT = top desk
    "canPass": false,
   "draw": 'brick',
+   'canTalk': false,
   'canCheck': false
 };
 
@@ -278,6 +315,7 @@ var dkT = {
 var drB = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -286,6 +324,7 @@ var dRc = {
   // dRc = hor. desk right end with computer
    "canPass": false,
   "draw": 'brick',
+   'canTalk': false,
   'canCheck': false
 };
 
@@ -293,6 +332,7 @@ var dRc = {
 var drT = {
    "canPass": false,
   "draw": 'brick',
+   'canTalk': false,
   'canCheck': false
 };
 
@@ -300,6 +340,7 @@ var dLc = {
   // dLc = hor. desk left end with computer
    "canPass": false,
   "draw": 'brick',
+   'canTalk': false,
   'canCheck': false
 };
 
@@ -307,6 +348,7 @@ var fcs = {
 // fcs = file cabinet short
    "canPass": false,
   "draw": 'brick',
+   'canTalk': false,
   'canCheck': false
 };
 
@@ -314,13 +356,38 @@ var fcs = {
 var fdL = {
    "canPass": false,
   "draw": 'brick',
+   'canTalk': false,
   'canCheck': false
+};
+
+// FDP = Front Desk Person = Victoria Snyder*
+var FDP = {
+  name: "Victoria",
+  she: "She",
+  canPass: false,
+  draw: "Fred",
+  canTalk: true,
+  canCheck: true,
+  check() {
+    var thingie =
+      "This is " + this.name + ". " + this.she + " is our front desk person.";
+    print(thingie);
+  },
+  talk() {
+    var thingie =
+      this.name + ": Hi, I am " + this.name + ", I can help you make an ";
+    thingie +=
+      '<a href="http://usm.mywconline.com" target="_blank">appointment</a> or help you find ';
+    thingie += "the resource that you need.";
+    print(thingie);
+  }
 };
 
 // fdR = front desk right*
 var fdR = {
    "canPass": false,
   "draw": 'brick',
+   'canTalk': false,
   'canCheck': false
 };
 
@@ -349,6 +416,7 @@ var grs = {
 var gsB = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -356,6 +424,7 @@ var gsB = {
 var gsL = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -363,6 +432,7 @@ var gsL = {
 var gsR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -370,6 +440,7 @@ var gsR = {
 var gsT = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -377,6 +448,7 @@ var gsT = {
 var gwh = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -384,6 +456,7 @@ var gwh = {
 var gwv = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -391,6 +464,7 @@ var gwv = {
 var hLL = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -398,6 +472,7 @@ var hLL = {
 var hLR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -405,6 +480,7 @@ var hLR = {
 var hML = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -412,6 +488,7 @@ var hML = {
 var hMR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -419,6 +496,7 @@ var hMR = {
 var hUL = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -426,6 +504,7 @@ var hUL = {
 var hUR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -433,6 +512,7 @@ var hwb = {
 // hwb = horizontal white board
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -460,6 +540,7 @@ var Lps = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': true,
+   canTalk: false,
    check() {
     var thingie = "This is the Library Public Services Dept. We check out books. Find books, and other fun stuff.";
     text.innerHTML = thingie;
@@ -471,6 +552,7 @@ var Lrs = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': true,
+  canTalk: false,
    check() {
     var thingie = "This is the Research Services Unit. We help you perform research and search databases.";
     text.innerHTML = thingie;
@@ -492,6 +574,7 @@ var ltc = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': true,
+  canTalk: false,
    check() {
     var thingie = "This is the laptop cart. Speak to an ASC tutor to check out a laptop. Please have your student ID ready.";
     text.innerHTML = thingie;
@@ -514,6 +597,7 @@ var MLb = {
 var otR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -521,6 +605,7 @@ var otR = {
 var otT = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -528,6 +613,7 @@ var otT = {
 var plt = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -556,6 +642,7 @@ var sch = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': true,
+  canTalk: false,
   check() {
     var thingie = 'View the schedule at ';
     thingie += '<a href="http://usm.mywconline.com" target="_blank">usm.mywconline.com</a>'; 
@@ -567,6 +654,7 @@ var sch = {
 var sfB = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -622,6 +710,7 @@ var SGs = {
 var shl = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -629,6 +718,7 @@ var shl = {
 var sid = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -637,6 +727,7 @@ var siL = {
    "canPass": false,
   "draw": 'brick',
   'canCheck': true,
+  canTalk: false,
   check() {
     var thingie = "Library stuff";
     print(thingie);
@@ -654,6 +745,7 @@ var smp = {
 var shl = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -661,6 +753,7 @@ var shl = {
 var SmS = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -688,6 +781,7 @@ var StL = {
 var str = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -695,6 +789,7 @@ var str = {
 var tcB = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -702,6 +797,7 @@ var tcB = {
 var tcD = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -709,6 +805,7 @@ var tcD = {
 var tcL = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -716,6 +813,7 @@ var tcL = {
 var tcM = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -723,6 +821,7 @@ var tcM = {
 var tcR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -730,6 +829,7 @@ var tcR = {
 var tcT = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -737,6 +837,7 @@ var tcT = {
 var tcU = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -852,6 +953,7 @@ var Tr4 = {
 var trs = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -859,6 +961,7 @@ var trs = {
 var vfb = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -866,6 +969,7 @@ var vfb = {
 var vwb = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -873,6 +977,7 @@ var vwb = {
 var wal = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -880,6 +985,7 @@ var wal = {
 var wbL = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -887,6 +993,7 @@ var wbL = {
 var wbM = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -894,6 +1001,7 @@ var wbM = {
 var wbR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -901,6 +1009,7 @@ var wbR = {
 var wnB = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -908,6 +1017,7 @@ var wnB = {
 var wnT = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -915,6 +1025,7 @@ var wnT = {
 var wsh = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -922,6 +1033,7 @@ var wsh = {
 var wtL = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
@@ -937,27 +1049,11 @@ var wtr = {
 var wtR = {
    "canPass": false,
   "draw": 'brick',
+   canTalk: false,
   'canCheck': false
 };
 
-// FDP = Front Desk Person = Victoria Snyder*
-var FDP = {
-  'name': 'Victoria',
-  'she': "She",
-  'canPass': false,
-  'draw': 'Fred',
-  'canTalk': true,
-  'canCheck': true,
-  check() {
-    var thingie = "This is " + this.name + ". " + this.she + " is our front desk person.";
-    text.innerHTML = thingie;
-  },
-  talk() {
-    var thingie = this. name  + ": Hi, I am " + this.name + ', I can help you make an ';
-    thingie += '<a href="http://usm.mywconline.com" target="_blank">appointment</a> or help you find ';
-    thingie += "the resource that you need."; 
-  }
-};
+
 
 /* Map key
 // bbb = bullitin board
