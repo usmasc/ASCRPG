@@ -1032,7 +1032,7 @@ var wal = {
 // wbL = white board Left*
 var wbL = {
   canPass: false,
-  draw: "brick",
+  draw: "whiteBoardTable",
   canTalk: false,
   canCheck: false
 };
@@ -1040,7 +1040,7 @@ var wbL = {
 // wbM = white board Middle*
 var wbM = {
   canPass: false,
-  draw: "brick",
+  draw: "whiteBoardTable",
   canTalk: false,
   canCheck: false
 };
@@ -1048,7 +1048,7 @@ var wbM = {
 // wbR = white board Right*
 var wbR = {
   canPass: false,
-  draw: "brick",
+  draw: "whiteBoardTable",
   canTalk: false,
   canCheck: false
 };
@@ -1080,7 +1080,7 @@ var wsh = {
 // wtL = white board table left*
 var wtL = {
   canPass: false,
-  draw: "whiteboardTable",
+  draw: "whiteBoardTable",
   canTalk: false,
   canCheck: false
 };
@@ -1096,7 +1096,7 @@ var wtr = {
 // wtR = white board table Right*
 var wtR = {
   canPass: false,
-  draw: "whiteboardTable",
+  draw: "whiteBoardTable",
   canTalk: false,
   canCheck: false
 };
