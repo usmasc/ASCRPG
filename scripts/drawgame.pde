@@ -70,6 +70,7 @@ var mapD = [
 [wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,wal,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB,tiB]
 ];
 
+
 void draw() {
 
   int mapX0 = player.mapX - player.x/20;
