@@ -85,12 +85,21 @@ void draw() {
         xi = x + mapX0;
         if (xi > -1 && xi < mapD[yi].length) {
           draw_bg(mapD[yi][xi].draw,x,y);
+        } else {
+          draw_black_square(x,y);
         }
       }
     }
   }
  
 draw_PlayerFacingDown(); 
+}
+
+void draw_black_square(x,y) {
+  var newX = 20*x-20;
+  var newY = 20*y-20;
+  fill(0,0,0);
+  rect(newX,newY,20,20);
 }
 
 void draw_PlayerFacingDown() {
