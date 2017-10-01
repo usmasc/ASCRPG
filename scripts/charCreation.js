@@ -131,7 +131,7 @@ function pickHairColor() {
      thingie += '<button class="hair3" onclick="setHairColor(3)">_</button> ';
      thingie += '<button class="hair4" onclick="setHairColor(4)">_</button> ';
      thingie += '<button class="hair5" onclick="setHairColor(5)">_</button> ';
-     thingie += '<button onclick="pickShirt()">OK</button>';    
+     thingie += '<button onclick="pickPantsColor()">OK</button>';    
      sumbit.innerHTML = thingie;
 }
 
