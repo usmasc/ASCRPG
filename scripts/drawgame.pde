@@ -104,7 +104,7 @@ void draw_black_square(x,y) {
   rect(newX,newY,20,20);
 }
 
-void draw_blackRow(x,y) {
+void draw_blackRow(y) {
   var newY = 20*y-20;
   fill(0,0,0);
   rect(0,newY,w,20);
