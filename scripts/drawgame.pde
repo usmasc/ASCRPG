@@ -293,6 +293,22 @@ void draw_desk(x,y) {
   rect(x,y,20,20);  
 }
 
+void draw_horGlassWall(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  noStroke();
+  fill(100,100,255);
+  rect(x,y,20,10);  
+}
+
+void draw_verGlassWall(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  noStroke();
+  fill(100,100,255);
+  rect(x,y,10,20);  
+}
+
 void draw_tile(x,y) {
   noStroke();
   x = 20*x-20;
@@ -427,6 +443,16 @@ void draw_bg(bgo, x,y) {
     case 'barstool':
       draw_rug(x,y);
       draw_barstool(x,y);
+      break;
+      
+    case 'verGlass':
+      draw_rug(x,y);
+      draw_verGlassWall(x,y);
+      break;
+      
+    case 'horGlass':
+      draw_rug(x,y);
+      draw_horGlassWall(x,y);
       break;
     
     case 'barstoolTable':
