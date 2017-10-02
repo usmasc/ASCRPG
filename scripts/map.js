@@ -821,7 +821,7 @@ var tcB = {
 // tcD = Think Center chair facing down
 var tcD = {
   canPass: false,
-  draw: "brick",
+  draw: "ottomanRug",
   canTalk: false,
   canCheck: false
 };
@@ -829,7 +829,7 @@ var tcD = {
 // tcL = Think Center chair facing left
 var tcL = {
   canPass: false,
-  draw: "brick",
+  draw: "ottomanRug",
   canTalk: false,
   canCheck: false
 };
@@ -845,7 +845,7 @@ var tcM = {
 // tcR = Think Center chair facing Right
 var tcR = {
   canPass: false,
-  draw: "brick",
+  draw: "ottomanRug",
   canTalk: false,
   canCheck: false
 };
@@ -861,7 +861,7 @@ var tcT = {
 // tcU = Think Center chair facing UP
 var tcU = {
   canPass: false,
-  draw: "brick",
+  draw: "ottomanRug",
   canTalk: false,
   canCheck: false
 };
