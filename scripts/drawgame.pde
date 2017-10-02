@@ -252,34 +252,34 @@ void draw_brick(x,y) {
       for(var yi = y; yi < y+16; yi+=8) {
         //1st line
         stroke(30, 0, 0);
-        fill(random(31,255),random(31,255),0);
+        fill(random(31,125),random(126,255),0);
         rect(x,yi,6,4);
-        fill(random(31,225),random(31,255),0);
+        fill(random(31,125),random(126,255),0);
         rect(x+7,yi,7,4);
         stroke(30, 0, 0);
-        fill(random(31,225),random(31,255),0);
+        fill(random(31,125),random(126,255),0);
         rect(x+14,yi,6,4);
         //2nd line
         noStroke();
-        fill(random(31,255),random(31,255),0);
+        fill(random(31,125),random(126,255),0);
         rect(x,yi+4,4,4);
-        fill(random(31,225),random(31,255),0);
+        fill(random(31,125),random(126,255),0);
         rect(x+16,yi+4,4,4);
         stroke(30, 0, 0);
-        fill(random(31,225),random(31,255),0);
+        fill(random(31,125),random(126,255),0);
         rect(x+4,yi+4,7,4);
-        fill(random(31,225),random(31,255),0);
+        fill(random(31,125),random(126,255),0);
         rect(x+10,yi+4,6,4);
       }
       //last line
       var yi = y+16;
       stroke(30, 0, 0);
-      fill(random(31,255),random(31,255),0);
+      fill(random(31,125),random(126,255),0);
       rect(x,yi,6,4);
-      fill(random(31,225),random(31,255),0);
+      fill(random(31,125),random(126,255),0);
       rect(x+7,yi,7,4);
       stroke(30, 0, 0);
-      fill(random(31,225),random(31,255),0);
+      fill(random(31,125),random(126,255),0);
       rect(x+14,yi,6,4);
       rect(x+10,yi,6,4);
       noStroke();
@@ -292,10 +292,18 @@ void draw_rug(x,y) {
   for(var xi = x; xi < x+20; xi+=5) {
     for(var yi = y; yi < y+20; yi+=5) {
       noStroke();
-      fill(random(175,200), 0, 0);
+      fill(random(175,200), random(150,174), 0);
       rect(xi,yi,5,5);
     }
   }
+}
+
+void draw_smallCircleTable(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  stroke(0,0,0);
+  fill(255,255,255);
+  ellipse(x+10,y+10,18,18);
 }
 
 void draw_grass(x,y) {
@@ -310,6 +318,15 @@ void draw_grass(x,y) {
       }
   }
 }
+
+void draw_desk(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  noStroke();
+  fill(102,51,0);
+  rect(x,y,20,20);  
+}
+
 
 void draw_path(x,y) {
   noStroke();
@@ -393,6 +410,15 @@ void draw_bg(bgo, x,y) {
       
   case 'path':
     draw_path(x,y);
+    break;
+    
+  case 'circleTableOnRug':
+    draw_rug(x,y);
+    draw_smallCircleTable(x,y);
+    break;
+    
+  case 'desk':
+    draw_desk(x,y);
     break;
       
   case 'sand':
