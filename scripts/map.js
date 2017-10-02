@@ -457,7 +457,7 @@ var gwh = {
 };
 
 // gwc = glass wall corner
-var gwh = {
+var gwc = {
   canPass: false,
   draw: "corGlass",
   canTalk: false,
