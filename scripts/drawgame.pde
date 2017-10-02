@@ -427,18 +427,22 @@ void draw_bg(bgo, x,y) {
     case 'barstool':
       draw_rug(x,y);
       draw_barstool(x,y);
+      break;
     
     case 'barstoolTable':
       draw_rug(x,y);
       draw_barstoolTable(x,y);
+      break;
       
     case 'ottomanRug':
       draw_rug(x,y);
       draw_ottoman(x,y);
+      break;
       
     case 'ottomanTile':
       draw_floor(x,y);
       draw_ottoman(x,y);
+      break;
       
   case 'brick':
     draw_brick(x,y);
