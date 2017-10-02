@@ -245,77 +245,129 @@ void draw_npc(x,y,skin,clothes,cc,hair,hairCol) {
   }
 }
 
-void draw_bg(bgo, x,y) {
-  switch(bgo) {
-    case 'whiteBoardTable':
-      draw_whiteboardTable();
-      break;
-      
-    case 'brick':
+void draw_brick(x,y) {
       //stroke(255, 255, 255);
       x = 20*x-20;
       y = 20*y-20;
       for(var yi = y; yi < y+16; yi+=8) {
         //1st line
         stroke(30, 0, 0);
-        fill(random(31,255),0,0);
+        fill(random(31,255),random(31,255),0);
         rect(x,yi,6,4);
-        fill(random(31,225),0,0);
+        fill(random(31,225),random(31,255),0);
         rect(x+7,yi,7,4);
         stroke(30, 0, 0);
-        fill(random(31,225),0,0);
+        fill(random(31,225),random(31,255),0);
         rect(x+14,yi,6,4);
         //2nd line
         noStroke();
-        fill(random(31,255),0,0);
+        fill(random(31,255),random(31,255),0);
         rect(x,yi+4,4,4);
-        fill(random(31,225),0,0);
+        fill(random(31,225),random(31,255),0);
         rect(x+16,yi+4,4,4);
         stroke(30, 0, 0);
-        fill(random(31,225),0,0);
+        fill(random(31,225),random(31,255),0);
         rect(x+4,yi+4,7,4);
-        fill(random(31,225),0,0);
+        fill(random(31,225),random(31,255),0);
         rect(x+10,yi+4,6,4);
       }
       //last line
       var yi = y+16;
       stroke(30, 0, 0);
-      fill(random(31,255),0,0);
+      fill(random(31,255),random(31,255),0);
       rect(x,yi,6,4);
-      fill(random(31,225),0,0);
+      fill(random(31,225),random(31,255),0);
       rect(x+7,yi,7,4);
       stroke(30, 0, 0);
-      fill(random(31,225),0,0);
+      fill(random(31,225)random(31,255),0);
       rect(x+14,yi,6,4);
       rect(x+10,yi,6,4);
       noStroke();
+}
+
+void draw_rug(x,y) {
+  noStroke();
+  x = 20*x-20;
+  y = 20*y-20;
+  for(var xi = x; xi < x+20; xi+=5) {
+    for(var yi = y; yi < y+20; yi+=5) {
+      noStroke();
+      fill(random(175,200), 0, 0);
+      rect(xi,yi,5,5);
+    }
+  }
+}
+
+void draw_grass(x,y) {
+  noStroke();
+  x = 20*x-20;
+  y = 20*y-20;
+  for(var xi = x; xi < x+20; xi+=5) {
+      for(var yi = y; yi < y+20; yi+=5) {
+          noStroke();
+          fill(random(75,100),random(225,255),random(75,100));
+          rect(xi,yi,5,5);
+      }
+  }
+}
+
+void draw_path(x,y) {
+  noStroke();
+  x = 20*x-20;
+  y = 20*y-20;
+  for(var xi = x; xi < x+20; xi+=5) {
+      for(var yi = y; yi < y+20; yi+=5) {
+          noStroke();
+          fill(random(175,200), random(175,200), 0);
+          rect(xi,yi,5,5);
+      }
+  }
+}
+
+void draw_sand(x,y) {
+  noStroke();
+  x = 20*x-20;
+  y = 20*y-20;
+  for(var xi = x; xi < x+20; xi+=5) {
+      for(var yi = y; yi < y+20; yi+=5) {
+          noStroke();
+          //224, 166, 137
+          fill(random(230,255), random(200,229), random(175,199));
+          rect(xi,yi,5,5);
+      }
+  }
+}
+
+void draw_swamp(x,y) {
+  noStroke();
+  x = 20*x-20;
+  y = 20*y-20;
+  for(var xi = x; xi < x+20; xi+=5) {
+    for(var yi = y; yi < y+20; yi+=5) {
+      noStroke();
+      fill(0,random(50,200),random(50,150));
+      rect(xi,yi,5,5);
+    }
+  }
+}
+
+void draw_bg(bgo, x,y) {
+  switch(bgo) {
+    case 'whiteBoardTable':
+      draw_whiteboardTable(x,y);
       break;
       
+  case 'brick':
+    draw_brick(x,y);
+    break;
+      
     case 'rug':
-        noStroke();
-        x = 20*x-20;
-        y = 20*y-20;
-        for(var xi = x; xi < x+20; xi+=5) {
-          for(var yi = y; yi < y+20; yi+=5) {
-            noStroke();
-            fill(random(175,200), 0, 0);
-            rect(xi,yi,5,5);
-          }
-        }
-        break;
+      draw_rug(x,y);
+      break;
       
   case 'grass':
-    noStroke();
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=5) {
-        for(var yi = y; yi < y+20; yi+=5) {
-            noStroke();
-            fill(random(75,100),random(225,255),random(75,100));
-            rect(xi,yi,5,5);
-        }
-    }
-  break;
+    draw_grass(x,y);
+    break;
       
   case 'floor':
     draw_floor(x,y);
@@ -327,43 +379,15 @@ void draw_bg(bgo, x,y) {
     break;
       
   case 'path':
-    noStroke();
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=5) {
-        for(var yi = y; yi < y+20; yi+=5) {
-            noStroke();
-            fill(random(175,200), random(175,200), 0);
-            rect(xi,yi,5,5);
-        }
-    }
+    draw_path(x,y);
     break;
       
   case 'sand':
-    noStroke();
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=5) {
-        for(var yi = y; yi < y+20; yi+=5) {
-            noStroke();
-            //224, 166, 137
-            fill(random(230,255), random(200,229), random(175,199));
-            rect(xi,yi,5,5);
-        }
-    }
+    draw_sand(x,y);
     break;
   
   case 'swamp':
-    noStroke();
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=5) {
-        for(var yi = y; yi < y+20; yi+=5) {
-            noStroke();
-            fill(0,random(50,200),random(50,150));
-            rect(xi,yi,5,5);
-        }
-    }
+    draw_swamp(x,y);
     break;
   
   case 'water':
