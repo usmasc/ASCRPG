@@ -88,6 +88,8 @@ void draw() {
         } else {
           draw_black_square(x,y);
         }
+      } else {
+        draw_bg(mapD[yi][xi].draw,x,y);
       }
     }
   }
