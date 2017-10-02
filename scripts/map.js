@@ -451,7 +451,7 @@ var gsT = {
 // gwh = glass wall horizontal
 var gwh = {
   canPass: false,
-  draw: "brick",
+  draw: "horGlass",
   canTalk: false,
   canCheck: false
 };
@@ -459,7 +459,7 @@ var gwh = {
 // gwv = glass wall vertical
 var gwv = {
   canPass: false,
-  draw: "brick",
+  draw: "verGlass",
   canTalk: false,
   canCheck: false
 };
