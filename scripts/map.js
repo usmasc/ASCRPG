@@ -1022,7 +1022,7 @@ var trs = {
 // vfb = vertical felt board
 var vfb = {
   canPass: false,
-  draw: "brick",
+  draw: "verWB",
   canTalk: false,
   canCheck: false
 };
@@ -1030,7 +1030,7 @@ var vfb = {
 // vwb = vertical white board
 var vwb = {
   canPass: false,
-  draw: "whiteBoardTable",
+  draw: "verWB",
   canTalk: false,
   canCheck: false
 };
