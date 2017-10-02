@@ -16,7 +16,7 @@ var bbb = {
 var bbT = {
   // bbT = bullitin board Top
   canPass: false,
-  draw: "brick",
+  draw: "sand",
   canTalk: false,
   canCheck: false
 };
@@ -24,7 +24,7 @@ var bbT = {
 var bbB = {
   // bbB = bullitin board Bottom
   canPass: false,
-  draw: "brick",
+  draw: "sand",
   canTalk: false,
   canCheck: false
 };
@@ -32,7 +32,7 @@ var bbB = {
 var bbL = {
   // bbL = bullitin board left
   canPass: false,
-  draw: "brick",
+  draw: "sand",
   canTalk: false,
   canCheck: false
 };
@@ -40,7 +40,7 @@ var bbL = {
 var bbR = {
   // bbR = bullitin board right
   canPass: false,
-  draw: "brick",
+  draw: "sand",
   canTalk: false,
   canCheck: false
 };
@@ -56,7 +56,7 @@ var brk = {
 // barstool
 var brs = {
   canPass: false,
-  draw: "brick",
+  draw: "barstool",
   canTalk: false,
   canCheck: false
 };
@@ -64,7 +64,7 @@ var brs = {
 // barstool table
 var bst = {
   canPass: false,
-  draw: "brick",
+  draw: "barstoolTable",
   canTalk: false,
   canCheck: false
 };
@@ -72,7 +72,7 @@ var bst = {
 var bsL = {
   // bsL = black shelf left
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -80,7 +80,7 @@ var bsL = {
 // black shelf Right
 var bsR = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -90,7 +90,7 @@ var bsR = {
 // bsv = vertical black shelf*
 var bsv = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -100,7 +100,7 @@ var bsv = {
 // cct = computer card catologue #
 var cct = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -124,7 +124,7 @@ var cfT = {
 // chair on rug
 var chR = {
   canPass: false,
-  draw: "brick",
+  draw: "ottomanRug",
   canTalk: false,
   canCheck: false
 };
@@ -132,7 +132,7 @@ var chR = {
 // cLL = circle table lower left
 var cLL = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -140,7 +140,7 @@ var cLL = {
 // circle table lower right
 var cLR = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -164,7 +164,7 @@ var coT = {
 // CpL = computer Lab #
 var CpL = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canCheck: true,
   canTalk: false,
   check() {
@@ -216,7 +216,7 @@ var ctR = {
 var cUL = {
   // cUL = circle table upper left
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -224,7 +224,7 @@ var cUL = {
 var cUR = {
   // cUR = circle table upper right
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -558,8 +558,13 @@ var Lrs = {
   canPass: false,
   draw: "desk",
   canCheck: true,
-  canTalk: false,
+  canTalk: true,
   check() {
+    var thingie =
+      "This is the Research Services Unit. We help you perform research and search databases.";
+    text.innerHTML = thingie;
+  },
+    talk() {
     var thingie =
       "This is the Research Services Unit. We help you perform research and search databases.";
     text.innerHTML = thingie;
@@ -605,7 +610,7 @@ var MLb = {
 // otR = ottoman on rug
 var otR = {
   canPass: false,
-  draw: "circleTableOnRug",
+  draw: "ottomanRug",
   canTalk: false,
   canCheck: false
 };
@@ -613,7 +618,7 @@ var otR = {
 // otT = ottoman on tile
 var otT = {
   canPass: false,
-  draw: "brick",
+  draw: "ottomanTile",
   canTalk: false,
   canCheck: false
 };
@@ -650,7 +655,7 @@ var rug = {
 // sch = schedule
 var sch = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canCheck: true,
   canTalk: false,
   check() {
@@ -664,7 +669,7 @@ var sch = {
 // sfB = black sofa
 var sfB = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -772,7 +777,7 @@ var shl = {
 // SmS = Seymour Shelf
 var SmS = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -1017,7 +1022,7 @@ var vfb = {
 // vwb = vertical white board
 var vwb = {
   canPass: false,
-  draw: "brick",
+  draw: "whiteBoardTable",
   canTalk: false,
   canCheck: false
 };
