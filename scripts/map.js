@@ -1014,7 +1014,7 @@ var Tr4 = {
 // trs = trash
 var trs = {
   canPass: false,
-  draw: "brick",
+  draw: "trash",
   canTalk: false,
   canCheck: false
 };
