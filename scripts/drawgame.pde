@@ -442,6 +442,14 @@ void draw_water(x,y) {
   }
 }
 
+void draw_verWB(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  noStroke();
+  fill(0,0,0);
+  rect(x+5,y,10,20);  
+}
+
 void draw_bg(bgo, x,y) {
   switch(bgo) {
     case 'whiteBoardTable':
@@ -466,6 +474,11 @@ void draw_bg(bgo, x,y) {
     case 'corGlass':
       draw_rug(x,y);
       draw_corGlassWall(x,y);
+      break;
+      
+    case 'verWB':
+      draw_rug(x,y);
+      draw_verWB(x,y);
       break;
     
     case 'barstoolTable':
