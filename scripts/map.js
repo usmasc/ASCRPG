@@ -456,6 +456,14 @@ var gwh = {
   canCheck: false
 };
 
+// gwc = glass wall corner
+var gwh = {
+  canPass: false,
+  draw: "corGlass",
+  canTalk: false,
+  canCheck: false
+};
+
 // gwv = glass wall vertical
 var gwv = {
   canPass: false,
@@ -1249,7 +1257,7 @@ var map = {
 '33':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,fdL,fdR,crp,crp,crp,crp,crp,gwv],
 '34':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,tcL,ctC,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,tcU,gwv],
 '35':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,wal,tcU,crp,crp,crp,sid,sch,crp,crp,crp,tcU,wal,gwv],
-'36':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,gwh,gwh,gwh,gwh,crp,crp,gwh,gwh,gwh,gwh,gwh,gwh,gwh,gwv],
+'36':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,gwh,gwh,gwh,gwh,crp,crp,gwh,gwh,gwh,gwh,gwh,gwh,gwh,gwc],
 '37':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crB],
 '38':[wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crp,crB],
 '39':[wal,til,til,til,til,til,til,til,til,til,dkT,til,crp,crp,cUL,cUR,crp,crp,crp,cUL,cUR,crp,crp,crp,crB],
