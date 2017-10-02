@@ -8,7 +8,7 @@ function print(str) {
 // bbb = bullitin board
 var bbb = {
   canPass: false,
-  draw: "brick",
+  draw: "sand",
   canTalk: false,
   canCheck: false
 };
