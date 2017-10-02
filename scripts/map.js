@@ -108,7 +108,7 @@ var cct = {
 // cfB = coffee table bottom
 var cfB = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -116,7 +116,7 @@ var cfB = {
 // cfT = coffee table top
 var cfT = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -176,7 +176,7 @@ var CpL = {
 var cpr = {
   // cpr = copier
   canPass: false,
-  draw: "brick",
+  draw: "whiteBoardTable",
   canTalk: false,
   canCheck: false
 };
@@ -200,7 +200,7 @@ var crp = {
 var ctC = {
   // ctC = circle table on carpet
   canPass: false,
-  draw: "brick",
+  draw: "circleTableOnRug",
   canTalk: false,
   canCheck: false
 };
@@ -208,7 +208,7 @@ var ctC = {
 var ctR = {
   // ctR = circle table on rug
   canPass: false,
-  draw: "brick",
+  draw: "circleTableOnRug",
   canTalk: false,
   canCheck: false
 };
@@ -232,7 +232,7 @@ var cUR = {
 var dcR = {
   // dcR = desk corner lower Right
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -240,7 +240,7 @@ var dcR = {
 var dTc = {
   // dTc = top desk with computer
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -248,7 +248,7 @@ var dTc = {
 var dhL = {
   // dhL = desk horizontal Left end
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -257,7 +257,7 @@ var dhL = {
 var DiO = {
   name: "Jensa Besse",
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: true,
   check() {
@@ -270,7 +270,7 @@ var DiO = {
 var dkB = {
   // dkB = bottom desk
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -278,7 +278,7 @@ var dkB = {
 // dkH = middle desk Horizontal
 var dkH = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -286,7 +286,7 @@ var dkH = {
 var dkL = {
   // dkL = hor. desk left end
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -294,7 +294,7 @@ var dkL = {
 // dkM = middle desk verticle #
 var dkM = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -302,7 +302,7 @@ var dkM = {
 var dkR = {
   // dkR = hor. desk right end
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -310,7 +310,7 @@ var dkR = {
 var dkT = {
   // dkT = top desk
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -318,7 +318,7 @@ var dkT = {
 // drB = bottom door
 var drB = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -326,7 +326,7 @@ var drB = {
 var dRc = {
   // dRc = hor. desk right end with computer
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -334,7 +334,7 @@ var dRc = {
 // drT = top door
 var drT = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -342,7 +342,7 @@ var drT = {
 var dLc = {
   // dLc = hor. desk left end with computer
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -350,7 +350,7 @@ var dLc = {
 var fcs = {
   // fcs = file cabinet short
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -358,7 +358,7 @@ var fcs = {
 // fdL = front desk left*
 var fdL = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -389,7 +389,7 @@ var FDP = {
 // fdR = front desk right*
 var fdR = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -419,7 +419,7 @@ var grs = {
 // gsB = bottom gray shelf *
 var gsB = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -427,7 +427,7 @@ var gsB = {
 // gsL = left gray shelf *
 var gsL = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -435,7 +435,7 @@ var gsL = {
 // gsR = right gray shelf *
 var gsR = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -443,7 +443,7 @@ var gsR = {
 // gsT = top gray shelf *
 var gsT = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -467,7 +467,7 @@ var gwv = {
 // hLL = hexagon table Lower Left*
 var hLL = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -475,7 +475,7 @@ var hLL = {
 // hLR = hexagon table Lower Right*
 var hLR = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -483,7 +483,7 @@ var hLR = {
 // hML = hexagon table Middle Left*
 var hML = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -491,7 +491,7 @@ var hML = {
 // hMR = hexagon table Middle Right*
 var hMR = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -499,7 +499,7 @@ var hMR = {
 // hUL = hexagon table Upper Left*
 var hUL = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -507,7 +507,7 @@ var hUL = {
 // hUR = hexagon table Upper Right*
 var hUR = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -515,7 +515,7 @@ var hUR = {
 var hwb = {
   // hwb = horizontal white board
   canPass: false,
-  draw: "brick",
+  draw: "whiteBoardTable",
   canTalk: false,
   canCheck: false
 };
@@ -543,7 +543,7 @@ var LEP = {
 // Lps = Library Public Serives #
 var Lps = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canCheck: true,
   canTalk: false,
   check() {
@@ -556,7 +556,7 @@ var Lps = {
 // Lrs = Library Research Services Unit
 var Lrs = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canCheck: true,
   canTalk: false,
   check() {
@@ -592,7 +592,7 @@ var ltc = {
 // MLb = Media Lab
 var MLb = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: true,
   check() {
@@ -605,7 +605,7 @@ var MLb = {
 // otR = ottoman on rug
 var otR = {
   canPass: false,
-  draw: "brick",
+  draw: "circleTableOnRug",
   canTalk: false,
   canCheck: false
 };
@@ -728,7 +728,7 @@ var SGs = {
 // shl = shelf
 var shl = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -736,7 +736,7 @@ var shl = {
 // sign in desk
 var sid = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -744,7 +744,7 @@ var sid = {
 // siL = library sign #
 var siL = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canCheck: true,
   canTalk: false,
   check() {
@@ -762,8 +762,9 @@ var smp = {
 };
 
 var shl = {
+  // shelf?
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -787,7 +788,7 @@ var snd = {
 // StL = Staff Lounge
 var StL = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: true,
   check() {
@@ -807,7 +808,7 @@ var str = {
 // tcB = techology cabinet Bottom
 var tcB = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -831,7 +832,7 @@ var tcL = {
 // tcM = techology cabinet Middle
 var tcM = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -847,7 +848,7 @@ var tcR = {
 // tcT = technology cabinent Top
 var tcT = {
   canPass: false,
-  draw: "brick",
+  draw: "desk",
   canTalk: false,
   canCheck: false
 };
@@ -1072,7 +1073,7 @@ var wnT = {
 // wsh = white shelf*
 var wsh = {
   canPass: false,
-  draw: "brick",
+  draw: "whiteBoardTable",
   canTalk: false,
   canCheck: false
 };
