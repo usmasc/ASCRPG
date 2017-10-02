@@ -252,34 +252,34 @@ void draw_brick(x,y) {
       for(var yi = y; yi < y+16; yi+=8) {
         //1st line
         stroke(30, 0, 0);
-        fill(random(31,125),random(126,255),0);
+        fill(random(100,125),random(126,150),0);
         rect(x,yi,6,4);
-        fill(random(31,125),random(126,255),0);
+        fill(random(100,125),random(126,150),0);
         rect(x+7,yi,7,4);
         stroke(30, 0, 0);
-        fill(random(31,125),random(126,255),0);
+        fill(random(100,125),random(126,150),0);
         rect(x+14,yi,6,4);
         //2nd line
         noStroke();
-        fill(random(31,125),random(126,255),0);
+        fill(random(100,125),random(126,150),0);
         rect(x,yi+4,4,4);
-        fill(random(31,125),random(126,255),0);
+        fill(random(100,125),random(126,150),0);
         rect(x+16,yi+4,4,4);
         stroke(30, 0, 0);
-        fill(random(31,125),random(126,255),0);
+        fill(random(100,125),random(126,150),0);
         rect(x+4,yi+4,7,4);
-        fill(random(31,125),random(126,255),0);
+        fill(random(100,125),random(126,150),0);
         rect(x+10,yi+4,6,4);
       }
       //last line
       var yi = y+16;
       stroke(30, 0, 0);
-      fill(random(31,125),random(126,255),0);
+      fill(random(100,125),random(126,150),0);
       rect(x,yi,6,4);
-      fill(random(31,125),random(126,255),0);
+      fill(random(100,125),random(126,150),0);
       rect(x+7,yi,7,4);
       stroke(30, 0, 0);
-      fill(random(31,125),random(126,255),0);
+      fill(random(100,125),random(126,150),0);
       rect(x+14,yi,6,4);
       rect(x+10,yi,6,4);
       noStroke();
@@ -291,6 +291,19 @@ void draw_desk(x,y) {
   noStroke();
   fill(102,51,0);
   rect(x,y,20,20);  
+}
+
+void draw_tile(x,y) {
+  noStroke();
+  x = 20*x-20;
+  y = 20*y-20;
+  for(var xi = x; xi < x+20; xi+=10) {
+    for(var yi = y; yi < y+20; yi+=10) {
+      noStroke();
+      fill(random(201,225), random(176,200), 0);
+      rect(xi,yi,5,5);
+    }
+  }
 }
 
 
@@ -442,7 +455,7 @@ void draw_bg(bgo, x,y) {
     break;
       
   case 'floor':
-    draw_floor(x,y);
+    draw_tile(x,y);
     break;
     
   case 'Fred':
