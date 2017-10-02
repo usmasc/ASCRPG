@@ -279,7 +279,7 @@ void draw_brick(x,y) {
       fill(random(31,225),random(31,255),0);
       rect(x+7,yi,7,4);
       stroke(30, 0, 0);
-      fill(random(31,225)random(31,255),0);
+      fill(random(31,225),random(31,255),0);
       rect(x+14,yi,6,4);
       rect(x+10,yi,6,4);
       noStroke();
@@ -351,6 +351,19 @@ void draw_swamp(x,y) {
   }
 }
 
+void draw_water(x,y) {
+  noStroke();
+  x = 20*x-20;
+  y = 20*y-20;
+  for(var xi = x; xi < x+20; xi+=5) {
+    for(var yi = y; yi < y+20; yi+=5) {
+        noStroke();
+        fill(random(0,50),random(0,50),random(225,255));
+        rect(xi,yi,5,5);
+    }
+  }
+}
+
 void draw_bg(bgo, x,y) {
   switch(bgo) {
     case 'whiteBoardTable':
@@ -391,16 +404,7 @@ void draw_bg(bgo, x,y) {
     break;
   
   case 'water':
-    noStroke();
-    x = 20*x-20;
-    y = 20*y-20;
-    for(var xi = x; xi < x+20; xi+=5) {
-        for(var yi = y; yi < y+20; yi+=5) {
-            noStroke();
-            fill(random(0,50),random(0,50),random(225,255));
-            rect(xi,yi,5,5);
-        }
-    }
+    draw_water(x,y);
     break;
   }
 }
