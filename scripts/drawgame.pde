@@ -452,6 +452,14 @@ void draw_verWB(x,y) {
   rect(x+5,y,10,20);  
 }
 
+void draw_verFeltBoard(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  noStroke();
+  fill(33,33,33);
+  rect(x+5,y,10,20);  
+}
+
 void draw_bg(bgo, x,y) {
   switch(bgo) {
     case 'whiteBoardTable':
@@ -479,6 +487,11 @@ void draw_bg(bgo, x,y) {
       break;
       
     case 'verWB':
+      draw_rug(x,y);
+      draw_verWB(x,y);
+      break;
+      
+    case 'verFeltBoard':
       draw_rug(x,y);
       draw_verWB(x,y);
       break;
