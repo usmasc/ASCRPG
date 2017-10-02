@@ -54,7 +54,7 @@ var player = {
     "hair": 0,
     "hairColor": [0, 0, 0],
     "tshirt": '↑',
-    "tColor": [100, 84, 0],
+    "tColor": [255, 214, 0],
     'pColor': [0, 50, 0],
     'hp': 50,
     'mp': 10,
