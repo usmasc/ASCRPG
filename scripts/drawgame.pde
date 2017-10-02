@@ -88,9 +88,9 @@ void draw() {
         } else {
           draw_black_square(x,y);
         }
-      } else {
-        draw_bg(mapD[yi][xi].draw,x,y);
       }
+    }  else {
+        draw_blackRow(y);
     }
   }
  
@@ -102,6 +102,12 @@ void draw_black_square(x,y) {
   var newY = 20*y-20;
   fill(0,0,0);
   rect(newX,newY,20,20);
+}
+
+void draw_blackRow(x,y) {
+  var newY = 20*y-20;
+  fill(0,0,0);
+  rect(0,newY,w,20);
 }
 
 void draw_PlayerFacingDown() {
