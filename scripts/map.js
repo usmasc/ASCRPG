@@ -579,7 +579,7 @@ var LST = {
 var ltc = {
   // ltc = laptop cart
   canPass: false,
-  draw: "brick",
+  draw: "whiteBoardTable",
   canCheck: true,
   canTalk: false,
   check() {
