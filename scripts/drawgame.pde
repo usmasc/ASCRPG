@@ -301,7 +301,7 @@ void draw_tile(x,y) {
     for(var yi = y; yi < y+20; yi+=10) {
       noStroke();
       fill(random(201,225), random(176,200), 0);
-      rect(xi,yi,5,5);
+      rect(xi,yi,10,10);
     }
   }
 }
@@ -364,8 +364,6 @@ void draw_grass(x,y) {
       }
   }
 }
-
-
 
 void draw_path(x,y) {
   noStroke();
