@@ -462,6 +462,11 @@ void draw_bg(bgo, x,y) {
       draw_rug(x,y);
       draw_horGlassWall(x,y);
       break;
+      
+    case 'corGlass':
+      draw_rug(x,y);
+      draw_corGlassWall(x,y);
+      break;
     
     case 'barstoolTable':
       draw_rug(x,y);
