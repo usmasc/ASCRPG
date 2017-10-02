@@ -111,6 +111,7 @@ void draw_blackRow(y) {
 }
 
 void draw_PlayerFacingDown() {
+  stroke(0,0,0);
   var newx = player.x-10;
   var newy = player.y-20;
   fill(player.skin[0],player.skin[1],player.skin[2]);
@@ -382,6 +383,7 @@ void draw_ottoman(x,y) {
   stroke(0,0,0);
   fill(random(100,255),random(100,255),random(100,255));
   ellipse(x+10,y+10,18,18);
+    noStroke();
 }
 
 void draw_grass(x,y) {
@@ -589,4 +591,5 @@ void draw_bg(bgo, x,y) {
     draw_water(x,y);
     break;
   }
+  noStroke();
 }
