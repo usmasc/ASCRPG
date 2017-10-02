@@ -454,16 +454,32 @@ void draw_verWB(x,y) {
   x = 20*x-20;
   y = 20*y-20;
   noStroke();
-  fill(0,0,0);
+  fill(255,255,255);
   rect(x+5,y,10,20);  
+}
+
+void draw_horWB(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  noStroke();
+  fill(255,255,255);
+  rect(x,y+5,20,10);  
 }
 
 void draw_verFeltBoard(x,y) {
   x = 20*x-20;
   y = 20*y-20;
   noStroke();
-  fill(33,33,33);
+  fill(200,200,200);
   rect(x+5,y,10,20);  
+}
+
+void draw_trash(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  stroke(0,0,0);
+  fill(200,200,200);
+  quad(x+2,y+2,x+5,y+20,x+15,y+20,x+18,y+2);
 }
 
 void draw_bg(bgo, x,y) {
@@ -493,13 +509,23 @@ void draw_bg(bgo, x,y) {
       break;
       
     case 'verWB':
-      draw_rug(x,y);
+      draw_floor(x,y);
       draw_verWB(x,y);
       break;
       
-    case 'verFeltBoard':
+    case 'horWB':
       draw_rug(x,y);
+      draw_horWB(x,y);
+      break;
+      
+    case 'verFeltBoard':
+      draw_floor(x,y);
       draw_verFeltBoard(x,y);
+      break;
+      
+    case 'trash':
+      draw_floor(x,y);
+      draw_trash(x,y);
       break;
     
     case 'barstoolTable':
