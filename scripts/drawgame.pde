@@ -183,34 +183,34 @@ void draw_floor(x,y) {
     for(var xi = x; xi < x+16; xi+=8) {
         //1st line
         //stroke(51, 32, 2);
-        fill(random(100,125),random(75,100),0);
+        fill(random(200,250),random(150,200),0);
         rect(xi,y,4,7);
-        fill(random(100,125),random(75,100),0);
+        fill(random(200,250),random(150,200),0);
         rect(xi,y+7,4,7);
         //stroke(30, 0, 0);
-        fill(random(100,125),random(75,100),0);
+        fill(random(200,250),random(150,200),0);
         rect(xi,y+14,4,6);
         //2nd line
         noStroke();
-        fill(random(100,125),random(75,100),0);
+        fill(random(200,250),random(150,200),0);
         rect(xi+4,y,4,4);
-        fill(random(100,125),random(75,100),0);
+        fill(random(200,250),random(150,200),0);
         rect(xi+4,y+16,4,4);
         //stroke(30, 0, 0);
-        fill(random(100,125),random(75,100),0);
+        fill(random(200,250),random(150,200),0);
         rect(xi+4,y+4,4,7);
-        fill(random(100,125),random(75,100),0);
+        fill(random(200,250),random(150,200),0);
         rect(xi+4,y+10,4,6);
     }
     //last line
     var xi = x+16;
     //stroke(51, 32, 2);
-    fill(random(100,125),random(75,100),0);
+    fill(random(200,250),random(150,200),0);
     rect(xi,y,4,7);
-    fill(random(100,125),random(75,100),0);
+    fill(random(200,250),random(150,200),0);
     rect(xi,y+7,4,7);
     //stroke(30, 0, 0);
-    fill(random(100,125),random(75,100),0);
+    fill(random(200,250),random(150,200),0);
     rect(xi,y+14,4,6);
 }
 
@@ -285,6 +285,15 @@ void draw_brick(x,y) {
       noStroke();
 }
 
+void draw_desk(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  noStroke();
+  fill(102,51,0);
+  rect(x,y,20,20);  
+}
+
+
 void draw_rug(x,y) {
   noStroke();
   x = 20*x-20;
@@ -306,6 +315,30 @@ void draw_smallCircleTable(x,y) {
   ellipse(x+10,y+10,18,18);
 }
 
+void draw_barstool(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  stroke(0,0,0);
+  fill(0,0,0);
+  ellipse(x+10,y+10,15,15);
+}
+
+void draw_barstoolTable(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  stroke(0,0,0);
+  fill(0,0,0);
+  ellipse(x+10,y+10,18,18);
+}
+
+void draw_ottoman(x,y) {
+  x = 20*x-20;
+  y = 20*y-20;
+  stroke(0,0,0);
+  fill(random(100,255),random(100,255),random(100,255));
+  ellipse(x+10,y+10,18,18);
+}
+
 void draw_grass(x,y) {
   noStroke();
   x = 20*x-20;
@@ -319,13 +352,6 @@ void draw_grass(x,y) {
   }
 }
 
-void draw_desk(x,y) {
-  x = 20*x-20;
-  y = 20*y-20;
-  noStroke();
-  fill(102,51,0);
-  rect(x,y,20,20);  
-}
 
 
 void draw_path(x,y) {
@@ -386,6 +412,22 @@ void draw_bg(bgo, x,y) {
     case 'whiteBoardTable':
       draw_whiteboardTable(x,y);
       break;
+      
+    case 'barstool':
+      draw_rug(x,y);
+      draw_barstool(x,y);
+    
+    case 'barstoolTable':
+      draw_rug(x,y);
+      draw_barstoolTable(x,y);
+      
+    case 'ottomanRug':
+      draw_rug(x,y);
+      draw_ottoman(x,y);
+      
+    case 'ottomanTile':
+      draw_floor(x,y);
+      draw_ottoman(x,y);
       
   case 'brick':
     draw_brick(x,y);
