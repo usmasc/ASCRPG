@@ -493,7 +493,7 @@ void draw_bg(bgo, x,y) {
       
     case 'verFeltBoard':
       draw_rug(x,y);
-      draw_verWB(x,y);
+      draw_verFeltBoard(x,y);
       break;
     
     case 'barstoolTable':
