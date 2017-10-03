@@ -45,7 +45,7 @@ function tutorTalk(tutor) {
 
 var Tr1 = {
   name: "Adam Terrell",
-  subjects = ['Geography','Speaking','Writing'];
+  subjects: ['Geography','Speaking','Writing'],
   she: "He",
   canPass: false,
   draw: "Fred",
@@ -62,7 +62,7 @@ var Tr1 = {
 // Tr2 = Teneala Spencer
 var Tr2 = {
   name: "Teneala",
-  subjects: ["Spanish", "Computer Science", "Math", "Cal I, II, III"];
+  subjects: ["Spanish", "Computer Science", "Math", "Cal I, II, III"],
   she: "She",
   canPass: false,
   draw: "Fred",
@@ -79,7 +79,7 @@ var Tr2 = {
 // Tr3 = Scott Geyer
 var Tr3 = {
   name: "Scott",
-  subjects:["Math", "Stats"];
+  subjects:["Math", "Stats"],
   she: "He",
   canPass: false,
   draw: "Fred",
