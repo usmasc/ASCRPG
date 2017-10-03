@@ -284,8 +284,10 @@ var sid = {
     print(FDP.name + "Welcome to the Academic Success Center. Please sign in.");
 },
   check() {
-    print("You sign in on this computer. This helps the ASC track how the center is used and ensures that this resource ");
-    print("will be available in the future.");
+    var thingie = "You sign in on this computer. ";
+    thingie += "This helps the ASC track how the center is used and ensures that this resource ";
+    thingie += "will be available in the future.";
+    print(thingie);
   }
 };
 
@@ -294,7 +296,13 @@ var tcB = {
   canPass: false,
   draw: "desk",
   canTalk: false,
-  canCheck: false
+  canCheck: true,
+  check() {
+    var thingie = "Speak with a tutor to borrow "; 
+    thingie += "a calculator, a camera, a laptop, ";
+    thingie += "and other technology that we store here.";
+    print(thingie);
+  },
 };
 
 // tcM = techology cabinet Middle
@@ -302,7 +310,12 @@ var tcM = {
   canPass: false,
   draw: "desk",
   canTalk: false,
-  canCheck: false
+  canCheck: true,
+  check() {
+    var thingie = "Speak with a tutor to borrow "; 
+    thingie += "a calculator, a camera, a laptop, ";
+    thingie += "and other technology that we store here.";
+    print(thingie);
 };
 
 // tcT = technology cabinent Top
@@ -310,7 +323,12 @@ var tcT = {
   canPass: false,
   draw: "desk",
   canTalk: false,
-  canCheck: false
+  canCheck: true,
+  check() {
+    var thingie = "Speak with a tutor to borrow "; 
+    thingie += "a calculator, a camera, a laptop, ";
+    thingie += "and other technology that we store here.";
+    print(thingie);
 };
 
 // SGA
