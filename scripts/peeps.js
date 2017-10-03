@@ -18,7 +18,7 @@ function listSubjects(tutor) {
       thingie += 'and';
     }
     thingie += tutor.subjects[i];
-    if (i < this.subjects.length-1) {
+    if (i < tutor.subjects.length-1) {
       thingie += ',';
     }
     thingie += ' ';
