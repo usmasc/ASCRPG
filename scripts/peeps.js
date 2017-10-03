@@ -7,8 +7,8 @@ var sumbit = document.getElementById('submitButtonArea');
 
 // functions
 
-function print(str) {
-  text.innerHTML = str;
+function print(stri) {
+  text.innerHTML = stri;
 }
 
 function listSubjects(tutor) {
@@ -260,6 +260,20 @@ var MLb = {
   }
 };
 
+// Spanish Room
+var SLb = {
+  canPass: false,
+  draw: "desk",
+  canTalk: false,
+  canCheck: true,
+  check() {
+    var thingie = "This is the Spanish lab. You can practice";
+    thingie += "  presentations here, use the computer, or even practice speaking Spanish here.";
+    thingie += " We also have Spanish language materials stored in this room.";
+    text.innerHTML = thingie;
+  }
+};
+
 // sch = schedule
 var sch = {
   canPass: false,
@@ -316,6 +330,7 @@ var tcM = {
     thingie += "a calculator, a camera, a laptop, ";
     thingie += "and other technology that we store here.";
     print(thingie);
+  }
 };
 
 // tcT = technology cabinent Top
@@ -329,6 +344,7 @@ var tcT = {
     thingie += "a calculator, a camera, a laptop, ";
     thingie += "and other technology that we store here.";
     print(thingie);
+  }
 };
 
 // SGA
@@ -488,4 +504,3 @@ var StL = {
     text.innerHTML = thingie;
   }
 };
-
