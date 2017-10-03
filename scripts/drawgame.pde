@@ -426,6 +426,20 @@ void draw_sand(x,y) {
   }
 }
 
+void draw_bb(x,y) {
+  noStroke();
+  x = 20*x-20;
+  y = 20*y-20;
+  for(var xi = x; xi < x+20; xi+=5) {
+      for(var yi = y; yi < y+20; yi+=5) {
+          noStroke();
+          //224, 166, 137
+          fill(random(115,127), random(100,115), 0);
+          rect(xi,yi,5,5);
+      }
+  }
+}
+
 void draw_swamp(x,y) {
   noStroke();
   x = 20*x-20;
