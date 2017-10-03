@@ -833,7 +833,7 @@ var map = {
 '43':[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,til,coT,coT,til,coT,til,coT,til,coT,til,coT,tiB],
 '44':[wal,til,til,til,til,til,til,til,til,til,dkM,til,til,siL,coB,coB,til,coB,til,coB,til,coB,til,coB,tiB],
 '45':[wal,til,til,til,til,til,til,LST,til,LEP,dkM,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
-'46':[wal,wal,wal,bbL,bbR,wal,dkH,dkH,Lrs,dkH,Lps,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
+'46':[wal,wal,wal,bbL,bbR,wal,dkH,Lrs,dkH,dkH,Lps,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
 '47':[drT,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,til,tiB],
 '48':[drB,til,til,til,til,til,til,til,til,til,til,til,til,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal,wal],
 '49':[wal,til,til,til,til,til,til,til,til,til,til,til,til,str,str,str,str,str,str,str,str,str,str,str,str],
