@@ -1,8 +1,8 @@
 var text = document.getElementById('textArea');
 var sumbit = document.getElementById('submitButtonArea');
 
-function print(str) {
-  text.innerHTML = str;
+function print(stri) {
+  text.innerHTML = stri;
 }
 
 // bbb = bullitin board
