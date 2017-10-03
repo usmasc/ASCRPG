@@ -261,34 +261,34 @@ void draw_brick(x,y) {
       for(var yi = y; yi < y+16; yi+=8) {
         //1st line
         stroke(30, 0, 0);
-        fill(random(100,125),random(126,150),0);
+        fill(random(126,150),random(100,125,0);
         rect(x,yi,6,4);
-        fill(random(100,125),random(126,150),0);
+        fill(random(126,150),random(100,125,0);
         rect(x+7,yi,7,4);
         stroke(30, 0, 0);
-        fill(random(100,125),random(126,150),0);
+        fill(random(126,150),random(100,125,0);
         rect(x+14,yi,6,4);
         //2nd line
         noStroke();
-        fill(random(100,125),random(126,150),0);
+        fill(random(126,150),random(100,125,0);
         rect(x,yi+4,4,4);
-        fill(random(100,125),random(126,150),0);
+        fill(random(126,150),random(100,125,0);
         rect(x+16,yi+4,4,4);
         stroke(30, 0, 0);
-        fill(random(100,125),random(126,150),0);
+        fill(random(126,150),random(100,125,0);
         rect(x+4,yi+4,7,4);
-        fill(random(100,125),random(126,150),0);
+        fill(random(126,150),random(100,125,0);
         rect(x+10,yi+4,6,4);
       }
       //last line
       var yi = y+16;
       stroke(30, 0, 0);
-      fill(random(100,125),random(126,150),0);
+       fill(random(126,150),random(100,125,0);
       rect(x,yi,6,4);
-      fill(random(100,125),random(126,150),0);
+       fill(random(126,150),random(100,125,0);
       rect(x+7,yi,7,4);
       stroke(30, 0, 0);
-      fill(random(100,125),random(126,150),0);
+       fill(random(126,150),random(100,125,0);
       rect(x+14,yi,6,4);
       rect(x+10,yi,6,4);
       noStroke();
@@ -333,7 +333,7 @@ void draw_tile(x,y) {
   for(var xi = x; xi < x+20; xi+=10) {
     for(var yi = y; yi < y+20; yi+=10) {
       noStroke();
-      fill(random(201,225), random(176,200), 0);
+      fill(random(210,215), random(180,185), 0);
       rect(xi,yi,10,10);
     }
   }
