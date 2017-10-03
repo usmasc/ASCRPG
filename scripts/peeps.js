@@ -187,7 +187,10 @@ var cfB = {
   canPass: false,
   draw: "desk",
   canTalk: false,
-  canCheck: false
+  check() {
+    print("Free coffee!");
+  }
+};
 };
 
 // cfT = coffee table top
@@ -195,7 +198,10 @@ var cfT = {
   canPass: false,
   draw: "desk",
   canTalk: false,
-  canCheck: false
+  canCheck: true,
+  check() {
+    print("Free coffee!");
+  }
 };
 
 var cpr = {
@@ -255,7 +261,7 @@ var MLb = {
   canCheck: true,
   check() {
     var thingie =
-      "This is the media lab. You can practice presentations here or use the computer for video editting.";
+      "This is the Media Lab. You can practice presentations here or use the computer for video editting.";
     text.innerHTML = thingie;
   }
 };
@@ -267,7 +273,7 @@ var SLb = {
   canTalk: false,
   canCheck: true,
   check() {
-    var thingie = "This is the Spanish lab. You can practice";
+    var thingie = "This is the Spanish Room. You can practice";
     thingie += "  presentations here, use the computer, or even practice speaking Spanish here.";
     thingie += " We also have Spanish language materials stored in this room.";
     text.innerHTML = thingie;
