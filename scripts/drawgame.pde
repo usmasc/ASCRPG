@@ -330,15 +330,11 @@ void draw_tile(x,y) {
   noStroke();
   x = 20*x-20;
   y = 20*y-20;
-  for(var xi = x; xi < x+20; xi+=10) {
-    for(var yi = y; yi < y+20; yi+=10) {
-      noStroke();
-      fill(random(210,215), random(180,185), 0);
-      rect(xi,yi,10,10);
-    }
-  }
+  stroke(220, 200);
+  fill(random(210,215), random(180,185), 0);
+  rect(xi,yi,20,20);
+  noStroke();
 }
-
 
 void draw_rug(x,y) {
   noStroke();
@@ -595,6 +591,10 @@ void draw_bg(bgo, x,y) {
       
   case 'sand':
     draw_sand(x,y);
+    break;
+    
+   case 'bb':
+    draw_bb(x,y);
     break;
   
   case 'swamp':
