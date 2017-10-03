@@ -431,7 +431,7 @@ var hUR = {
 var hwb = {
   // hwb = horizontal white board
   canPass: false,
-  draw: "whiteBoardTable",
+  draw: "horWB",
   canTalk: false,
   canCheck: false
 };
