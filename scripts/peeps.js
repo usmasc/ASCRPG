@@ -27,7 +27,7 @@ function listSubjects(tutor) {
 }
 
 function tutorCheck(tutor) {
-    var thingie = "This is " +  tutor.name +  ". " + tutor.she + " is a ';
+    var thingie = "This is " +  tutor.name +  ". " + tutor.she + " is a ";
     thingie += listSubjects(tutor);
     thingie += "tutor in the ASC.";
     text.innerHTML = thingie;
@@ -79,7 +79,7 @@ var Tr2 = {
 // Tr3 = Scott Geyer
 var Tr3 = {
   name: "Scott",
-  subjects:["Math", Stats"];
+  subjects:["Math", "Stats"];
   she: "He",
   canPass: false,
   draw: "Fred",
