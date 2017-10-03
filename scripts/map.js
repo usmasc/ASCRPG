@@ -8,7 +8,7 @@ function print(stri) {
 // bbb = bullitin board
 var bbb = {
   canPass: false,
-  draw: "sand",
+  draw: "bb",
   canTalk: false,
   canCheck: false
 };
@@ -16,7 +16,7 @@ var bbb = {
 var bbT = {
   // bbT = bullitin board Top
   canPass: false,
-  draw: "sand",
+  draw: "bb",
   canTalk: false,
   canCheck: false
 };
@@ -24,7 +24,7 @@ var bbT = {
 var bbB = {
   // bbB = bullitin board Bottom
   canPass: false,
-  draw: "sand",
+  draw: "bb",
   canTalk: false,
   canCheck: false
 };
@@ -32,7 +32,7 @@ var bbB = {
 var bbL = {
   // bbL = bullitin board left
   canPass: false,
-  draw: "sand",
+  draw: "bb",
   canTalk: false,
   canCheck: false
 };
@@ -40,7 +40,7 @@ var bbL = {
 var bbR = {
   // bbR = bullitin board right
   canPass: false,
-  draw: "sand",
+  draw: "bb",
   canTalk: false,
   canCheck: false
 };
