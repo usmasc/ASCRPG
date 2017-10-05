@@ -97,10 +97,12 @@ void draw() {
 draw_PlayerFacingDown(); 
 }
 
+// random fill color
 void draw_randomColor(rL, rH, gL, gH, bH, bL) {
   fill(random(rL,rH),random(gL,gH),random(bL,bH));
 }
 
+// wall color
 void draw_castleColor() {
   draw_randomColor(126,150,100,125,0,0);
 }
@@ -335,11 +337,10 @@ void draw_verGlassWall(x,y) {
 }
 
 void draw_tile(x,y) {
-  noStroke();
   x = 20*x-20;
   y = 20*y-20;
   stroke(220, 200,0);
-  fill(random(210,215), random(180,185), 0);
+  draw_randomColor(210,215,180,185,0,0);
   rect(xi,yi,20,20);
   noStroke();
 }
