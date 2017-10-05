@@ -330,7 +330,7 @@ void draw_tile(x,y) {
   noStroke();
   x = 20*x-20;
   y = 20*y-20;
-  stroke(220, 200);
+  stroke(220, 200,0);
   fill(random(210,215), random(180,185), 0);
   rect(xi,yi,20,20);
   noStroke();
