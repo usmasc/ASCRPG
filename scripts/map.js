@@ -572,7 +572,7 @@ var tcU = {
 // til = tile
 var til = {
   canPass: true,
-  draw: "floor",
+  draw: "tile",
   canTalk: false,
   canCheck: false
 };
