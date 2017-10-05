@@ -76,8 +76,25 @@ var Tr2 = {
   }
 };
 
-// Tr3 = Scott Geyer
+// Elizabeth Snyder
 var Tr3 = {
+  name: "Elizabeth",
+  subjects:["Math", "Study Skills", "Algebra"],
+  she: "She",
+  canPass: false,
+  draw: "Fred",
+  canTalk: true,
+  canCheck: true,
+  check() {
+    tutorCheck(this);
+  },
+  talk() {
+    tutorCheck(this);
+  }
+};
+
+// Tr4 = Scott Geyer
+var Tr4 = {
   name: "Scott",
   subjects:["Math", "Stats"],
   she: "He",
@@ -93,29 +110,7 @@ var Tr3 = {
   }
 };
 
-// Elizabeth Snyder
-var Tr4 = {
-  name: "Elizabeth Snyder",
-  she: "She",
-  canPass: false,
-  draw: "Fred",
-  canTalk: true,
-  canCheck: true,
-  check() {
-    tutorCheck(this);
-  },
-  talk() {
-    tutorCheck(this);
-  }
-};
 
-// trs = trash
-var trs = {
-  canPass: false,
-  draw: "trash",
-  canTalk: false,
-  canCheck: false
-};
 
 // FDP = Front Desk Person = Victoria Snyder*
 var FDP = {
@@ -181,6 +176,19 @@ var DiO = {
 
 
 // interactive elements in ASC
+
+// trs = trash
+var trs = {
+  canPass: false,
+  draw: "trash",
+  canTalk: false,
+  canCheck: true,
+  check() {
+    var thingie = "Digging through the trash ... ";
+    thingie += "Casey Baker: Please don't dig in the trash.";
+    print(thingie);
+  }
+};
 
 // cfB = coffee table bottom
 var cfB = {

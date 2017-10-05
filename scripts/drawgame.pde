@@ -97,6 +97,16 @@ void draw() {
 draw_PlayerFacingDown(); 
 }
 
+// random fill color
+void draw_randomColor(rL, rH, gL, gH, bH, bL) {
+  fill(random(rL,rH),random(gL,gH),random(bL,bH));
+}
+
+// wall color
+void draw_castleColor() {
+  draw_randomColor(126,150,100,125,0,0);
+}
+
 void draw_black_square(x,y) {
   var newX = 20*x-20;
   var newY = 20*y-20;
@@ -261,34 +271,34 @@ void draw_brick(x,y) {
       for(var yi = y; yi < y+16; yi+=8) {
         //1st line
         stroke(30, 0, 0);
-        fill(random(100,125),random(126,150),0);
+        draw_castleColor();
         rect(x,yi,6,4);
-        fill(random(100,125),random(126,150),0);
+        draw_castleColor();
         rect(x+7,yi,7,4);
         stroke(30, 0, 0);
-        fill(random(100,125),random(126,150),0);
+        draw_castleColor();
         rect(x+14,yi,6,4);
         //2nd line
         noStroke();
-        fill(random(100,125),random(126,150),0);
+        draw_castleColor();
         rect(x,yi+4,4,4);
-        fill(random(100,125),random(126,150),0);
+        draw_castleColor();
         rect(x+16,yi+4,4,4);
         stroke(30, 0, 0);
-        fill(random(100,125),random(126,150),0);
+        draw_castleColor();
         rect(x+4,yi+4,7,4);
-        fill(random(100,125),random(126,150),0);
+        draw_castleColor();
         rect(x+10,yi+4,6,4);
       }
       //last line
       var yi = y+16;
       stroke(30, 0, 0);
-      fill(random(100,125),random(126,150),0);
+        draw_castleColor();
       rect(x,yi,6,4);
-      fill(random(100,125),random(126,150),0);
+
       rect(x+7,yi,7,4);
       stroke(30, 0, 0);
-      fill(random(100,125),random(126,150),0);
+        draw_castleColor();
       rect(x+14,yi,6,4);
       rect(x+10,yi,6,4);
       noStroke();
@@ -327,18 +337,13 @@ void draw_verGlassWall(x,y) {
 }
 
 void draw_tile(x,y) {
-  noStroke();
   x = 20*x-20;
   y = 20*y-20;
-  for(var xi = x; xi < x+20; xi+=10) {
-    for(var yi = y; yi < y+20; yi+=10) {
-      noStroke();
-      fill(random(201,225), random(176,200), 0);
-      rect(xi,yi,10,10);
-    }
-  }
+  stroke(220, 200,0);
+  draw_randomColor(210,215,180,185,0,0);
+  rect(x,y,20,20);
+  noStroke();
 }
-
 
 void draw_rug(x,y) {
   noStroke();
@@ -421,6 +426,20 @@ void draw_sand(x,y) {
           noStroke();
           //224, 166, 137
           fill(random(230,255), random(200,229), random(175,199));
+          rect(xi,yi,5,5);
+      }
+  }
+}
+
+void draw_bb(x,y) {
+  noStroke();
+  x = 20*x-20;
+  y = 20*y-20;
+  for(var xi = x; xi < x+20; xi+=5) {
+      for(var yi = y; yi < y+20; yi+=5) {
+          noStroke();
+          //224, 166, 137
+          fill(random(115,127), random(100,115), 0);
           rect(xi,yi,5,5);
       }
   }
@@ -558,6 +577,10 @@ void draw_bg(bgo, x,y) {
     break;
       
   case 'floor':
+    draw_floor(x,y);
+    break;
+    
+  case 'tile':
     draw_tile(x,y);
     break;
     
@@ -581,6 +604,10 @@ void draw_bg(bgo, x,y) {
       
   case 'sand':
     draw_sand(x,y);
+    break;
+    
+   case 'bb':
+    draw_bb(x,y);
     break;
   
   case 'swamp':
