@@ -341,7 +341,7 @@ void draw_tile(x,y) {
   y = 20*y-20;
   stroke(220, 200,0);
   draw_randomColor(210,215,180,185,0,0);
-  rect(xi,yi,20,20);
+  rect(x,y,20,20);
   noStroke();
 }
 
@@ -577,6 +577,10 @@ void draw_bg(bgo, x,y) {
     break;
       
   case 'floor':
+    draw_floor(x,y);
+    break;
+    
+  case 'tile':
     draw_tile(x,y);
     break;
     
